@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AimStore - Clé d'Accès</title>
+  <title>AimStore - Access Gateway</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
@@ -25,7 +25,7 @@
       border: 1px solid rgba(99, 102, 241, 0.2);
       border-radius: 24px;
       padding: 35px 30px;
-      max-width: 400px;
+      max-width: 420px;
       width: 100%;
       text-align: center;
       box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
@@ -36,8 +36,8 @@
     }
 
     .logo-container img {
-      width: 48px;
-      height: 48px;
+      width: 55px;
+      height: 55px;
       object-fit: contain;
     }
 
@@ -55,6 +55,35 @@
       line-height: 1.5;
     }
 
+    /* BARRE DE PROGRESSION CHECKPOINT */
+    .checkpoint-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      font-weight: 600;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background: rgba(30, 27, 75, 0.8);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 25px;
+      border: 1px solid rgba(99, 102, 241, 0.2);
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #38bdf8, #818cf8);
+      transition: width 0.4s ease;
+    }
+
+    /* AFFICHAGE DE LA CLÉ */
     .key-box {
       background: rgba(30, 27, 75, 0.6);
       border: 1px solid rgba(129, 140, 248, 0.3);
@@ -71,7 +100,7 @@
 
     .btn {
       width: 100%;
-      padding: 13px;
+      padding: 14px;
       background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
       color: white;
       border: none;
@@ -81,7 +110,10 @@
       cursor: pointer;
       transition: all 0.2s ease;
       box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
-      margin-bottom: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
     }
 
     .btn:hover {
@@ -91,32 +123,96 @@
     }
 
     .status-text {
-      margin-top: 10px;
+      margin-top: 15px;
       font-size: 0.8rem;
       color: #64748b;
     }
+
+    .hidden { display: none; }
   </style>
 </head>
 <body>
 
   <div class="card">
     <div class="logo-container">
-      <!-- Tu peux y glisser l'image de ton logo si tu veux -->
-      <span style="font-size: 2rem;">🐰</span>
+      <img src="logo.png" alt="AimStore Logo" onerror="this.style.display='none'">
     </div>
     <h1>AIM Store</h1>
-    <p>Votre clé d'accès sécurisée de 24 heures est prête. Copiez-la pour l'utiliser dans le launcher.</p>
 
-    <div class="key-box" id="keyBox">Chargement...</div>
+    <!-- VUE 1 : CHECKPOINTS PUBLICITAIRES -->
+    <div id="checkpointSection">
+      <p>Complétez les étapes ci-dessous pour débloquer votre clé d'accès AimStore.</p>
 
-    <button class="btn" onclick="copyKey()">Copier la clé</button>
-    <div class="status-text" id="statusText">Vérification en cours...</div>
+      <div class="checkpoint-header">
+        <span>Checkpoint #1</span>
+        <span id="stepCounter">Step 0 of 2</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <button class="btn" id="checkpointBtn" onclick="handleCheckpoint()">
+        <span>Open Checkpoint</span> 🔗
+      </button>
+      <div class="status-text" id="cpStatus">Cliquez pour démarrer la vérification.</div>
+    </div>
+
+    <!-- VUE 2 : CLÉ FINALE (AFFICHÉE SEULEMENT APRÈS LE WORKINK) -->
+    <div id="keySection" class="hidden">
+      <p>Votre clé d'accès sécurisée de 24 heures est prête. Copiez-la pour l'utiliser dans le launcher.</p>
+
+      <div class="key-box" id="keyBox">Chargement...</div>
+
+      <button class="btn" onclick="copyKey()">Copier la clé</button>
+      <div class="status-text" id="keyStatus">Vérification en cours...</div>
+    </div>
   </div>
 
   <script>
+    // 🔗 DÉFINIS TES LIENS ICI :
+    const AD_POPUP_URL = "https://www.google.com"; // Remplace par ton lien de pub Pop-up / Sponsor
+    const WORKINK_URL = "https://workink.net/ton-lien-workink"; // Remplace par ton lien Workink
+
+    let currentStep = 0;
+
+    // Vérifier si l'utilisateur provient de Workink (ex: ?completed=true)
+    const urlParams = new URLSearchParams(window.location.search);
+    const isCompleted = urlParams.get('completed');
+
+    if (isCompleted === 'true') {
+      // Masquer les checkpoints et afficher la clé finale
+      document.getElementById('checkpointSection').classList.add('hidden');
+      document.getElementById('keySection').classList.remove('hidden');
+      loadKey();
+    }
+
+    function handleCheckpoint() {
+      const stepCounter = document.getElementById('stepCounter');
+      const progressFill = document.getElementById('progressFill');
+      const btn = document.getElementById('checkpointBtn');
+      const cpStatus = document.getElementById('cpStatus');
+
+      if (currentStep === 0) {
+        // Étape 1 : Ouvrir la pub pop-up
+        window.open(AD_POPUP_URL, '_blank');
+        
+        currentStep = 1;
+        stepCounter.textContent = "Step 1 of 2";
+        progressFill.style.width = "50%";
+        btn.innerHTML = "<span>Open Final Checkpoint</span> 🚀";
+        cpStatus.textContent = "Publicité ouverte. Cliquez à nouveau pour accéder à Workink.";
+      } 
+      else if (currentStep === 1) {
+        // Étape 2 : Rediriger vers Workink
+        progressFill.style.width = "100%";
+        cpStatus.textContent = "Redirection vers Workink...";
+        window.location.href = WORKINK_URL;
+      }
+    }
+
     async function loadKey() {
       const keyBox = document.getElementById('keyBox');
-      const statusText = document.getElementById('statusText');
+      const keyStatus = document.getElementById('keyStatus');
 
       try {
         const response = await fetch('/api/generate');
@@ -125,17 +221,17 @@
         if (data.success) {
           keyBox.textContent = data.key;
           if (data.isExisting) {
-            statusText.textContent = `Clé active (${data.remainingHours}h restantes)`;
+            keyStatus.textContent = `Clé active (${data.remainingHours}h restantes)`;
           } else {
-            statusText.textContent = `Nouvelle clé générée avec succès !`;
+            keyStatus.textContent = `Nouvelle clé générée avec succès !`;
           }
         } else {
           keyBox.textContent = "ERREUR";
-          statusText.textContent = data.message || "Erreur de génération.";
+          keyStatus.textContent = data.message || "Erreur de génération.";
         }
       } catch (err) {
         keyBox.textContent = "ERREUR";
-        statusText.textContent = "Erreur de communication avec le serveur.";
+        keyStatus.textContent = "Erreur de communication avec le serveur.";
       }
     }
 
@@ -146,8 +242,6 @@
         alert("Clé copiée dans le presse-papier !");
       }
     }
-
-    loadKey();
   </script>
 </body>
 </html>
