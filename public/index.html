@@ -3,12 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AimStore - Clé d'Accès</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <title>AimStore - Key Access</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', sans-serif; }
+    :root {
+      /* 🎨 COULEURS DU LAUNCHER AIMSTORE (Ajuste les valeurs si besoin) */
+      --bg-main: #0b0e14;
+      --card-bg: rgba(18, 24, 38, 0.85);
+      --accent-primary: #6366f1;   /* Violet / Bleu Neon du Launcher */
+      --accent-hover: #4f46e5;
+      --accent-glow: rgba(99, 102, 241, 0.4);
+      --text-title: #ffffff;
+      --text-sub: #94a3b8;
+      --key-text: #38bdfe;
+      --border-color: rgba(99, 102, 241, 0.25);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+    
     body {
-      background: #090d16;
+      background: var(--bg-main);
+      background-image: 
+        radial-gradient(circle at 50% 10%, rgba(99, 102, 241, 0.15) 0%, transparent 60%),
+        radial-gradient(circle at 80% 90%, rgba(56, 189, 248, 0.08) 0%, transparent 50%);
       color: #f3f4f6;
       display: flex;
       justify-content: center;
@@ -16,72 +33,102 @@
       min-height: 100vh;
       padding: 20px;
     }
+
     .card {
-      background: rgba(17, 24, 39, 0.8);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-      border-radius: 20px;
+      background: var(--card-bg);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
       padding: 40px;
-      max-width: 420px;
+      max-width: 440px;
       width: 100%;
       text-align: center;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6), 0 0 30px var(--accent-glow);
     }
+
     .badge {
       display: inline-block;
-      padding: 6px 14px;
-      background: rgba(56, 189, 248, 0.1);
-      color: #38bdf8;
+      padding: 6px 16px;
+      background: rgba(99, 102, 241, 0.12);
+      color: var(--key-text);
+      border: 1px solid rgba(56, 189, 248, 0.3);
       border-radius: 50px;
-      font-size: 0.8rem;
-      font-weight: 600;
-      margin-bottom: 20px;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-    h1 { font-size: 1.8rem; font-weight: 800; margin-bottom: 10px; color: #ffffff; }
-    p { color: #9ca3af; font-size: 0.95rem; margin-bottom: 30px; line-height: 1.5; }
-    .key-box {
-      background: #030712;
-      border: 1px dashed rgba(56, 189, 248, 0.4);
-      border-radius: 12px;
-      padding: 16px;
-      font-family: monospace;
-      font-size: 1.4rem;
+      font-size: 0.75rem;
       font-weight: 700;
-      color: #4ade80;
+      margin-bottom: 22px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 12px;
+      color: var(--text-title);
+      letter-spacing: -0.5px;
+    }
+
+    p {
+      color: var(--text-sub);
+      font-size: 0.92rem;
+      margin-bottom: 28px;
+      line-height: 1.6;
+    }
+
+    .key-box {
+      background: rgba(7, 10, 19, 0.9);
+      border: 1.5px dashed var(--accent-primary);
+      border-radius: 14px;
+      padding: 18px;
+      font-family: 'Courier New', monospace;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--key-text);
       letter-spacing: 3px;
-      margin-bottom: 20px;
+      margin-bottom: 24px;
+      text-shadow: 0 0 12px var(--accent-glow);
       user-select: all;
     }
+
     .btn-copy {
       width: 100%;
-      padding: 14px;
-      background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+      padding: 16px;
+      background: linear-gradient(135deg, var(--accent-primary) 0%, #3b82f6 100%);
       color: white;
       border: none;
-      border-radius: 12px;
-      font-weight: 600;
+      border-radius: 14px;
+      font-weight: 700;
       font-size: 1rem;
       cursor: pointer;
-      transition: all 0.2s ease;
-      box-shadow: 0 4px 15px rgba(2, 132, 199, 0.3);
+      transition: all 0.25s ease;
+      box-shadow: 0 6px 20px var(--accent-glow);
     }
-    .btn-copy:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(2, 132, 199, 0.5); }
-    .status-text { margin-top: 15px; font-size: 0.85rem; color: #6b7280; }
+
+    .btn-copy:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(99, 102, 241, 0.6);
+      background: linear-gradient(135deg, var(--accent-hover) 0%, #2563eb 100%);
+    }
+
+    .status-text {
+      margin-top: 18px;
+      font-size: 0.85rem;
+      color: #64748b;
+    }
   </style>
 </head>
 <body>
 
   <div class="card">
-    <div class="badge">Vérification Réussie</div>
-    <h1>AimStore Key</h1>
-    <p>Voici votre clé temporaire d'accès de 24 heures. Copiez-la et collez-la dans le launcher <strong>AimStore</strong>.</p>
+    <div class="badge">Session Validée</div>
+    <h1>AimStore</h1>
+    <p>Votre clé temporaire est prête. Copiez-la et collez-la dans le launcher <strong>AimStore</strong> pour débloquer l'accès pendant 24 heures.</p>
 
     <div class="key-box" id="keyBox">Chargement...</div>
 
     <button class="btn-copy" onclick="copyKey()">Copier la clé</button>
-    <div class="status-text" id="statusText">Génération en cours...</div>
+    <div class="status-text" id="statusText">Vérification en cours...</div>
   </div>
 
   <script>
@@ -96,7 +143,7 @@
         if (data.success) {
           keyBox.textContent = data.key;
           if (data.isExisting) {
-            statusText.textContent = `Clé déjà active (${data.remainingHours}h restantes)`;
+            statusText.textContent = `Clé active réaffichée (${data.remainingHours}h restantes)`;
           } else {
             statusText.textContent = `Nouvelle clé créée ! Valide 24 heures.`;
           }
@@ -106,7 +153,7 @@
         }
       } catch (err) {
         keyBox.textContent = "ERREUR";
-        statusText.textContent = "Erreur de communication avec le serveur.";
+        statusText.textContent = "Erreur de connexion au serveur.";
       }
     }
 
@@ -114,7 +161,7 @@
       const key = document.getElementById('keyBox').textContent;
       if (key && key !== "Chargement..." && key !== "ERREUR") {
         navigator.clipboard.writeText(key);
-        alert("Clé copié dans le presse-papier !");
+        alert("Clé copiée avec succès !");
       }
     }
 
