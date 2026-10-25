@@ -31,15 +31,8 @@
       box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
     }
 
-    .logo-container {
-      margin-bottom: 15px;
-    }
-
-    .logo-container img {
-      width: 55px;
-      height: 55px;
-      object-fit: contain;
-    }
+    .logo-container { margin-bottom: 15px; }
+    .logo-container img { width: 55px; height: 55px; object-fit: contain; }
 
     h1 {
       font-size: 1.6rem;
@@ -55,7 +48,6 @@
       line-height: 1.5;
     }
 
-    /* BARRE DE PROGRESSION CHECKPOINT */
     .checkpoint-header {
       display: flex;
       justify-content: space-between;
@@ -83,7 +75,6 @@
       transition: width 0.4s ease;
     }
 
-    /* AFFICHAGE DE LA CLÉ */
     .key-box {
       background: rgba(30, 27, 75, 0.6);
       border: 1px solid rgba(129, 140, 248, 0.3);
@@ -139,12 +130,12 @@
     </div>
     <h1>AIM Store</h1>
 
-    <!-- VUE 1 : CHECKPOINTS PUBLICITAIRES -->
+    <!-- VUE CHECKPOINTS EN CASCADE -->
     <div id="checkpointSection">
-      <p>Complétez les étapes ci-dessous pour débloquer votre clé d'accès AimStore.</p>
+      <p id="cpDescription">Complétez les étapes de vérification pour obtenir votre clé d'accès.</p>
 
       <div class="checkpoint-header">
-        <span>Checkpoint #1</span>
+        <span id="cpTitle">Checkpoint #1</span>
         <span id="stepCounter">Step 0 of 2</span>
       </div>
       <div class="progress-bar">
@@ -154,10 +145,10 @@
       <button class="btn" id="checkpointBtn" onclick="handleCheckpoint()">
         <span>Open Checkpoint</span> 🔗
       </button>
-      <div class="status-text" id="cpStatus">Cliquez pour démarrer la vérification.</div>
+      <div class="status-text" id="cpStatus">Étape 1 requise.</div>
     </div>
 
-    <!-- VUE 2 : CLÉ FINALE (AFFICHÉE SEULEMENT APRÈS LE WORKINK) -->
+    <!-- VUE CLÉ FINALE -->
     <div id="keySection" class="hidden">
       <p>Votre clé d'accès sécurisée de 24 heures est prête. Copiez-la pour l'utiliser dans le launcher.</p>
 
@@ -169,44 +160,52 @@
   </div>
 
   <script>
-    // 🔗 DÉFINIS TES LIENS ICI :
-    const AD_POPUP_URL = "https://www.google.com"; // Remplace par ton lien de pub Pop-up / Sponsor
-    const WORKINK_URL = "https://workink.net/ton-lien-workink"; // Remplace par ton lien Workink
+    // 🔗 TES LIENS DE REDIRECTION EXTERNES :
+    // L'URL de ton site Vercel actuel (utilisé pour les retours de checkpoint)
+    const BASE_URL = window.location.origin + window.location.pathname;
 
-    let currentStep = 0;
+    // 1. Lien Workink configuré pour renvoyer vers ton site avec ?step=1
+    const WORKINK_URL = "https://workink.net/ton-lien-workink"; 
+    
+    // 2. Lien Linkvertise configuré pour renvoyer vers ton site avec ?step=2 (final)
+    const LINKVERTISE_URL = "https://link-to.net/ton-lien-linkvertise"; 
 
-    // Vérifier si l'utilisateur provient de Workink (ex: ?completed=true)
+    // Lecture des paramètres de l'URL pour savoir où en est l'utilisateur
     const urlParams = new URLSearchParams(window.location.search);
-    const isCompleted = urlParams.get('completed');
+    const currentStepParam = urlParams.get('step');
 
-    if (isCompleted === 'true') {
-      // Masquer les checkpoints et afficher la clé finale
+    const cpTitle = document.getElementById('cpTitle');
+    const stepCounter = document.getElementById('stepCounter');
+    const progressFill = document.getElementById('progressFill');
+    const checkpointBtn = document.getElementById('checkpointBtn');
+    const cpStatus = document.getElementById('cpStatus');
+    const cpDescription = document.getElementById('cpDescription');
+
+    if (currentStepParam === '1') {
+      // ÉTAPE 2 : L'utilisateur revient de Workink (1/2 complété)
+      cpTitle.textContent = "Checkpoint #2";
+      stepCounter.textContent = "Step 1 of 2";
+      progressFill.style.width = "50%";
+      checkpointBtn.innerHTML = "<span>Finaliser (Open Checkpoint)</span> 🚀";
+      cpStatus.textContent = "Première partie validée. Passez au checkpoint final.";
+    } 
+    else if (currentStepParam === '2') {
+      // ÉTAPE FINALE : L'utilisateur revient de Linkvertise -> On masque les checkpoints et on affiche la clé
       document.getElementById('checkpointSection').classList.add('hidden');
       document.getElementById('keySection').classList.remove('hidden');
       loadKey();
     }
 
     function handleCheckpoint() {
-      const stepCounter = document.getElementById('stepCounter');
-      const progressFill = document.getElementById('progressFill');
-      const btn = document.getElementById('checkpointBtn');
-      const cpStatus = document.getElementById('cpStatus');
-
-      if (currentStep === 0) {
-        // Étape 1 : Ouvrir la pub pop-up
-        window.open(AD_POPUP_URL, '_blank');
-        
-        currentStep = 1;
-        stepCounter.textContent = "Step 1 of 2";
-        progressFill.style.width = "50%";
-        btn.innerHTML = "<span>Open Final Checkpoint</span> 🚀";
-        cpStatus.textContent = "Publicité ouverte. Cliquez à nouveau pour accéder à Workink.";
-      } 
-      else if (currentStep === 1) {
-        // Étape 2 : Rediriger vers Workink
-        progressFill.style.width = "100%";
-        cpStatus.textContent = "Redirection vers Workink...";
+      if (!currentStepParam || currentStepParam === '0') {
+        // ACTION 1 : Envoi vers Workink. 
+        // On configure Workink pour qu'il redirige vers : TonSite/?step=1 une fois terminé
         window.location.href = WORKINK_URL;
+      } 
+      else if (currentStepParam === '1') {
+        // ACTION 2 : Envoi vers Linkvertise.
+        // On configure Linkvertise pour qu'il redirige vers : TonSite/?step=2 une fois terminé
+        window.location.href = LINKVERTISE_URL;
       }
     }
 
