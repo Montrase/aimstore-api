@@ -130,13 +130,13 @@
     </div>
     <h1>AIM Store</h1>
 
-    <!-- VUE CHECKPOINTS EN CASCADE -->
+    <!-- VUE SYSTEME DE CHECKPOINTS -->
     <div id="checkpointSection">
-      <p id="cpDescription">Complétez les étapes de vérification pour obtenir votre clé d'accès.</p>
+      <p id="cpDescription">Complétez les étapes de vérification pour débloquer votre clé d'accès.</p>
 
       <div class="checkpoint-header">
         <span id="cpTitle">Checkpoint #1</span>
-        <span id="stepCounter">Step 0 of 2</span>
+        <span id="stepCounter">0/2 Complété</span>
       </div>
       <div class="progress-bar">
         <div class="progress-fill" id="progressFill"></div>
@@ -145,12 +145,12 @@
       <button class="btn" id="checkpointBtn" onclick="handleCheckpoint()">
         <span>Open Checkpoint</span> 🔗
       </button>
-      <div class="status-text" id="cpStatus">Étape 1 requise.</div>
+      <div class="status-text" id="cpStatus">Étape 1 sur 2 requise.</div>
     </div>
 
-    <!-- VUE CLÉ FINALE -->
+    <!-- VUE FINALE : CLÉ GÉNÉRÉE (APPRÈS STEP 2) -->
     <div id="keySection" class="hidden">
-      <p>Votre clé d'accès sécurisée de 24 heures est prête. Copiez-la pour l'utiliser dans le launcher.</p>
+      <p>Toutes les étapes ont été validées ! Voici votre clé d'accès sécurisée de 24h :</p>
 
       <div class="key-box" id="keyBox">Chargement...</div>
 
@@ -160,17 +160,11 @@
   </div>
 
   <script>
-    // 🔗 TES LIENS DE REDIRECTION EXTERNES :
-    // L'URL de ton site Vercel actuel (utilisé pour les retours de checkpoint)
-    const BASE_URL = window.location.origin + window.location.pathname;
+    // 🔗 TES VRAIS LIENS INTEGRÉS :
+    const WORKINK_URL = "https://work.ink/370E/aimstore"; 
+    const LINKVERTISE_URL = "https://link-center.net/10344688/ujQeZfYkD4gD"; 
 
-    // 1. Lien Workink configuré pour renvoyer vers ton site avec ?step=1
-    const WORKINK_URL = "https://workink.net/ton-lien-workink"; 
-    
-    // 2. Lien Linkvertise configuré pour renvoyer vers ton site avec ?step=2 (final)
-    const LINKVERTISE_URL = "https://link-to.net/ton-lien-linkvertise"; 
-
-    // Lecture des paramètres de l'URL pour savoir où en est l'utilisateur
+    // Lecture du paramètre ?step= dans l'URL
     const urlParams = new URLSearchParams(window.location.search);
     const currentStepParam = urlParams.get('step');
 
@@ -179,33 +173,39 @@
     const progressFill = document.getElementById('progressFill');
     const checkpointBtn = document.getElementById('checkpointBtn');
     const cpStatus = document.getElementById('cpStatus');
-    const cpDescription = document.getElementById('cpDescription');
 
+    // Gestion de l'état selon l'étape renvoyée
     if (currentStepParam === '1') {
-      // ÉTAPE 2 : L'utilisateur revient de Workink (1/2 complété)
+      // ÉTAPE 1 COMPLÉTÉE (Retour de Workink)
       cpTitle.textContent = "Checkpoint #2";
-      stepCounter.textContent = "Step 1 of 2";
+      stepCounter.textContent = "1/2 Complété";
       progressFill.style.width = "50%";
-      checkpointBtn.innerHTML = "<span>Finaliser (Open Checkpoint)</span> 🚀";
-      cpStatus.textContent = "Première partie validée. Passez au checkpoint final.";
+      checkpointBtn.innerHTML = "<span>Continuer (Checkpoint #2)</span> 🚀";
+      cpStatus.textContent = "Workink validé ! Cliquez sur Continuer pour accéder à Linkvertise.";
     } 
     else if (currentStepParam === '2') {
-      // ÉTAPE FINALE : L'utilisateur revient de Linkvertise -> On masque les checkpoints et on affiche la clé
-      document.getElementById('checkpointSection').classList.add('hidden');
-      document.getElementById('keySection').classList.remove('hidden');
-      loadKey();
+      // ÉTAPE 2 COMPLÉTÉE (Retour de Linkvertise)
+      cpTitle.textContent = "Vérification terminée";
+      stepCounter.textContent = "2/2 Complété";
+      progressFill.style.width = "100%";
+      checkpointBtn.innerHTML = "<span>Obtenir ma clé</span> 🔑";
+      cpStatus.textContent = "Toutes les étapes sont validées ! Cliquez pour afficher votre clé.";
     }
 
     function handleCheckpoint() {
       if (!currentStepParam || currentStepParam === '0') {
-        // ACTION 1 : Envoi vers Workink. 
-        // On configure Workink pour qu'il redirige vers : TonSite/?step=1 une fois terminé
+        // Envoi vers Workink
         window.location.href = WORKINK_URL;
       } 
       else if (currentStepParam === '1') {
-        // ACTION 2 : Envoi vers Linkvertise.
-        // On configure Linkvertise pour qu'il redirige vers : TonSite/?step=2 une fois terminé
+        // Envoi vers Linkvertise
         window.location.href = LINKVERTISE_URL;
+      } 
+      else if (currentStepParam === '2') {
+        // Affichage de la clé finale
+        document.getElementById('checkpointSection').classList.add('hidden');
+        document.getElementById('keySection').classList.remove('hidden');
+        loadKey();
       }
     }
 
@@ -222,15 +222,15 @@
           if (data.isExisting) {
             keyStatus.textContent = `Clé active (${data.remainingHours}h restantes)`;
           } else {
-            keyStatus.textContent = `Nouvelle clé générée avec succès !`;
+            keyStatus.textContent = `Nouvelle clé créée avec succès !`;
           }
         } else {
           keyBox.textContent = "ERREUR";
-          keyStatus.textContent = data.message || "Erreur de génération.";
+          keyStatus.textContent = data.message || "Impossible de générer la clé.";
         }
       } catch (err) {
         keyBox.textContent = "ERREUR";
-        keyStatus.textContent = "Erreur de communication avec le serveur.";
+        keyStatus.textContent = "Erreur de connexion avec le serveur.";
       }
     }
 
