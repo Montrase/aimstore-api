@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AimStore - Access Gateway</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
+
+    body {
+      background: radial-gradient(circle at 50% 30%, #1e1b4b 0%, #090d16 80%);
+      color: #f3f4f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.75);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(99, 102, 241, 0.2);
+      border-radius: 24px;
+      padding: 35px 30px;
+      max-width: 420px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7);
+    }
+
+    .logo-container { margin-bottom: 15px; }
+    .logo-container img { width: 55px; height: 55px; object-fit: contain; }
+
+    h1 { font-size: 1.6rem; font-weight: 700; margin-bottom: 8px; color: #ffffff; }
+
+    p { color: #94a3b8; font-size: 0.88rem; margin-bottom: 25px; line-height: 1.5; }
+
+    .checkpoint-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      font-weight: 600;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 8px;
+      background: rgba(30, 27, 75, 0.8);
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 25px;
+      border: 1px solid rgba(99, 102, 241, 0.2);
+    }
+
+    .progress-fill {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, #38bdf8, #818cf8);
+      transition: width 0.4s ease;
+    }
+
+    .key-box {
+      background: rgba(30, 27, 75, 0.6);
+      border: 1px solid rgba(129, 140, 248, 0.3);
+      border-radius: 12px;
+      padding: 14px;
+      font-family: monospace;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #38bdf8;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      user-select: all;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 14px;
+      background: linear-gradient(135deg, #4f46e5 0%, #7c3aed 100%);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 15px rgba(79, 70, 229, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(79, 70, 229, 0.6);
+      background: linear-gradient(135deg, #4338ca 0%, #6d28d9 100%);
+    }
+
+    .btn:disabled { opacity: 0.55; cursor: not-allowed; transform: none; }
+
+    .status-text { margin-top: 15px; font-size: 0.8rem; color: #64748b; }
+    .status-text.error { color: #f87171; }
+
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="logo-container">
+      <img src="/logo.png" alt="AimStore Logo" onerror="this.style.display='none'">
+    </div>
+    <h1>AIM Store</h1>
+
+    <!-- VUE CHECKPOINTS -->
+    <div id="checkpointSection">
+      <p id="cpDescription">Complétez les étapes de vérification pour débloquer votre clé d'accès.</p>
+
+      <div class="checkpoint-header">
+        <span id="cpTitle">Checkpoint #1</span>
+        <span id="stepCounter">0/2 Complété</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressFill"></div>
+      </div>
+
+      <button class="btn" id="checkpointBtn" disabled>
+        <span id="checkpointBtnText">Chargement...</span>
+      </button>
+      <div class="status-text" id="cpStatus"></div>
+    </div>
+
+    <!-- VUE FINALE : CLÉ -->
+    <div id="keySection" class="hidden">
+      <p>Toutes les étapes ont été validées ! Voici votre clé d'accès sécurisée de 24h :</p>
+
+      <div class="key-box" id="keyBox">...</div>
+
+      <button class="btn" id="copyBtn">Copier la clé</button>
+      <div class="status-text" id="keyStatus"></div>
+    </div>
+  </div>
+
+  <script>
+    // Liens publics des checkpoints (ceux que l'utilisateur ouvre)
+    const WORKINK_URL = "https://work.ink/370E/aimstore";
+    const LINKVERTISE_URL = "https://link-center.net/10344688/ujQeZfYkD4gD";
+
+    // IMPORTANT : dans les tableaux de bord, la DESTINATION de chaque lien doit être :
+    //   Work.ink    -> https://aimstore-api.vercel.app/cp/workink?hash={TOKEN}
+    //   Linkvertise -> https://aimstore-api.vercel.app/cp/linkvertise
+
+    const el = (id) => document.getElementById(id);
+    let currentStep = 0;
+
+    function getSid() {
+      try { return localStorage.getItem('aim_sid') || ''; } catch (e) { return ''; }
+    }
+    function saveSid(sid) {
+      try { localStorage.setItem('aim_sid', sid); } catch (e) {}
+    }
+
+    async function post(url, body) {
+      try {
+        const r = await fetch(url, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(body || {})
+        });
+        return await r.json();
+      } catch (e) {
+        return { success: false, message: "Erreur de connexion avec le serveur." };
+      }
+    }
+
+    function setStatus(text, isError) {
+      const s = el('cpStatus');
+      s.textContent = text || '';
+      s.classList.toggle('error', !!isError);
+    }
+
+    function render(state) {
+      currentStep = state.step || 0;
+      const btn = el('checkpointBtn');
+      btn.disabled = false;
+
+      if (currentStep >= 2 && state.key) {
+        el('checkpointSection').classList.add('hidden');
+        el('keySection').classList.remove('hidden');
+        el('keyBox').textContent = state.key;
+        el('keyStatus').textContent = state.isExisting
+          ? `Clé déjà active (${state.remainingHours}h restantes)`
+          : `Nouvelle clé créée ! Valable ${state.remainingHours}h.`;
+        return;
+      }
+
+      el('keySection').classList.add('hidden');
+      el('checkpointSection').classList.remove('hidden');
+
+      if (currentStep === 1) {
+        el('cpTitle').textContent = 'Checkpoint #2';
+        el('stepCounter').textContent = '1/2 Complété';
+        el('progressFill').style.width = '50%';
+        el('checkpointBtnText').textContent = 'Continuer (Checkpoint #2) 🚀';
+        setStatus('Checkpoint #1 validé ! Cliquez pour passer au #2.');
+      } else {
+        el('cpTitle').textContent = 'Checkpoint #1';
+        el('stepCounter').textContent = '0/2 Complété';
+        el('progressFill').style.width = '0%';
+        el('checkpointBtnText').textContent = 'Open Checkpoint 🔗';
+        setStatus('Étape 1 sur 2 requise.');
+      }
+    }
+
+    el('checkpointBtn').addEventListener('click', () => {
+      if (currentStep === 0) window.location.href = WORKINK_URL;
+      else if (currentStep === 1) window.location.href = LINKVERTISE_URL;
+    });
+
+    el('copyBtn').addEventListener('click', async () => {
+      const key = el('keyBox').textContent;
+      try {
+        await navigator.clipboard.writeText(key);
+        el('keyStatus').textContent = 'Clé copiée dans le presse-papier !';
+      } catch (e) {
+        el('keyStatus').textContent = 'Copie impossible : sélectionne la clé et copie-la manuellement.';
+      }
+    });
+
+    async function init() {
+      const path = window.location.pathname.replace(/\/+$/, '');
+      const provider = path === '/cp/workink' ? 'workink' : path === '/cp/linkvertise' ? 'linkvertise' : null;
+      const hash = new URLSearchParams(window.location.search).get('hash');
+
+      // Retour d'un checkpoint : on envoie la preuve au serveur, qui la vérifie auprès du service
+      if (provider && hash) {
+        history.replaceState(null, '', '/'); // retire le hash de l'adresse
+        el('checkpointBtnText').textContent = 'Vérification en cours...';
+        setStatus('Vérification du checkpoint en cours...');
+
+        const sid = getSid();
+        if (sid) {
+          const data = await post('/api/checkpoint', { sid, provider, hash });
+          if (data.success) { render(data); return; }
+
+          // Échec : on affiche l'état réel de la session avec le message d'erreur
+          const state = await post('/api/session', { sid });
+          if (state.sid) saveSid(state.sid);
+          render(state);
+          setStatus(data.message || 'Vérification échouée.', true);
+          return;
+        }
+
+        const fresh = await post('/api/session', {});
+        if (fresh.sid) saveSid(fresh.sid);
+        render(fresh);
+        setStatus('Session introuvable. Recommence depuis le checkpoint #1.', true);
+        return;
+      }
+
+      // Ouverture normale de la page
+      const state = await post('/api/session', { sid: getSid() });
+      if (state.sid) saveSid(state.sid);
+      if (state.success === false) {
+        el('checkpointBtnText').textContent = 'Réessayer';
+        el('checkpointBtn').disabled = false;
+        el('checkpointBtn').onclick = () => window.location.reload();
+        setStatus(state.message || 'Erreur de connexion avec le serveur.', true);
+        return;
+      }
+      render(state);
+    }
+
+    init();
+  </script>
+</body>
+</html>
