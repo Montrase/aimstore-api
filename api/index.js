@@ -251,7 +251,12 @@ app.post('/api/checkpoint', async (req, res) => {
     }
 
     if (!ok) {
-      return res.status(400).json({ success: false, code: 'INVALID_PROOF', message: 'Vérification échouée. Refais le checkpoint depuis le début.' });
+      return res.status(400).json({
+        success: false,
+        code: 'INVALID_PROOF',
+        message: 'Vérification échouée. Refais le checkpoint depuis le début.' +
+          (process.env.DEBUG_CHECKPOINT === '1' && provider === 'workink' ? ' [debug : ' + lastWorkinkReason + ']' : '')
+      });
     }
 
     if (provider === 'workink') {
