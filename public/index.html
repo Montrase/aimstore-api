@@ -150,8 +150,8 @@
 
   <script>
     // Liens publics des checkpoints (ceux que l'utilisateur ouvre)
-    const WORKINK_URL = "https://work.ink/370E/aimstore-checkpoint1";
-    const LINKVERTISE_URL = "https://link-hub.net/10344688/lai9TaNB76Px";
+    const WORKINK_URL = "https://work.ink/370E/aimstore";
+    const LINKVERTISE_URL = "https://link-center.net/10344688/ujQeZfYkD4gD";
 
     // IMPORTANT : dans les tableaux de bord, la DESTINATION de chaque lien doit être :
     //   Work.ink    -> https://aimstore-api.vercel.app/cp/workink?hash={TOKEN}
@@ -237,8 +237,7 @@
     async function init() {
       const path = window.location.pathname.replace(/\/+$/, '');
       const provider = path === '/cp/workink' ? 'workink' : path === '/cp/linkvertise' ? 'linkvertise' : null;
-     const urlParams = new URLSearchParams(window.location.search);
-const hash = urlParams.get('hash') || urlParams.get('token');
+      const hash = new URLSearchParams(window.location.search).get('hash');
 
       // Retour d'un checkpoint : on envoie la preuve au serveur, qui la vérifie auprès du service
       if (provider && hash) {
