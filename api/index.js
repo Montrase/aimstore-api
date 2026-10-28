@@ -77,22 +77,43 @@ async function fetchWithTimeout(url, options, ms) {
 // Work.ink : le jeton est vérifié côté serveur et supprimé après usage (usage unique).
 // On contrôle aussi que le jeton vient bien de TON lien (WORKINK_LINK_ID),
 // sinon quelqu'un pourrait créer son propre lien Work.ink facile et obtenir un jeton valide.
+let lastWorkinkReason = '';
+
 async function verifyWorkink(token) {
-  if (!WORKINK_TOKEN_RE.test(token)) return false;
+  lastWorkinkReason = '';
+  if (!WORKINK_TOKEN_RE.test(token)) {
+    lastWorkinkReason = 'jeton au mauvais format';
+    console.error(`[workink] ${lastWorkinkReason}`);
+    return false;
+  }
   const r = await fetchWithTimeout(
     `https://work.ink/_api/v2/token/isValid/${encodeURIComponent(token)}?deleteToken=1`
   );
-  if (!r.ok) return false;
+  if (!r.ok) {
+    lastWorkinkReason = `work.ink a répondu HTTP ${r.status}`;
+    console.error(`[workink] ${lastWorkinkReason}`);
+    return false;
+  }
   const data = await r.json();
-  if (data.valid !== true) return false;
+  if (data.valid !== true) {
+    lastWorkinkReason = 'jeton refusé par work.ink (déjà utilisé, expiré ou invalide)';
+    console.error(`[workink] ${lastWorkinkReason}`);
+    return false;
+  }
 
   const receivedLinkId = data.info && data.info.linkId;
   const expectedLinkId = process.env.WORKINK_LINK_ID;
   if (!expectedLinkId) {
-    console.error(`[workink] WORKINK_LINK_ID non défini. linkId reçu : ${receivedLinkId} -> ajoute cette valeur dans les variables Vercel.`);
+    lastWorkinkReason = `WORKINK_LINK_ID non défini, linkId reçu : ${receivedLinkId}`;
+    console.error(`[workink] ${lastWorkinkReason}`);
     return false;
   }
-  return String(receivedLinkId) === String(expectedLinkId);
+  if (String(receivedLinkId) !== String(expectedLinkId)) {
+    lastWorkinkReason = `linkId différent : reçu ${receivedLinkId}, attendu ${expectedLinkId}`;
+    console.error(`[workink] ${lastWorkinkReason}`);
+    return false;
+  }
+  return true;
 }
 
 // Linkvertise Anti-Bypass : le "hash" est valable 10 secondes et ne peut être vérifié qu'une seule fois.
