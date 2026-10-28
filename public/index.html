@@ -237,7 +237,8 @@
     async function init() {
       const path = window.location.pathname.replace(/\/+$/, '');
       const provider = path === '/cp/workink' ? 'workink' : path === '/cp/linkvertise' ? 'linkvertise' : null;
-      const hash = new URLSearchParams(window.location.search).get('hash');
+     const urlParams = new URLSearchParams(window.location.search);
+const hash = urlParams.get('hash') || urlParams.get('token');
 
       // Retour d'un checkpoint : on envoie la preuve au serveur, qui la vérifie auprès du service
       if (provider && hash) {
