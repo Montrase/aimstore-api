@@ -236,8 +236,14 @@
 
     async function init() {
       const path = window.location.pathname.replace(/\/+$/, '');
-      const provider = path === '/cp/workink' ? 'workink' : path === '/cp/linkvertise' ? 'linkvertise' : null;
+            let provider = path === '/cp/workink' ? 'workink' : path === '/cp/linkvertise' ? 'linkvertise' : null;
       const hash = new URLSearchParams(window.location.search).get('hash');
+
+      // Si le service renvoie vers l'accueil avec un code (?hash=), on déduit l'étape depuis la session
+      if (!provider && hash) {
+        const cur = await post('/api/session', { sid: getSid() });
+        provider = cur.step === 1 ? 'linkvertise' : 'workink';
+      }
 
       // Retour d'un checkpoint : on envoie la preuve au serveur, qui la vérifie auprès du service
       if (provider && hash) {
