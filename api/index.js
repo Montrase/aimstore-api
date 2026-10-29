@@ -119,6 +119,15 @@ async function verifyWorkink(token) {
 // Linkvertise Anti-Bypass : le "hash" est valable 10 secondes et ne peut être vérifié qu'une seule fois.
 let lastLinkvertiseReason = '';
 
+// Linkvertise répond en JSON : {"status":true} si le code est bon, {"status":false} sinon
+// (ou {"status":"Invalid token."} si le token est faux). On accepte aussi un simple TRUE.
+function linkvertiseSaysTrue(raw) {
+  let v = raw;
+  try { v = JSON.parse(raw); } catch (e) {}
+  if (v && typeof v === 'object') v = v.status;
+  return v === true || String(v).replace(/"/g, '').trim().toUpperCase() === 'TRUE';
+}
+
 async function verifyLinkvertise(hash) {
   lastLinkvertiseReason = '';
   const token = (process.env.LINKVERTISE_AB_TOKEN || '').trim();
@@ -134,9 +143,9 @@ async function verifyLinkvertise(hash) {
   }
   const url = `https://publisher.linkvertise.com/api/v1/anti_bypassing?token=${encodeURIComponent(token)}&hash=${encodeURIComponent(hash)}`;
   const r = await fetchWithTimeout(url, { method: 'POST' });
-  const text = (await r.text()).trim().replace(/"/g, '').toUpperCase();
-  if (text !== 'TRUE') {
-    lastLinkvertiseReason = `Linkvertise a répondu HTTP ${r.status} : ${text.slice(0, 80)}`;
+  const raw = (await r.text()).trim();
+  if (!linkvertiseSaysTrue(raw)) {
+    lastLinkvertiseReason = `Linkvertise a répondu HTTP ${r.status} : ${raw.slice(0, 80)}`;
     console.warn(`[linkvertise] ${lastLinkvertiseReason}`);
     return false;
   }
