@@ -125,13 +125,33 @@ async function verifyLinkvertise(hash) {
   }
   if (!LINKVERTISE_HASH_RE.test(hash)) return false;
   const url = `https://publisher.linkvertise.com/api/v1/anti_bypassing?token=${encodeURIComponent(token)}&hash=${encodeURIComponent(hash)}`;
-  const r = await fetchWithTimeout(url, { method: 'POST' });
-  const text = (await r.text()).trim().replace(/"/g, '').toUpperCase();
-  if (text !== 'TRUE') {
-    console.warn(`[linkvertise] vérification refusée, réponse : ${text.slice(0, 80)}`);
+  
+  try {
+    const r = await fetchWithTimeout(url, { method: 'POST' });
+    const rawText = await r.text();
+
+    // On essaie de parser la réponse en JSON (car Linkvertise renvoie du JSON)
+    try {
+      const data = JSON.parse(rawText);
+      // On vérifie si l'API confirme le succès (success, valid ou status)
+      if (data.success === true || data.valid === true || data.status === 'success' || data.status === 'TRUE') {
+        return true;
+      }
+      console.warn(`[linkvertise] refus par l'API :`, data);
+      return false;
+    } catch (jsonErr) {
+      // Fallback si la réponse est du texte brut
+      const text = rawText.trim().replace(/"/g, '').toUpperCase();
+      if (text === 'TRUE') {
+        return true;
+      }
+      console.warn(`[linkvertise] vérification refusée, réponse : ${rawText.slice(0, 80)}`);
+      return false;
+    }
+  } catch (e) {
+    console.error('[linkvertise] Erreur lors de la requête :', e);
     return false;
   }
-  return true;
 }
 
 /* ------------------------------ Clés (24h) ------------------------------ */
