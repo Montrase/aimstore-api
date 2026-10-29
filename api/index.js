@@ -117,36 +117,30 @@ async function verifyWorkink(token) {
 }
 
 // Linkvertise Anti-Bypass : le "hash" est valable 10 secondes et ne peut être vérifié qu'une seule fois.
-async function verifyLinkvertise(hash) {
-  const token = process.env.LINKVERTISE_AB_TOKEN;
-  if (!token) {
-    console.error('[linkvertise] LINKVERTISE_AB_TOKEN non défini.');
-    return false;
-  }
-  if (!LINKVERTISE_HASH_RE.test(hash)) return false;
-  const url = `https://publisher.linkvertise.com/api/v1/anti_bypassing?token=${encodeURIComponent(token)}&hash=${encodeURIComponent(hash)}`;
-  
-  try {
-    const r = await fetchWithTimeout(url, { method: 'POST' });
-    const rawText = await r.text();
-    
-    // On affiche la vraie réponse de Linkvertise dans les logs Vercel pour comprendre
-    console.log(`[linkvertise DEBUG] Code HTTP : ${r.status}, Réponse brute : ${rawText}`);
+let lastLinkvertiseReason = '';
 
-    try {
-      const data = JSON.parse(rawText);
-      if (data.success === true || data.valid === true || data.status === 'success' || data.status === 'TRUE') {
-        return true;
-      }
-      return false;
-    } catch (jsonErr) {
-      const text = rawText.trim().replace(/"/g, '').toUpperCase();
-      return text === 'TRUE';
-    }
-  } catch (e) {
-    console.error('[linkvertise] Erreur lors de la requête :', e);
+async function verifyLinkvertise(hash) {
+  lastLinkvertiseReason = '';
+  const token = (process.env.LINKVERTISE_AB_TOKEN || '').trim();
+  if (!token) {
+    lastLinkvertiseReason = 'LINKVERTISE_AB_TOKEN non défini dans Vercel';
+    console.error(`[linkvertise] ${lastLinkvertiseReason}`);
     return false;
   }
+  if (!LINKVERTISE_HASH_RE.test(hash)) {
+    lastLinkvertiseReason = `hash au mauvais format (${hash.length} caractères)`;
+    console.error(`[linkvertise] ${lastLinkvertiseReason}`);
+    return false;
+  }
+  const url = `https://publisher.linkvertise.com/api/v1/anti_bypassing?token=${encodeURIComponent(token)}&hash=${encodeURIComponent(hash)}`;
+  const r = await fetchWithTimeout(url, { method: 'POST' });
+  const text = (await r.text()).trim().replace(/"/g, '').toUpperCase();
+  if (text !== 'TRUE') {
+    lastLinkvertiseReason = `Linkvertise a répondu HTTP ${r.status} : ${text.slice(0, 80)}`;
+    console.warn(`[linkvertise] ${lastLinkvertiseReason}`);
+    return false;
+  }
+  return true;
 }
 
 /* ------------------------------ Clés (24h) ------------------------------ */
@@ -270,7 +264,7 @@ app.post('/api/checkpoint', async (req, res) => {
         success: false,
         code: 'INVALID_PROOF',
         message: 'Vérification échouée. Refais le checkpoint depuis le début.' +
-          (process.env.DEBUG_CHECKPOINT === '1' && provider === 'workink' ? ' [debug : ' + lastWorkinkReason + ']' : '')
+          (process.env.DEBUG_CHECKPOINT === '1' ? ' [debug : ' + (provider === 'workink' ? lastWorkinkReason : lastLinkvertiseReason) + ']' : '')
       });
     }
 
@@ -345,6 +339,27 @@ app.post('/api/verify', handleVerify);
 // 4. L'ancien endpoint est désactivé : il permettait d'obtenir une clé sans passer les checkpoints
 app.all('/api/generate', (req, res) => {
   res.status(410).json({ success: false, message: 'Endpoint supprimé.' });
+});
+
+// 5. DIAGNOSTIC TEMPORAIRE : teste le token Linkvertise avec un faux hash (ne consomme aucun vrai essai).
+// Actif uniquement quand la variable DEBUG_CHECKPOINT vaut 1. À désactiver ensuite.
+app.get('/api/debug-linkvertise', async (req, res) => {
+  if (process.env.DEBUG_CHECKPOINT !== '1') return res.status(404).json({ success: false });
+  const ip = getClientIp(req);
+  if (!(await rateLimit('debuglv', ip, 5, 60))) return res.status(429).json({ success: false });
+  const token = (process.env.LINKVERTISE_AB_TOKEN || '').trim();
+  if (!token) return res.json({ tokenDefini: false });
+  try {
+    const fake = 'a'.repeat(64);
+    const r = await fetchWithTimeout(
+      `https://publisher.linkvertise.com/api/v1/anti_bypassing?token=${encodeURIComponent(token)}&hash=${fake}`,
+      { method: 'POST' }
+    );
+    const text = (await r.text()).trim();
+    return res.json({ tokenDefini: true, longueurToken: token.length, httpStatus: r.status, reponseLinkvertise: text.slice(0, 120) });
+  } catch (e) {
+    return res.json({ tokenDefini: true, longueurToken: token.length, erreur: String(e.message || e) });
+  }
 });
 
 // Erreurs de requête (JSON invalide, trop gros, etc.)
