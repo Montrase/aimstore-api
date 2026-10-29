@@ -129,24 +129,19 @@ async function verifyLinkvertise(hash) {
   try {
     const r = await fetchWithTimeout(url, { method: 'POST' });
     const rawText = await r.text();
+    
+    // On affiche la vraie réponse de Linkvertise dans les logs Vercel pour comprendre
+    console.log(`[linkvertise DEBUG] Code HTTP : ${r.status}, Réponse brute : ${rawText}`);
 
-    // On essaie de parser la réponse en JSON (car Linkvertise renvoie du JSON)
     try {
       const data = JSON.parse(rawText);
-      // On vérifie si l'API confirme le succès (success, valid ou status)
       if (data.success === true || data.valid === true || data.status === 'success' || data.status === 'TRUE') {
         return true;
       }
-      console.warn(`[linkvertise] refus par l'API :`, data);
       return false;
     } catch (jsonErr) {
-      // Fallback si la réponse est du texte brut
       const text = rawText.trim().replace(/"/g, '').toUpperCase();
-      if (text === 'TRUE') {
-        return true;
-      }
-      console.warn(`[linkvertise] vérification refusée, réponse : ${rawText.slice(0, 80)}`);
-      return false;
+      return text === 'TRUE';
     }
   } catch (e) {
     console.error('[linkvertise] Erreur lors de la requête :', e);
