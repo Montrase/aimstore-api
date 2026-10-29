@@ -35,6 +35,41 @@ function safeEqual(a, b) {
   return crypto.timingSafeEqual(ha, hb);
 }
 
+/* ------------------------- Jetons de session signés ------------------------- */
+// Après une vérification réussie, le serveur remet au launcher un jeton signé (HMAC).
+// Le launcher ne peut pas le modifier ni le fabriquer sans SESSION_SECRET.
+
+const ADMIN_TOKEN_DURATION_MS = 30 * 24 * 60 * 60 * 1000; // une session admin dure 30 jours
+
+// Empreinte de la clé admin : si tu changes ADMIN_KEY, tous les anciens jetons admin deviennent invalides.
+function adminVersion() {
+  const k = process.env.ADMIN_KEY || '';
+  return crypto.createHash('sha256').update(k).digest('hex').slice(0, 12);
+}
+
+function signToken(payload) {
+  const secret = process.env.SESSION_SECRET;
+  if (!secret) return null;
+  const body = Buffer.from(JSON.stringify(payload)).toString('base64url');
+  const sig = crypto.createHmac('sha256', secret).update(body).digest('base64url');
+  return `${body}.${sig}`;
+}
+
+function readToken(token) {
+  const secret = process.env.SESSION_SECRET;
+  if (!secret || typeof token !== 'string' || token.length > 700) return null;
+  const parts = token.split('.');
+  if (parts.length !== 2) return null;
+  const expected = crypto.createHmac('sha256', secret).update(parts[0]).digest('base64url');
+  if (!safeEqual(parts[1], expected)) return null;
+  try {
+    const payload = JSON.parse(Buffer.from(parts[0], 'base64url').toString('utf8'));
+    return payload && typeof payload === 'object' ? payload : null;
+  } catch (e) {
+    return null;
+  }
+}
+
 function generateKey() {
   const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
   const part = () => {
@@ -310,7 +345,12 @@ async function handleVerify(req, res) {
   // Clé admin : uniquement dans la variable d'environnement ADMIN_KEY (Vercel)
   const adminKey = process.env.ADMIN_KEY;
   if (adminKey && safeEqual(rawKey, adminKey)) {
-    return res.json({ valid: true, isAdmin: true, message: 'Accès administrateur' });
+    return res.json({
+      valid: true,
+      isAdmin: true,
+      message: 'Accès administrateur',
+      token: signToken({ adm: true, av: adminVersion(), exp: Date.now() + ADMIN_TOKEN_DURATION_MS })
+    });
   }
 
   try {
@@ -335,7 +375,8 @@ async function handleVerify(req, res) {
       isAdmin: false,
       message: 'Accès autorisé',
       remainingHours: Math.ceil(remainingMs / 3600000),
-      expiresIn: remainingMs
+      expiresIn: remainingMs,
+      token: signToken({ adm: false, key: userKey, exp: Date.now() + remainingMs })
     });
   } catch (e) {
     console.error('[verify]', e);
@@ -344,6 +385,47 @@ async function handleVerify(req, res) {
 }
 app.get('/api/verify', handleVerify);
 app.post('/api/verify', handleVerify);
+
+// 3b. Contrôle d'une session déjà ouverte (appelé par le launcher au démarrage puis régulièrement).
+// Répond valid:false seulement si la session est réellement invalide ; en cas de panne serveur : 503 sans "valid".
+app.post('/api/check', async (req, res) => {
+  const ip = getClientIp(req);
+  if (!(await rateLimit('check', ip, 60, 60))) {
+    return res.status(429).json({ rateLimited: true, reason: 'Trop de requêtes.' });
+  }
+
+  const payload = readToken(req.body && req.body.token);
+  if (!payload || typeof payload.exp !== 'number') {
+    return res.json({ valid: false, reason: 'Session invalide' });
+  }
+  const now = Date.now();
+  if (now >= payload.exp) {
+    return res.json({ valid: false, reason: 'Session expirée' });
+  }
+
+  // Session admin : valable tant que la clé admin n'a pas changé
+  if (payload.adm === true) {
+    if (payload.av !== adminVersion() || !process.env.ADMIN_KEY) {
+      return res.json({ valid: false, reason: 'Session invalide' });
+    }
+    return res.json({ valid: true, isAdmin: true, expiresIn: payload.exp - now });
+  }
+
+  // Session utilisateur : la clé doit toujours exister (non expirée, non supprimée)
+  if (typeof payload.key !== 'string' || !KEY_RE.test(payload.key)) {
+    return res.json({ valid: false, reason: 'Session invalide' });
+  }
+  try {
+    const rec = await redis.get(`key:${payload.key}`);
+    if (!rec) return res.json({ valid: false, reason: 'Clé expirée ou supprimée' });
+    const remainingMs = rec.createdAt + KEY_DURATION_MS - now;
+    if (remainingMs <= 0) return res.json({ valid: false, reason: 'Clé expirée (24h dépassées)' });
+    return res.json({ valid: true, isAdmin: false, expiresIn: Math.min(remainingMs, payload.exp - now) });
+  } catch (e) {
+    console.error('[check]', e);
+    return res.status(503).json({ unavailable: true, reason: 'Service temporairement indisponible.' });
+  }
+});
 
 // 4. L'ancien endpoint est désactivé : il permettait d'obtenir une clé sans passer les checkpoints
 app.all('/api/generate', (req, res) => {
