@@ -1415,5 +1415,69 @@
     "carousel": true,
     "steamAppId": 3159330,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3159330/logo.png"
+  },
+  {
+    "id": 26,
+    "title": "Assassin's Creed : Black Flag Resynced",
+    "category": "Aventure",
+    "sourceVersion": 1,
+    "image": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ar6c3i.jpg",
+    "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/ar6c3i.jpg",
+    "thumb": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ar6c3i.jpg",
+    "poster": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cobyue.jpg",
+    "sizeNum": 65,
+    "size": "65 GB",
+    "publisher": "Ubisoft Entertainment",
+    "pegi": 18,
+    "tags": [
+      "platform",
+      "hack and slash/beat 'em up",
+      "adventure"
+    ],
+    "description": "The iconic solo pirate adventure returns with Assassin's Creed Black Flag Resynced, launching on July 9, 2026. Sail the Caribbean as Edward Kenway during the Golden Age of Piracy in this faithfully enhanced remake featuring stunning visuals, upgraded gameplay, and new content.",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc131ra.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc131rb.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc131rc.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc131rd.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc131re.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc131xp.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc131xq.jpg"
+      }
+    ],
+    "reqMin": {
+      "os": "10, 11",
+      "cpu": "Intel Core i7-8700K 3.7 GHz",
+      "ram": "16 GB",
+      "gpu": "Nvidia GeForce GTX 1660",
+      "storage": "65 GB (SSD)"
+    },
+    "reqRec": {
+      "cpu": "Intel Core i5-10600K 4.1 GHz",
+      "gpu": "Nvidia GeForce RTX 3060"
+    },
+    "carousel": true,
+    "logo": "https://cdn2.steamgriddb.com/logo/c3a5706e6524c0a5454747000dea498d.png",
+    "addedAt": "2026-11-11T13:05:15.800Z"
   }
 ]
