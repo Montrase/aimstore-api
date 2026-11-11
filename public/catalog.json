@@ -72,8 +72,7 @@
     },
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1020790/logo.png",
     "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1020790/library_600x900.jpg?t=1727301927",
-    "carousel": false,
-    "featured": true
+    "carousel": false
   },
   {
     "id": 2,
@@ -150,8 +149,7 @@
     },
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1790600/logo.png",
     "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1790600/library_600x900.jpg?t=1785726916",
-    "carousel": false,
-    "featured": true
+    "carousel": false
   },
   {
     "id": 3,
@@ -234,7 +232,8 @@
       "storage": "100 GB SSD"
     },
     "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4080220/81210d536b70c14e4cf9725f3f03d82bf64e5e25/library_capsule.jpg?t=1793610006",
-    "carousel": false
+    "carousel": true,
+    "featured": true
   },
   {
     "id": 4,
@@ -402,8 +401,7 @@
     "steamAppId": 4435490,
     "logo": "https://cdn2.steamgriddb.com/logo/69440128781fc4007d24fa1f60d14ff2.png",
     "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4435490/c71bc2cb60e440d1a0d2435d0c06c4d4a4050edf/library_capsule.jpg?t=1793753407",
-    "carousel": false,
-    "featured": true
+    "carousel": false
   },
   {
     "id": 6,
@@ -939,8 +937,7 @@
     },
     "carousel": false,
     "steamAppId": 3595230,
-    "logo": "https://cdn2.steamgriddb.com/logo/c7ecae463b4f3d49f7a4ef3eea76bd4e.png",
-    "featured": true
+    "logo": "https://cdn2.steamgriddb.com/logo/c7ecae463b4f3d49f7a4ef3eea76bd4e.png"
   },
   {
     "id": 17,
@@ -1172,10 +1169,9 @@
       "gpu": "NVIDIA® GeForce® GTX 1080Ti / RTX 3060 or AMD Radeon™ RX 6600XT or Intel® Arc™ A770",
       "storage": "180GB"
     },
-    "carousel": false,
+    "carousel": true,
     "steamAppId": 3595270,
-    "logo": "https://cdn2.steamgriddb.com/logo/b454acc6fd77f2c3e5749728c5102201.png",
-    "featured": true
+    "logo": "https://cdn2.steamgriddb.com/logo/b454acc6fd77f2c3e5749728c5102201.png"
   },
   {
     "id": 23,
@@ -1252,7 +1248,7 @@
       "gpu": "OpenGL ES 2.0 hardware driver support required for WebGL acceleration. (AMD Catalyst 10.9, NVidia 358.50)",
       "storage": "9 GB d'espace disque disponible"
     },
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 2553870,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2553870/logo.png"
   },
@@ -1331,7 +1327,7 @@
       "gpu": "AMD RX 5600 XT or Nvidia GTX 1660",
       "storage": "100 GB d'espace disque disponible"
     },
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 2669320,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2669320/logo.png"
   },
