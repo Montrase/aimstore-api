@@ -1474,7 +1474,8 @@
     },
     "reqRec": {
       "cpu": "Intel Core i5-10600K 4.1 GHz",
-      "gpu": "Nvidia GeForce RTX 3060"
+      "gpu": "Nvidia GeForce RTX 3060",
+      "storage": "65 GB (SSD)"
     },
     "carousel": true,
     "logo": "https://cdn2.steamgriddb.com/logo/c3a5706e6524c0a5454747000dea498d.png",
