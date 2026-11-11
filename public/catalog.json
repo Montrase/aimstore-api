@@ -1,0 +1,1423 @@
+[
+  {
+    "id": 1,
+    "title": "NARUTO X BORUTO Ultimate Ninja STORM CONNECTIONS",
+    "category": "Action",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1020790/capsule_616x353.jpg?t=1727301927",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1020790/library_hero.jpg?t=1727301927",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1020790/capsule_616x353.jpg?t=1727301927",
+    "sizeNum": 31,
+    "size": "30.36 GB",
+    "publisher": "Bandai Namco Entertainment",
+    "pegi": 12,
+    "tags": [
+      "anime",
+      "naruto",
+      "boruto",
+      "ninja",
+      "action",
+      "histoire",
+      "multijoueur"
+    ],
+    "description": "Réunissez plus de 130 personnages de l'univers Naruto et Boruto dans le plus grand roster de la série STORM. Revivez les moments marquants de la rivalité entre Naruto et Sasuke et découvrez une histoire originale centrée sur Boruto.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.fastly.steamstatic.com/store_trailers/1020790/634548/d094bb96df15353a6d614436e90cecca43345606/1750607407/microtrailer.mp4",
+        "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1020790/256985299/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1020790/ss_ec54af0d418014b5248ee6f8a1b66545b4baa29b.1920x1080.jpg?t=1727301927"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1020790/ss_b335f364a9e7bef84c54f5236f8557279e0f7ceb.1920x1080.jpg?t=1727301927"
+      },
+      {
+        "type": "video",
+        "url": "https://video.fastly.steamstatic.com/store_trailers/1020790/551611/d990a3b1ae79c52a47e7135455b2b1c55c04b4c4/1750607066/microtrailer.mp4",
+        "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1020790/256937648/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1020790/ss_726a0954289660537a03f058ffa44aa42a199edc.1920x1080.jpg?t=1727301927"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1020790/ss_6d290b28aef7b31cd45ec453240748e750841df6.1920x1080.jpg?t=1727301927"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1020790/ss_a0b87a40e03a8e172ea9d9ed6569d1cb75031c1c.1920x1080.jpg?t=1727301927"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1020790/ss_7148349d63019945d71d6057c002994807eb5c9d.1920x1080.jpg?t=1727301927"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 10 64-bit",
+      "cpu": "Intel Core i7-8700 / AMD Ryzen 7 2700X",
+      "ram": "8 GB RAM",
+      "gpu": "NVIDIA GeForce GTX 660 Ti / AMD Radeon R9 270X / Intel Arc A380",
+      "storage": "30.36 GB"
+    },
+    "reqRec": {
+      "os": "Windows 11 64-bit",
+      "cpu": "Intel Core i7-11700K / AMD Ryzen 5 3600",
+      "ram": "8 GB RAM",
+      "gpu": "NVIDIA GeForce GTX 770 / AMD Radeon RX 480 / Intel Arc A750",
+      "storage": "30.36 GB"
+    },
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1020790/logo.png",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1020790/library_600x900.jpg?t=1727301927",
+    "carousel": false,
+    "featured": true
+  },
+  {
+    "id": 2,
+    "title": "DRAGON BALL: Sparking! ZERO",
+    "category": "Action",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1790600/dd58a5788c333cf0ebb5743e32fb716448e28cb0/capsule_616x353.jpg?t=1785726916",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1790600/library_hero.jpg?t=1785726916",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1790600/dd58a5788c333cf0ebb5743e32fb716448e28cb0/capsule_616x353.jpg?t=1785726916",
+    "sizeNum": 29,
+    "size": "29 GB",
+    "publisher": "Bandai Namco Entertainment",
+    "pegi": 12,
+    "tags": [
+      "dragon ball",
+      "anime",
+      "action",
+      "solo",
+      "multijoueur",
+      "3D"
+    ],
+    "description": "Retrouvez l'univers de Dragon Ball dans des affrontements en arène spectaculaires. Incarnez de nombreux personnages, découvrez leurs transformations et techniques spéciales et créez vos propres affrontements.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/1790600/638124/7971f303cc8a027bf97873926756c8cc1520c532/1750736498/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256987552/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1790600/ss_11942c933c595bf0188d5ee22f6f6a7ed3cdf7d9.1920x1080.jpg?t=1785726916"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1790600/ss_edf6973923cb0d2ad72acecc014262a6de55a608.1920x1080.jpg?t=1785726916"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1790600/ss_f4ec953421c54bf74bdca77ceed361ad7b509858.1920x1080.jpg?t=1785726916"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1790600/ss_90f5785f89a9882a7f33fd5a812a7e7384720afd.1920x1080.jpg?t=1785726916"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1790600/ss_72cb10fb8f0c7554e932257450b19189534a846d.1920x1080.jpg?t=1785726916"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1790600/ss_80d442d735c80a31c78696aeaaae08c0bf843a0f.1920x1080.jpg?t=1785726916"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1790600/ss_119e7890b990201c6ca61280a76851dc0ced05f9.1920x1080.jpg?t=1785726916"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1790600/ss_6389b6aef0ecaa3f6cc1e36dcfb145c6fcb70a75.1920x1080.jpg?t=1785726916"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 10 64-bit",
+      "cpu": "Intel Core i5-9600K / AMD Ryzen 5 2600",
+      "ram": "8 GB RAM",
+      "gpu": "NVIDIA GeForce GTX 980 / AMD Radeon RX 590 / Intel Arc A750",
+      "storage": "29 GB"
+    },
+    "reqRec": {
+      "os": "Windows 10/11 64-bit",
+      "cpu": "Intel Core i7-9700K / AMD Ryzen 5 3600",
+      "ram": "16 GB RAM",
+      "gpu": "NVIDIA GeForce RTX 2060 / AMD Radeon RX Vega 64",
+      "storage": "29 GB"
+    },
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1790600/logo.png",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1790600/library_600x900.jpg?t=1785726916",
+    "carousel": false,
+    "featured": true
+  },
+  {
+    "id": 3,
+    "title": "EA SPORTS FC 27",
+    "category": "Sport",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4080220/d3e9a412983e68c39b5751a5fc9480129ce745b3/capsule_616x353.jpg?t=1793610006",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4080220/98909665528dc40a7d43fd3dd6edc8088ed98c44/library_hero.jpg?t=1793610006",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4080220/d3e9a412983e68c39b5751a5fc9480129ce745b3/capsule_616x353.jpg?t=1793610006",
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4080220/b99ce0289769853c76a0562e306a7054ed5f8ab6/logo.png",
+    "sizeNum": 100,
+    "size": "100 GB",
+    "publisher": "Electronic Arts",
+    "pegi": 16,
+    "tags": [
+      "football",
+      "sport",
+      "simulation",
+      "multijoueur",
+      "carrière",
+      "clubs",
+      "ultimate team"
+    ],
+    "description": "Vivez le football avec EA SPORTS FC 27. Retrouvez les grands modes de la série, dont Carrière, Football Ultimate Team, Coup d'envoi et The Grounds, un espace où le football de rue rencontre le stade.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/4080220/1900282602/3682a522ac27a81f43ccbd532a56c76a1d3f2425/1790352546/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257435128/1f188e3371b53436351cde2b42935b6cb55a0c8f/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4080220/5adfa6a72f1ba6f269580d106ef6d6a760aa5119/ss_5adfa6a72f1ba6f269580d106ef6d6a760aa5119.1920x1080.jpg?t=1793610006"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4080220/a6dc5c0e33a2c9b174120be6f7caa26fc9aa8288/ss_a6dc5c0e33a2c9b174120be6f7caa26fc9aa8288.1920x1080.jpg?t=1793610006"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/4080220/1363878536/8694e560583523587f1c13c04bd480ad364b30ab/1788365732/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257415840/308f4d69fe35e853fbcdeda04431be40aae833fd/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4080220/1a9117db4e8d864dbcee4c377aa12d832f6660c8/ss_1a9117db4e8d864dbcee4c377aa12d832f6660c8.1920x1080.jpg?t=1793610006"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4080220/8b060e82405b4c33c0fae74113d09a21d001e95a/ss_8b060e82405b4c33c0fae74113d09a21d001e95a.1920x1080.jpg?t=1793610006"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4080220/f390f1ffc3aad9710f5824b30868278e97213d38/ss_f390f1ffc3aad9710f5824b30868278e97213d38.1920x1080.jpg?t=1793610006"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4080220/ccd88260677c782de8123f8f8b82b4ac1ad69963/ss_ccd88260677c782de8123f8f8b82b4ac1ad69963.1920x1080.jpg?t=1793610006"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4080220/355cc351a503a81c19ab33deaf6f3b8c223e4453/ss_355cc351a503a81c19ab33deaf6f3b8c223e4453.1920x1080.jpg?t=1793610006"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4080220/f3e109f380b7de00f561cb47db15e0eca7432b9e/ss_f3e109f380b7de00f561cb47db15e0eca7432b9e.1920x1080.jpg?t=1793610006"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 10/11 64-bit",
+      "cpu": "Intel Core i5-6600K / AMD Ryzen 5 1600",
+      "ram": "8 GB DDR4 double canal",
+      "gpu": "NVIDIA GeForce GTX 1050 Ti / AMD Radeon RX 570",
+      "storage": "100 GB"
+    },
+    "reqRec": {
+      "os": "Windows 10/11 64-bit",
+      "cpu": "Intel Core i7-6700 / AMD Ryzen 7 2700X",
+      "ram": "12 GB double canal",
+      "gpu": "NVIDIA GeForce GTX 1660 / AMD Radeon RX 5600 XT",
+      "storage": "100 GB SSD"
+    },
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4080220/81210d536b70c14e4cf9725f3f03d82bf64e5e25/library_capsule.jpg?t=1793610006",
+    "carousel": false
+  },
+  {
+    "id": 4,
+    "title": "Forza Horizon 6",
+    "category": "Course",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2483190/7673f57c3298de8878511a896f6bbb9e1b720d9a/capsule_616x353_alt_assets_6.jpg?t=1793664659",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2483190/3eeb9970d8a8b6634d114b43e0edba78a7ee1eb6/library_hero.jpg?t=1793664659",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2483190/7673f57c3298de8878511a896f6bbb9e1b720d9a/capsule_616x353_alt_assets_6.jpg?t=1793664659",
+    "sizeNum": 167,
+    "size": "167 GB",
+    "publisher": "Xbox Game Studios",
+    "pegi": 3,
+    "tags": [
+      "course",
+      "voiture",
+      "monde ouvert",
+      "japon",
+      "simulation",
+      "multijoueur",
+      "automobile"
+    ],
+    "description": "Parcourez les paysages du Japon dans un vaste monde ouvert au volant de plus de 550 voitures. Explorez les routes urbaines et rurales, participez aux épreuves du festival Horizon et personnalisez votre collection de véhicules.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/2483190/2058949366/d739456da33f95f5cc4b083fba09e203d39a2a1b/1779911769/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257344384/a72626dbd8e52315469c84239c32ff886f2dcb7a/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/706eb79418b2a74192de059693ddcbfaa803108a/ss_706eb79418b2a74192de059693ddcbfaa803108a.1920x1080.jpg?t=1793664659"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/383ace7815eaa8f8f5128a58fd8ca7df911d3e14/ss_383ace7815eaa8f8f5128a58fd8ca7df911d3e14.1920x1080.jpg?t=1793664659"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/2483190/1133501958/842a46e433376224f42832ce35c55f1f85bbe440/1778255437/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257270546/101e56fe48e45ee7ac30318154b8548b9458276e/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/d4b81f0cafcfba410371e53bd696fb5cc9b434c0/ss_d4b81f0cafcfba410371e53bd696fb5cc9b434c0.1920x1080.jpg?t=1793664659"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/041b9a2854dc647bf54d7d8b36d2f4186ed72c13/ss_041b9a2854dc647bf54d7d8b36d2f4186ed72c13.1920x1080.jpg?t=1793664659"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/945a08124625ffa26ec0077761fcbe19df07dad5/ss_945a08124625ffa26ec0077761fcbe19df07dad5.1920x1080.jpg?t=1793664659"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/0824558c70b2e5ed67fe239d577434929f157a26/ss_0824558c70b2e5ed67fe239d577434929f157a26.1920x1080.jpg?t=1793664659"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/701382eb1431c978e0c7e2518f47aa02b3fe6583/ss_701382eb1431c978e0c7e2518f47aa02b3fe6583.1920x1080.jpg?t=1793664659"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2483190/ffea3efe4e67b24ceb6f9bd0919b1ebac344b61b/ss_ffea3efe4e67b24ceb6f9bd0919b1ebac344b61b.1920x1080.jpg?t=1793664659"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 10 22H2 64-bit ou supérieur",
+      "cpu": "Intel Core i5-8400 / AMD Ryzen 5 1600",
+      "ram": "16 GB RAM",
+      "gpu": "NVIDIA GeForce GTX 1650 / AMD Radeon RX 6500 XT / Intel Arc A380",
+      "storage": "167 GB SSD"
+    },
+    "reqRec": {
+      "os": "Windows 10 22H2 64-bit ou supérieur",
+      "cpu": "Intel Core i5-12400F / AMD Ryzen 5 5600X",
+      "ram": "16 GB RAM",
+      "gpu": "NVIDIA GeForce RTX 3060 Ti / AMD Radeon RX 6700 XT / Intel Arc A580",
+      "storage": "167 GB SSD"
+    },
+    "logo": "https://cdn2.steamgriddb.com/logo/2c618774f88d9b2a617f9683b6a6ee5c.png",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2483190/711e39803402def82a90e1f31578c64744f952f3/library_capsule.jpg?t=1793664659",
+    "carousel": false
+  },
+  {
+    "id": 5,
+    "title": "Call of Duty: Modern Warfare 4",
+    "category": "Action",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4435490/bda2c357d3c05f49e9e8ed55542e7400ad407da0/capsule_616x353.jpg?t=1793753407",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4435490/4138eadd1bb476b0499f6ee7690aba461fdf179c/library_hero.jpg?t=1793753407",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4435490/bda2c357d3c05f49e9e8ed55542e7400ad407da0/capsule_616x353.jpg?t=1793753407",
+    "sizeNum": 115,
+    "size": "115 GB",
+    "publisher": "Activision",
+    "pegi": 18,
+    "tags": [
+      "action",
+      "solo",
+      "multijoueur"
+    ],
+    "description": "La péninsule coréenne entre en guerre tandis que la Corée du Nord lance une invasion de grande envergure qui pourrait bien bouleverser le monde entier dans Call of Duty®: Modern Warfare® 4.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/4435490/266304636/3c4648ce28f29226863a07942b255f9964399f3f/1793139167/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257481498/0dc59df055177970ad070020600df00ceed3eb8d/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/ee5f6b6aebe4dc9e86b49c4e309d361b132df308/ss_ee5f6b6aebe4dc9e86b49c4e309d361b132df308.1920x1080.jpg?t=1793753407"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/6b8f4040a1e923f036e04d9eb21ecb0f866be57e/ss_6b8f4040a1e923f036e04d9eb21ecb0f866be57e.1920x1080.jpg?t=1793753407"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/4435490/1147191538/a6aec591cccb634a044822b2880d5a4d68f045b8/1792689188/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257402415/7dc4daa6e856d07e8ccf6fdc14f140019832dc8c/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/10d6a60711209aa8019cedab4667532af49f5d2a/ss_10d6a60711209aa8019cedab4667532af49f5d2a.1920x1080.jpg?t=1793753407"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/69ebde0b83f6d45a259494397402df7a9f5fa50a/ss_69ebde0b83f6d45a259494397402df7a9f5fa50a.1920x1080.jpg?t=1793753407"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/4435490/544259191/b50fb0385e01017032548140188a0f10302a8159/1793029695/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257463700/cb4f72671e82b76c46b5b640bf635dcfcd2a4124/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/61b168480470e396b6160dfbb2e934f1e7945eed/ss_61b168480470e396b6160dfbb2e934f1e7945eed.1920x1080.jpg?t=1793753407"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/3b091c0e1911b3b070baa3ae40471a9ec4a98ab7/ss_3b091c0e1911b3b070baa3ae40471a9ec4a98ab7.1920x1080.jpg?t=1793753407"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/f1ad176144e4a7c47f8871c6f8c5f3e4cfb46c1e/ss_f1ad176144e4a7c47f8871c6f8c5f3e4cfb46c1e.1920x1080.jpg?t=1793753407"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4435490/edca7d2177120c3786f14d002040a2c302a8c5c0/ss_edca7d2177120c3786f14d002040a2c302a8c5c0.1920x1080.jpg?t=1793753407"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows® 10 64 Bit (dernière mise à jour)*",
+      "cpu": "AMD Ryzen™ 5 1400 ou Intel® Core™ i5-6600",
+      "ram": "8 GB de mémoire",
+      "gpu": "AMD Radeon™ RX 470, NVIDIA® GeForce® GTX 970 / 1060 ou Intel® Arc™ A580",
+      "storage": "115 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Windows® 11 64 Bit (dernière mise à jour)*",
+      "cpu": "AMD Ryzen™ 5 3600 ou Intel® Core™ i7-8700K",
+      "ram": "16 GB de mémoire",
+      "gpu": "AMD Radeon™ RX 6600XT ou NVIDIA® GeForce® RTX 3060 ou Intel® Arc™ B580",
+      "storage": "115 GB d'espace disque disponible"
+    },
+    "steamAppId": 4435490,
+    "logo": "https://cdn2.steamgriddb.com/logo/69440128781fc4007d24fa1f60d14ff2.png",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4435490/c71bc2cb60e440d1a0d2435d0c06c4d4a4050edf/library_capsule.jpg?t=1793753407",
+    "carousel": false,
+    "featured": true
+  },
+  {
+    "id": 6,
+    "title": "Rooftops & Alleys: The Parkour Game",
+    "category": "Sport",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2703850/daf0996a3baf769af1febe83799b51fa68bc781d/capsule_616x353.jpg?t=1763586858",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2703850/cced21dc84327b5323b406073242b1d89a0fdc80/library_hero.jpg?t=1763586858",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2703850/daf0996a3baf769af1febe83799b51fa68bc781d/capsule_616x353.jpg?t=1763586858",
+    "sizeNum": 2,
+    "size": "2 GB",
+    "publisher": "MLMEDIA",
+    "pegi": 0,
+    "tags": [
+      "indépendant",
+      "simulation",
+      "sport"
+    ],
+    "description": "Parcourez des maps de parkour gigantesques et relevez tous les défis : contre-la-montre, challenges de tricks et bien plus encore ! En multi, défiez vos amis au jeu du chat, capture the flag, défis de figures, ou jouez simplement en free-roam!",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/2703850/634254/37e6bfeb85403abded80a4f6bb0c928fc8c962ff/1750316179/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256985132/6b29284b90285a752544d53ea7fc1d7c5246223e/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2703850/6d0ec0824d58890698b495ab753f0e154d0838b1/ss_6d0ec0824d58890698b495ab753f0e154d0838b1.1920x1080.jpg?t=1763586858"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2703850/efaf932baf265103e04ed2475858f58361ba1cb2/ss_efaf932baf265103e04ed2475858f58361ba1cb2.1920x1080.jpg?t=1763586858"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2703850/6b85b4152588add38185c8cf5a295afbf4ee01d5/ss_6b85b4152588add38185c8cf5a295afbf4ee01d5.1920x1080.jpg?t=1763586858"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2703850/06a8ea363c702f2698e0da0f4f2b28d953064f34/ss_06a8ea363c702f2698e0da0f4f2b28d953064f34.1920x1080.jpg?t=1763586858"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2703850/afd142a7b5c04fd0876de0119d9498d7cd4cc73c/ss_afd142a7b5c04fd0876de0119d9498d7cd4cc73c.1920x1080.jpg?t=1763586858"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2703850/2743f90e4c52bd2061cbd82899de57ced679c5bc/ss_2743f90e4c52bd2061cbd82899de57ced679c5bc.1920x1080.jpg?t=1763586858"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 7 +",
+      "cpu": "2.5GHz dual core i5 or higher",
+      "ram": "6 GB de mémoire",
+      "gpu": "GeForce GTX 950 or higher",
+      "storage": "2 GB d'espace disque disponible"
+    },
+    "reqRec": {},
+    "steamAppId": 2703850,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2703850/logo.png",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2703850/ad4f1dcdce135d421dab58045abc1be0624bd142/library_600x900.jpg?t=1763586858",
+    "carousel": false,
+    "sourceVersion": 2
+  },
+  {
+    "id": 8,
+    "title": "Grand Theft Auto: San Andreas",
+    "category": "Course",
+    "image": "https://cdn2.steamgriddb.com/grid/90b8375d64d41c337c0cd41bb1700264.png",
+    "banner": "https://cdn2.steamgriddb.com/hero/6b5bf4d4122957763ce3b07201e4003e.png",
+    "thumb": "https://cdn2.steamgriddb.com/grid/90b8375d64d41c337c0cd41bb1700264.png",
+    "sizeNum": 4,
+    "size": "4GB",
+    "publisher": "Rockstar Games",
+    "pegi": 18,
+    "tags": [
+      "shooter",
+      "racing",
+      "adventure"
+    ],
+    "description": "Returning after his mother's murder to the semi-fictional city of Los Santos (based on Los Angeles), Carl Johnson, a former gang banger, must take back the streets for his family and friends by gaining respect and once again gaining control over the streets. However, a story filled with crime, lies and corruption will lead him to trudge the entire state of San Andreas (based on California and Nevada) to rebuild his life.",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/eswubyh9h3uereuyumjq.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/hircn6ewsgu70ynlzis5.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scgoqj.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/dbbtmdz0q1536npbpr5o.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scgoqf.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scgoqh.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scgoqk.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/e11zpyhhjc9qdqgrx7v0.jpg"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 2000 ou Windows XP",
+      "cpu": "Intel Pentium III ou AMD Athlon à 1 GHz",
+      "ram": "256 Mb",
+      "gpu": "64 Mo  DirectX 9 Nvidia GeForce 3 ",
+      "storage": "3.6 GB"
+    },
+    "reqRec": {
+      "os": "Windows 10 (64 bits)",
+      "cpu": "Intel Pentium 4 ou AMD Athlon XP",
+      "ram": " 384 Mb",
+      "gpu": "128 Mb Nvidia GeForce 6",
+      "storage": "4.7GB"
+    },
+    "logo": "https://cdn2.steamgriddb.com/logo/88a199611ac2b85bd3f76e8ee7e55650.png",
+    "poster": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2lb9.jpg",
+    "carousel": false
+  },
+  {
+    "id": 10,
+    "title": "Grand Theft Auto V (Legacy)",
+    "category": "Course",
+    "image": "https://cdn2.steamgriddb.com/grid/b955184660f6c017452092680006fc6c.png",
+    "banner": "https://cdn2.steamgriddb.com/hero/48a0fbc23cf60d3a99d3e4e233243fa0.png",
+    "thumb": "https://cdn2.steamgriddb.com/grid/b955184660f6c017452092680006fc6c.png",
+    "poster": "https://cdn2.steamgriddb.com/grid/af0a25e27510f77d97634a6bbe653b13.jpg",
+    "sizeNum": 120,
+    "size": "120 GB",
+    "publisher": "Rockstar Games",
+    "pegi": 18,
+    "tags": [
+      "shooter",
+      "racing",
+      "arcade"
+    ],
+    "description": "This bundle contains the original version of Grand Theft Auto V, the standalone game Grand Theft Auto Online and the story mode add-on of Grand Theft Auto V.",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scocxg.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scocxf.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scocxh.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scocxi.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scocxj.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scocxe.jpg"
+      }
+    ],
+    "reqMin": {
+      "os": "64 bits : Vista, Win 7, Win 8, Win 10",
+      "cpu": " Intel Core 2 Q6600 2,40 GHz ou AMD Phenom 9850 2,5 GHz",
+      "ram": "4 GB",
+      "gpu": "1 Go DX10 (NVIDIA 9800 GT ou AMD HD 4870)",
+      "storage": "120 GB"
+    },
+    "reqRec": {
+      "os": "Windows 10 (64 bits)",
+      "cpu": "Intel Core i5 3470 @ 3,2 GHz / AMD X8 FX-8350 @ 4 GHz",
+      "ram": "8 GB",
+      "gpu": "NVIDIA GTX 660 (2 Go VRAM) / AMD HD 7870 (2 Go VRAM)"
+    },
+    "logo": "https://cdn2.steamgriddb.com/logo/e5b294b70c9647dcf804d7baa1903918.png",
+    "carousel": false
+  },
+  {
+    "id": 11,
+    "title": "Cyberpunk 2077",
+    "category": "RPG",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/f5283a1d1a2a44b9b67a861cc2e047859557a872/capsule_616x353_alt_assets_9.jpg?t=1792682505",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/cf8cec802dc47d0f24b75f9eee135e96812e2652/library_hero.jpg?t=1792682505",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/f5283a1d1a2a44b9b67a861cc2e047859557a872/capsule_616x353_alt_assets_9.jpg?t=1792682505",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/6399de67cce3cecadce7900e03f6e09ff910a235/library_capsule.jpg?t=1792682505",
+    "sizeNum": 70,
+    "size": "70 GB",
+    "publisher": "CD PROJEKT RED",
+    "pegi": 18,
+    "tags": [
+      "rpg"
+    ],
+    "description": "Cyberpunk 2077 est un JDR d'action-aventure en monde ouvert, qui se déroule à Night City, une mégalopole futuriste et sombre, obsédée par le pouvoir, la séduction et les modifications corporelles.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/1091500/327947/36200af0c18bb97bb1b3b9369daf839b621488a8/1750616209/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256810262/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/ss_2f649b68d579bf87011487d29bc4ccbfdd97d34f.1920x1080.jpg?t=1792682505"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/900f9bda156599fcd235f08ffb64667f9baa1afe/ss_900f9bda156599fcd235f08ffb64667f9baa1afe.1920x1080.jpg?t=1792682505"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/1091500/182768872/634f07657fb5e6c75b9742c4a4c7344d24220322/1792676918/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257474183/b784478351487eac52d31101123727ef53941a5e/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/f678ed77c2fe7060ac9c64e32e1472e3ec3ab7dc/ss_f678ed77c2fe7060ac9c64e32e1472e3ec3ab7dc.1920x1080.jpg?t=1792682505"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/0ed9487e305983d60646ba163a3d8970efb6b347/ss_0ed9487e305983d60646ba163a3d8970efb6b347.1920x1080.jpg?t=1792682505"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/1091500/1780018736/e200987c6751db5ff576a35b5fb24914dab3d52c/1792586826/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257472501/533d6ab90bae35f7f14ed61401924becb96c04d9/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/ss_0e64170751e1ae20ff8fdb7001a8892fd48260e7.1920x1080.jpg?t=1792682505"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/f39ac45fd0d29c687b0c822b704f93a0764ce3e0/ss_f39ac45fd0d29c687b0c822b704f93a0764ce3e0.1920x1080.jpg?t=1792682505"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/ss_af2804aa4bf35d4251043744412ce3b359a125ef.1920x1080.jpg?t=1792682505"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1091500/ss_7924f64b6e5d586a80418c9896a1c92881a7905b.1920x1080.jpg?t=1792682505"
+      }
+    ],
+    "reqMin": {
+      "os": "64-bit Windows 10",
+      "cpu": "Core i7-6700 or Ryzen 5 1600",
+      "ram": "12 GB de mémoire",
+      "gpu": "GeForce GTX 1060 6GB or Radeon RX 580 8GB or Arc A380",
+      "storage": "70 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "64-bit Windows 10",
+      "cpu": "Core i7-12700 or Ryzen 7 7800X3D",
+      "ram": "16 GB de mémoire",
+      "gpu": "GeForce RTX 2060 SUPER or Radeon RX 5700 XT or Arc A770",
+      "storage": "70 GB d'espace disque disponible"
+    },
+    "steamAppId": 1091500,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1091500/logo.png",
+    "carousel": false
+  },
+  {
+    "id": 12,
+    "title": "Red Dead Redemption 2",
+    "category": "Aventure",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/capsule_616x353.jpg?t=1759502961",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/library_hero.jpg?t=1759502961",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/capsule_616x353.jpg?t=1759502961",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/library_600x900.jpg?t=1759502961",
+    "sizeNum": 150,
+    "size": "150 GB",
+    "publisher": "Rockstar Games",
+    "pegi": 18,
+    "tags": [
+      "action",
+      "aventure"
+    ],
+    "description": "Arthur Morgan et la bande de Van der Linde sont des hors-la-loi fugitifs. Les agents fédéraux et les chasseurs de primes sont à leurs trousses et la bande commet méfaits sur méfaits dans les terres sauvages pour survivre.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/1174180/254764/7a9619def1d2b41fbb7aeab0ebd6a2b4ada81f0d/1750634248/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256768371/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/ss_66b553f4c209476d3e4ce25fa4714002cc914c4f.1920x1080.jpg?t=1759502961"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/ss_bac60bacbf5da8945103648c08d27d5e202444ca.1920x1080.jpg?t=1759502961"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/1174180/254763/b5d4c79496d88d3e08c5968d7bd18b20db5efaa1/1750634245/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256768370/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/ss_668dafe477743f8b50b818d5bbfcec669e9ba93e.1920x1080.jpg?t=1759502961"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/ss_4ce07ae360b166f0f650e9a895a3b4b7bf15e34f.1920x1080.jpg?t=1759502961"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1174180/ss_d1a8f5a69155c3186c65d1da90491fcfd43663d9.1920x1080.jpg?t=1759502961"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 10 - 64-bit",
+      "cpu": "Intel® Core™ i5-2500K / AMD FX-6300",
+      "ram": "8 GB de mémoire",
+      "gpu": "Nvidia GeForce GTX 770 2GB / AMD Radeon R9 280 3GB",
+      "storage": "150 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Windows 10 - 64-bit",
+      "cpu": "Intel® Core™ i7-4770K / AMD Ryzen 5 1500X",
+      "ram": "12 GB de mémoire",
+      "gpu": "Nvidia GeForce GTX 1060 6GB / AMD Radeon RX 480 4GB",
+      "storage": "150 GB d'espace disque disponible"
+    },
+    "steamAppId": 1174180,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/logo.png",
+    "carousel": false
+  },
+  {
+    "id": 14,
+    "title": "Marvel’s Spider-Man 2",
+    "category": "Aventure",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2651280/cb8da9b3e99cf7362cd88c10a0544b7fe892ccad/capsule_616x353.jpg?t=1763569811",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2651280/064f792bf6582163f276aa5a648107830f858d5e/library_hero.jpg?t=1763569811",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2651280/cb8da9b3e99cf7362cd88c10a0544b7fe892ccad/capsule_616x353.jpg?t=1763569811",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2651280/6fa28738ef8cde05390d3f0a9b942185b5763cbd/library_600x900.jpg?t=1763569811",
+    "sizeNum": 140,
+    "size": "140 GB",
+    "publisher": "PlayStation Publishing LLC",
+    "pegi": 16,
+    "tags": [
+      "action",
+      "aventure"
+    ],
+    "description": "Dépassez vos limites. Ensemble. L'incroyable puissance du symbiote force Peter Parker et Miles Morales à se dépasser et à trouver le bon équilibre entre leurs vies, leurs amitiés et leurs responsabilités dans un nouveau chapitre palpitant de la franchise Spider-Man.",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2651280/ss_e4b67059ddedaeebd91fce113745f3eb99736f56.1920x1080.jpg?t=1763569811"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2651280/ss_b4be948946130b7e140be82f24f1f9ccefae9117.1920x1080.jpg?t=1763569811"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2651280/ss_f4140ba12158b812d9c1adc86c484d8e84b92e92.1920x1080.jpg?t=1763569811"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2651280/ss_7ef8bc176702470fdc73f62f8e537c3912e70444.1920x1080.jpg?t=1763569811"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2651280/ss_474a7ffe98998719c22025cc99da1f45dfca025e.1920x1080.jpg?t=1763569811"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2651280/ss_aa8346cf207a1e114c5f9e7f6c3086c5dc9c3050.1920x1080.jpg?t=1763569811"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2651280/ss_b34716a6d4505bfe32f83530e46aac5a5728f441.1920x1080.jpg?t=1763569811"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2651280/ss_0fda7c96ee3f16038559fffa8c2cd7b3ac433c2b.1920x1080.jpg?t=1763569811"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 10/11 (version 1909 or higher)",
+      "cpu": "Intel Core i3-8100 or AMD Ryzen 3 3100",
+      "ram": "16 GB de mémoire",
+      "gpu": "NVIDIA GeForce GTX 1650 or AMD Radeon RX 5500 XT",
+      "storage": "140 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Windows 10/11 (version 1909 or higher)",
+      "cpu": "Intel Core i5-8400 or AMD Ryzen 5 3600",
+      "ram": "16 GB de mémoire",
+      "gpu": "NVIDIA GeForce RTX 3060 or AMD Radeon RX 5700",
+      "storage": "140 GB d'espace disque disponible"
+    },
+    "steamAppId": 2651280,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2651280/logo.png",
+    "carousel": false
+  },
+  {
+    "id": 15,
+    "title": "Grand Theft Auto IV",
+    "category": "Course",
+    "image": "https://cdn2.steamgriddb.com/hero_thumb/c1210dd1376c754b78be3d9709965276.jpg",
+    "banner": "https://cdn2.steamgriddb.com/hero_thumb/f8051ec0460550327e241fc99e96c151.jpg",
+    "thumb": "https://cdn2.steamgriddb.com/icon/253d812cbfbb77c03b910f9897e9487d/32/256x256.png",
+    "poster": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2lbv.jpg",
+    "sizeNum": 22,
+    "size": "22 GB",
+    "publisher": "Take-Two Interactive",
+    "pegi": 18,
+    "tags": [
+      "shooter",
+      "racing",
+      "adventure"
+    ],
+    "description": "Grand Theft Auto IV is an action-adventure video game developed by Rockstar North and published by Rockstar Games. It is the eleventh title in the Grand Theft Auto series, and the first main entry since 2004's Grand Theft Auto: San Andreas. The game is played from a third-person perspective and its world is navigated on-foot or by vehicle. Throughout the single-player mode, players play as Niko Bellic. An online multiplayer mode is included with the game, allowing up to 32 players to engage in both co-operative and competitive gameplay in a recreation of the single-player setting. Two expansion packs were later released for the game, The Lost and Damned and The Ballad of Gay Tony, which both feature new plots that are interconnected with the main Grand Theft Auto IV storyline, and follow new protagonists.",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/kpaqc6q3il0dtjhrdpcd.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/rfvuzw0pjfkxq1d820a4.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/ywnl0sqqi9wslnyw60l9.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/bsnm6temoasfzkwkhiop.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/smxamwmtgvmoqmqqmdbs.jpg"
+      }
+    ],
+    "reqMin": {
+      "os": "XP SP3",
+      "cpu": "Intel Core 2 Duo 1.8 GHz",
+      "ram": "1.5 GB",
+      "gpu": "ATI Radeon X1900",
+      "storage": "22 GB"
+    },
+    "reqRec": {
+      "os": "Vista SP2, 7 SP1"
+    },
+    "logo": "https://cdn2.steamgriddb.com/logo_thumb/a637b51c944078205e237f8694399ddc.png",
+    "carousel": false
+  },
+  {
+    "id": 16,
+    "title": "Call of Duty: Modern Warfare II",
+    "category": "Action",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3595230/03a32ef57a71955100af89dc40add1c4535fd813/capsule_616x353.jpg?t=1778886532",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3595230/cf1b578facd3adfa47d61532438ba4ccef0121c1/library_hero.jpg?t=1778886532",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3595230/03a32ef57a71955100af89dc40add1c4535fd813/capsule_616x353.jpg?t=1778886532",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3595230/89267cd5928eebbb7ec07562e912717eba09ebc2/library_capsule.jpg?t=1778886532",
+    "sizeNum": 125,
+    "size": "125 GB",
+    "publisher": "Activision",
+    "pegi": 18,
+    "tags": [
+      "action"
+    ],
+    "description": "Call of Duty®: Modern Warfare® II plonge les joueurs dans un conflit mondial sans précédent et marque le grand retour des Opérateurs emblématiques de la Task Force 141.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/3595230/1718098932/fb4dbc1389f1c684b067c3f34ce4056137d04eb0/1753381199/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257173515/29117366fc5f63daf809ba1c6100590e4727840c/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595230/1c3624c55a8b7d6f49f9ffe7f8e4a2ac71aab0c6/ss_1c3624c55a8b7d6f49f9ffe7f8e4a2ac71aab0c6.1920x1080.jpg?t=1778886532"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595230/c06cc6508d956e43f97e08a6126f069364e14775/ss_c06cc6508d956e43f97e08a6126f069364e14775.1920x1080.jpg?t=1778886532"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595230/dd05935dce85d5d334b86609f9488113fc8aad30/ss_dd05935dce85d5d334b86609f9488113fc8aad30.1920x1080.jpg?t=1778886532"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595230/b1232b0c2f0f854ef006a598a7952ae24ebd0bea/ss_b1232b0c2f0f854ef006a598a7952ae24ebd0bea.1920x1080.jpg?t=1778886532"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595230/3a1a6fc37621de00944b9c77f27891cb3c5cd38e/ss_3a1a6fc37621de00944b9c77f27891cb3c5cd38e.1920x1080.jpg?t=1778886532"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595230/e9aec47f6bd0253360fbeb9e30b9f254dbd656c4/ss_e9aec47f6bd0253360fbeb9e30b9f254dbd656c4.1920x1080.jpg?t=1778886532"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595230/29420d302e8ba6caae95d555fa09faae1b90d711/ss_29420d302e8ba6caae95d555fa09faae1b90d711.1920x1080.jpg?t=1778886532"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595230/31deb49ee3bb53f0639a389c0ece1b97931017ea/ss_31deb49ee3bb53f0639a389c0ece1b97931017ea.1920x1080.jpg?t=1778886532"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows® 10 64 bits (dernière mise à jour)",
+      "cpu": "Intel® Core™ i3-6100 / Core™ i5-2500K ou AMD Ryzen™ 3 1200",
+      "ram": "8 GB de mémoire",
+      "gpu": "NVIDIA® GeForce® GTX 960 ou système compatible AMD Radeon™ RX 470 - DirectX 12.0",
+      "storage": "125 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Windows® 10 64 bit (dernière mise à jour) ou Windows® 11 64 bit (dernière mise à jour)",
+      "cpu": "Intel® Core™ i5-6600K / Core™ i7-4770 ou AMD Ryzen™ 5 1400",
+      "ram": "8 GB de mémoire",
+      "gpu": "NVIDIA® GeForce® GTX 1060 ou système compatible AMD Radeon™ RX 580 - DirectX 12.0 ou Intel® Arc™ A770",
+      "storage": "125 GB d'espace disque disponible"
+    },
+    "carousel": false,
+    "steamAppId": 3595230,
+    "logo": "https://cdn2.steamgriddb.com/logo/c7ecae463b4f3d49f7a4ef3eea76bd4e.png",
+    "featured": true
+  },
+  {
+    "id": 17,
+    "title": "007 First Light",
+    "category": "Aventure",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768760/c8fd64a71c14b826d9b47073c1f89b7497b09ef5/capsule_616x353_alt_assets_4.jpg?t=1791886607",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768760/136e92ac58ef98f53885421391c0f1c08c899cdf/library_hero.jpg?t=1791886607",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768760/c8fd64a71c14b826d9b47073c1f89b7497b09ef5/capsule_616x353_alt_assets_4.jpg?t=1791886607",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3768760/1159a696d257cbeb3f4479be3466cfba2ae938a0/library_600x900.jpg?t=1791886607",
+    "sizeNum": 80,
+    "size": "80 GB",
+    "publisher": "IO Interactive A/S",
+    "pegi": 16,
+    "tags": [
+      "action",
+      "aventure"
+    ],
+    "description": "Gagnez le matricule. 007 First Light est un jeu d’action-aventure et d’espionnage palpitant signé IO Interactive. Suivez un jeune James Bond malin, et parfois téméraire, durant son entraînement au MI6, et découvrez l’histoire des origines du plus célèbre des agents secrets.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/3768760/615469998/c6359dfb9ead58932615b470085faec7789424b4/1780060332/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257345966/4a5195b3e5e6abe70827fb3ea9d2b055f3ceb4c1/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/ef374e5e4ede8c71f32d455652bc00f2fa7c035e/ss_ef374e5e4ede8c71f32d455652bc00f2fa7c035e.1920x1080.jpg?t=1791886607"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/18787f52adabf0e5248548ed83562e6aac88f94d/ss_18787f52adabf0e5248548ed83562e6aac88f94d.1920x1080.jpg?t=1791886607"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/3768760/679739145/ecf18b9039446ffeb4f18a22f1ba7e4bcdb347e8/1780343027/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257347862/710709bed4d1b286d891918f9fe26f97cf1e82c5/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/43c8cf3875cb6643ac7d8244e9fd39381609814a/ss_43c8cf3875cb6643ac7d8244e9fd39381609814a.1920x1080.jpg?t=1791886607"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/c1e68b9b3d1c55b9d62f4041c6fbfefe329a236c/ss_c1e68b9b3d1c55b9d62f4041c6fbfefe329a236c.1920x1080.jpg?t=1791886607"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/3768760/866157196/8fba14db24d8f3d4f1dd3e71070bc17efbd6069e/1790850591/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257442444/f181ea37b34467a2cc6f434f84c7ecaddf72e1c2/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/d076a739da6136dc4da2c48750eb6f780d4f826d/ss_d076a739da6136dc4da2c48750eb6f780d4f826d.1920x1080.jpg?t=1791886607"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/7683959b09f7863c5eb23bfdbcf039269765b5d6/ss_7683959b09f7863c5eb23bfdbcf039269765b5d6.1920x1080.jpg?t=1791886607"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/2e3f04c42cca344dd3ca0be30c5078719bce23ed/ss_2e3f04c42cca344dd3ca0be30c5078719bce23ed.1920x1080.jpg?t=1791886607"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3768760/22b94f7aa04496557f7b8b797abe8e81c8ac8d94/ss_22b94f7aa04496557f7b8b797abe8e81c8ac8d94.1920x1080.jpg?t=1791886607"
+      }
+    ],
+    "reqMin": {
+      "os": "WINDOWS 10/11, 64-BIT",
+      "cpu": "INTEL CORE i5 9500, AMD RYZEN 5 3500",
+      "ram": "16 GB de mémoire",
+      "gpu": "NVIDIA GEFORCE GTX 1660, AMD RX 5700, INTEL DISCRETE GPU EQUIVALENT",
+      "storage": "80 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "WINDOWS 10/11, 64-BIT",
+      "cpu": "INTEL CORE i5 13500, AMD RYZEN 5 7600",
+      "ram": "16 GB de mémoire",
+      "gpu": "NVIDIA GEFORCE RTX 3060 TI, AMD RX 6700 XT, INTEL DISCRETE GPU EQUIVALENT",
+      "storage": "80 GB d'espace disque disponible"
+    },
+    "carousel": false,
+    "steamAppId": 3768760,
+    "logo": "https://cdn2.steamgriddb.com/logo/b26593cc2d0589aa2573b00fbd5a59c2.png"
+  },
+  {
+    "id": 18,
+    "title": "Black Myth: Wukong",
+    "category": "RPG",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2358720/f40ef565c380c617020e559b4b4b089edd93ec09/capsule_616x353.jpg?t=1760601605",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2358720/library_hero.jpg?t=1760601605",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2358720/f40ef565c380c617020e559b4b4b089edd93ec09/capsule_616x353.jpg?t=1760601605",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2358720/library_600x900.jpg?t=1760601605",
+    "sizeNum": 130,
+    "size": "130 GB",
+    "publisher": "Game Science",
+    "pegi": 16,
+    "tags": [
+      "action",
+      "aventure",
+      "rpg"
+    ],
+    "description": "Black Myth: Wukong est un jeu action-RPG inspiré de la mythologie chinoise. Vous y incarnerez le Prédestiné et prendrez part à une épopée merveilleuse au cours de laquelle vous devrez affronter maints périls pour découvrir la sombre vérité d'une légende glorieuse.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/2358720/599863/2efe2fbdd78b7c51d6892169a0b75e8c47bd6633/1750812850/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256965216/813ef09701102d456493067cf39d407ea0bbe02a/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/ss_86c4b7462bba219a0d0b89931a35812b9f188976.1920x1080.jpg?t=1760601605"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/ss_d9391ab31a4d15dddf7ba4949bfa44f5d9170580.1920x1080.jpg?t=1760601605"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/2358720/743632/6acf4311bb6a59d300b902ab6a3f445215089d9c/1750812851/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257048125/5bd85986ed6b1545d91ceb84714dd06a952fa17f/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/ss_524a39da392ee83dde091033562bc719d46b5838.1920x1080.jpg?t=1760601605"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/ss_968bbc9caceb7d798bd0c393e1e9b4c44ed6d835.1920x1080.jpg?t=1760601605"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/2358720/710907/cfac50d865dd4c081a67949bef11a498e5a2c67b/1750812850/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257029344/f33a1247a6929856238f8176f5cc30c75b84a865/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/ss_415397426d4c939ebb8a93ac66831f28ee7199be.1920x1080.jpg?t=1760601605"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2358720/ss_63477e8ce2c0582b81c6ed576377d78e692b5642.1920x1080.jpg?t=1760601605"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 10 64-bit",
+      "cpu": "Intel Core i5-8400 / AMD Ryzen 5 1600",
+      "ram": "16 GB de mémoire",
+      "gpu": "NVIDIA GeForce GTX 1060 6GB / AMD Radeon RX 580 8GB",
+      "storage": "130 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Windows 10 64-bit",
+      "cpu": "Intel Core i7-9700 / AMD Ryzen 5 5500",
+      "ram": "16 GB de mémoire",
+      "gpu": "NVIDIA GeForce RTX 2060 / AMD Radeon RX 5700 XT / INTEL Arc A750",
+      "storage": "130 GB d'espace disque disponible"
+    },
+    "carousel": false,
+    "steamAppId": 2358720,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2358720/logo.png"
+  },
+  {
+    "id": 22,
+    "title": "Call of Duty: Modern Warfare III",
+    "category": "Action",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3595270/862980706af9711b9c79ba4be6cb551d72f343a5/capsule_616x353.jpg?t=1778886604",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3595270/f22ad06e641a913b9eb4f075f10b1ec61a1effd8/library_hero.jpg?t=1778886604",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3595270/862980706af9711b9c79ba4be6cb551d72f343a5/capsule_616x353.jpg?t=1778886604",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3595270/a3070fe258d1e2a0232aad783d34f927629dbd21/library_capsule.jpg?t=1778886604",
+    "sizeNum": 149,
+    "size": "149 GB",
+    "publisher": "Activision",
+    "pegi": 18,
+    "tags": [
+      "action"
+    ],
+    "description": "Dans la suite directe de Call of Duty®: Modern Warfare® II, le capitaine Price et la Task Force 141 affrontent la menace ultime.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/3595270/656523119/da35c402738245f8a59efaa090334526e7e33ee7/1753143511/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257172102/e26215d214e394b60c6d689f6bc343c2eba9e80e/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595270/8694e5cb8262343c867d8f8edb70526b19b49cf8/ss_8694e5cb8262343c867d8f8edb70526b19b49cf8.1920x1080.jpg?t=1778886604"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595270/757e49ee3ff2b6ebf60e479731d983cec47faa41/ss_757e49ee3ff2b6ebf60e479731d983cec47faa41.1920x1080.jpg?t=1778886604"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595270/f713211188a2a872d638089b2d959a337639e91a/ss_f713211188a2a872d638089b2d959a337639e91a.1920x1080.jpg?t=1778886604"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595270/ee37e2686b1a21ede5b74e853d046ba9bd087878/ss_ee37e2686b1a21ede5b74e853d046ba9bd087878.1920x1080.jpg?t=1778886604"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595270/e23921966033db7075d68e33e233120756357093/ss_e23921966033db7075d68e33e233120756357093.1920x1080.jpg?t=1778886604"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595270/f778362cc479898f1f54f5e4de4f88130cf2b140/ss_f778362cc479898f1f54f5e4de4f88130cf2b140.1920x1080.jpg?t=1778886604"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595270/2a5b9db9430ee79aed122a309460e8c121d67765/ss_2a5b9db9430ee79aed122a309460e8c121d67765.1920x1080.jpg?t=1778886604"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3595270/1db97cd94c0f2c80016967904ccc43a72df79f98/ss_1db97cd94c0f2c80016967904ccc43a72df79f98.1920x1080.jpg?t=1778886604"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows® 10 64 Bit (latest update)",
+      "cpu": "Intel® Core™ i5-6600 or AMD Ryzen™ 5 1400",
+      "ram": "8 GB de mémoire",
+      "gpu": "NVIDIA® GeForce® GTX 960 / GTX 1650 or AMD Radeon™ RX 470",
+      "storage": "149GB"
+    },
+    "reqRec": {
+      "os": "Windows® 10 64 Bit (latest update) or Windows® 11 64 Bit (latest update)",
+      "cpu": "Intel® Core™ i7-6700K or AMD Ryzen™ 5 1600X",
+      "ram": "16 GB de mémoire",
+      "gpu": "NVIDIA® GeForce® GTX 1080Ti / RTX 3060 or AMD Radeon™ RX 6600XT or Intel® Arc™ A770",
+      "storage": "180GB"
+    },
+    "carousel": false,
+    "steamAppId": 3595270,
+    "logo": "https://cdn2.steamgriddb.com/logo/b454acc6fd77f2c3e5749728c5102201.png",
+    "featured": true
+  },
+  {
+    "id": 23,
+    "title": "The Genesis Order",
+    "category": "Aventure",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2553870/capsule_616x353.jpg?t=1792522988",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2553870/library_hero.jpg?t=1792522988",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2553870/capsule_616x353.jpg?t=1792522988",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2553870/library_600x900.jpg?t=1792522988",
+    "sizeNum": 9,
+    "size": "9 GB",
+    "publisher": "NLT Media",
+    "pegi": 18,
+    "tags": [
+      "aventure",
+      "occasionnel",
+      "indépendant"
+    ],
+    "description": "Murder and mystery lead a young detective to investigate a cult and to cross paths with a criminal organization. With the help of an angel and a harem of beauties, take on the challenge of saving the world from a mysterious threat.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/2553870/595737/8fe2ecc95efdd46341b2296eb104839d530b4d71/1750816993/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256962874/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2553870/ss_9197e714f890422c250576e8de5685a328874ff7.1920x1080.jpg?t=1792522988"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2553870/ss_6bd200dc74465d539bd9bbba1635911b1ffe0d37.1920x1080.jpg?t=1792522988"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/2553870/595738/94d7541b8550f523cb47978a0c33e5ab2d8e45b0/1750816993/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256962875/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2553870/ss_563b00b8fdaa94282c1d68281cb164bec1110776.1920x1080.jpg?t=1792522988"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2553870/ss_91e7d02c54e7fe3da845d807df6cee4790bd6785.1920x1080.jpg?t=1792522988"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2553870/ss_a84cb920c90dc711cf1b31835148e42e467ad6bc.1920x1080.jpg?t=1792522988"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2553870/ss_0a1909bf047da81816d4872fe89e2a8ccb50213e.1920x1080.jpg?t=1792522988"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2553870/ss_aa090c247f1d0234afb95a3181419b7ce20d4997.1920x1080.jpg?t=1792522988"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2553870/ss_86d3d5e1030f009dbb0016c7b02eac18c891ae05.1920x1080.jpg?t=1792522988"
+      }
+    ],
+    "reqMin": {
+      "os": "Microsoft® Windows® 7/8/8.1/10 (32bit/64bit)",
+      "cpu": "Intel Core2 Duo or better",
+      "ram": "2 GB de mémoire",
+      "storage": "9 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Microsoft® Windows® 7/8/8.1/10 (32bit/64bit)",
+      "cpu": "Intel Core2 Duo or better",
+      "ram": "3 GB de mémoire",
+      "gpu": "OpenGL ES 2.0 hardware driver support required for WebGL acceleration. (AMD Catalyst 10.9, NVidia 358.50)",
+      "storage": "9 GB d'espace disque disponible"
+    },
+    "carousel": true,
+    "steamAppId": 2553870,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2553870/logo.png"
+  },
+  {
+    "id": 24,
+    "title": "EA SPORTS FC 25",
+    "category": "Sport",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2669320/86a267ec44fc57124127eba46f25120813374317/capsule_616x353.jpg?t=1788548615",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2669320/bcda7f94f7d2ce21e91d3571c7d42a1053fbf0d0/library_hero.jpg?t=1788548615",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2669320/86a267ec44fc57124127eba46f25120813374317/capsule_616x353.jpg?t=1788548615",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2669320/c5ddf022ee6adee9aa6a6a6e8cb9e1c8b8490022/library_600x900.jpg?t=1788548615",
+    "sizeNum": 100,
+    "size": "100 GB",
+    "publisher": "Electronic Arts",
+    "pegi": 3,
+    "tags": [
+      "simulation",
+      "sport"
+    ],
+    "description": "EA SPORTS FC™ 25 vous offre de nouveaux moyens de gagner pour le club. Jouez avec vos proches dans vos modes favoris au format Rush 5-5 et utilisez FC IQ pour mener votre club à la victoire grâce à un meilleur contrôle tactique à 11 contre 11.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/2669320/762998/70825943faff3cc5b0e35a8dfad98f2788098c44/1750818211/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257059675/8472924f1c5341b306e5e4c031293699c6ce16db/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2669320/ss_857b4aaf3c10b2a886d60f029f32b2f86d968311.1920x1080.jpg?t=1788548615"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2669320/ss_aeeea35bf96fad387b97befd9a5c4b9d8ee2ac1a.1920x1080.jpg?t=1788548615"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/2669320/740427/3b01cca4b214e1c61e852230094a95c00d3cef54/1750818210/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257046237/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2669320/ss_c8460408705b54e37228cc320a2da1c19e4dc12f.1920x1080.jpg?t=1788548615"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2669320/ss_ee0be94a0a8e1325050481bcf351d736e6d2982d.1920x1080.jpg?t=1788548615"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2669320/ss_ded26e23554cb4d0612b8f531304f8f486eafcf4.1920x1080.jpg?t=1788548615"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2669320/ss_709f8a775654b083b7faf991522f657dda2a14a9.1920x1080.jpg?t=1788548615"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2669320/ss_009991924bc40dd9d9793bbef7b5783470e3030d.1920x1080.jpg?t=1788548615"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2669320/ss_bab390c4ca80ca91d5984440cec2eea12b4848ba.1920x1080.jpg?t=1788548615"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 10 - 64-Bit (Latest Update)",
+      "cpu": "AMD Ryzen 5 1600 or Intel Core i5 6600k",
+      "ram": "8 GB de mémoire",
+      "gpu": "AMD RX 570 or Nvidia GTX 1050 Ti",
+      "storage": "100 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Windows 10 - 64-Bit (Latest Update).",
+      "cpu": "AMD Ryzen 7 2700X or Intel Core i7 6700",
+      "ram": "12 GB de mémoire",
+      "gpu": "AMD RX 5600 XT or Nvidia GTX 1660",
+      "storage": "100 GB d'espace disque disponible"
+    },
+    "carousel": true,
+    "steamAppId": 2669320,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2669320/logo.png"
+  },
+  {
+    "id": 25,
+    "title": "Assassin’s Creed Shadows",
+    "category": "RPG",
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3159330/2d5536f7e9f72d7844c59c5dc1416f7b756d3ad4/capsule_616x353.jpg?t=1792778493",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3159330/7e28d06f1f49bfdf57f0eca2f570f3a0b3fb09b0/library_hero.jpg?t=1792778493",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3159330/2d5536f7e9f72d7844c59c5dc1416f7b756d3ad4/capsule_616x353.jpg?t=1792778493",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3159330/bdab6ed673aea5877d76e8c99c696ced92cf0d12/library_capsule.jpg?t=1792778493",
+    "sizeNum": 115,
+    "size": "115 GB",
+    "publisher": "Ubisoft",
+    "pegi": 18,
+    "tags": [
+      "action",
+      "aventure",
+      "rpg"
+    ],
+    "description": "Plongez dans une épopée d'action-aventure au cœur du Japon féodal ! Incarnez une Assassin shinobi meurtrière et un puissant samouraï légendaire tout en explorant un magnifique monde ouvert plongé dans le chaos.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/3159330/945119520/7643be217d9d4d581bcecbfc6b109d269d2ced96/1758297532/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257202269/46444c2b050a667a699bd4e6234090dbab0c6caa/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3159330/7257f31bb96b01f5b596ae5e0fa714319e43d64a/ss_7257f31bb96b01f5b596ae5e0fa714319e43d64a.1920x1080.jpg?t=1792778493"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3159330/86653e3e54574cb65155452fa6657b7214a8d877/ss_86653e3e54574cb65155452fa6657b7214a8d877.1920x1080.jpg?t=1792778493"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/3159330/1441709176/4c0d1a7d066a88ebe3b7fe10d7ba5711b8f52619/1750824229/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257145695/9318a6b9d2ee3c81602cd1e0e6d9bbf2b1a53e2b/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3159330/dbadf23ede7af4684012bab610ffb52f33fdb9e2/ss_dbadf23ede7af4684012bab610ffb52f33fdb9e2.1920x1080.jpg?t=1792778493"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3159330/c6b98b5978b0054173b38d5700dc3c9681d0513c/ss_c6b98b5978b0054173b38d5700dc3c9681d0513c.1920x1080.jpg?t=1792778493"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/3159330/1382087/8997e8913dd59d9a2e2b967bd6607a6e413e8a82/1758297785/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257202281/1f7f380cf6a6e525618c6a5fcaf3c37ee12522ae/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3159330/3e587ce8e677f7381748fdc0a61e4938b76625ba/ss_3e587ce8e677f7381748fdc0a61e4938b76625ba.1920x1080.jpg?t=1792778493"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3159330/81bbd04dae05b0a52dc62818dc5219abeb849f8d/ss_81bbd04dae05b0a52dc62818dc5219abeb849f8d.1920x1080.jpg?t=1792778493"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3159330/e53dc9ec73e3de9b8e680472898de775f0dc1cae/ss_e53dc9ec73e3de9b8e680472898de775f0dc1cae.1920x1080.jpg?t=1792778493"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3159330/2e74c5442faa027ea699dcfa15be173b43a8d37a/ss_2e74c5442faa027ea699dcfa15be173b43a8d37a.1920x1080.jpg?t=1792778493"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 10/11",
+      "cpu": "INTEL® Core TM i7 8700K AMD RYZEN 5 3600",
+      "ram": "16 GB de mémoire",
+      "gpu": "NVIDIA® GEFORCE GTX 1650 4GB / AMD RX-5500 XT 8GB / INTEL® ARC TM A380 6GB (REBAR ON)\"",
+      "storage": "115 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Windows 10/11",
+      "cpu": "Intel® Core™ i5 11600k/AMD Ryzen™ 5 5600x",
+      "ram": "16 GB de mémoire",
+      "gpu": "Nvidia® GeForce RTX™ 3060Ti 8GB/AMD Radeon™ RX 6700 XT 12GB/Intel® Arc™ B580 12GB (REBAR ON)",
+      "storage": "115 GB d'espace disque disponible"
+    },
+    "carousel": true,
+    "steamAppId": 3159330,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3159330/logo.png"
+  }
+]
