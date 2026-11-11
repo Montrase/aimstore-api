@@ -427,6 +427,65 @@ app.post('/api/check', async (req, res) => {
   }
 });
 
+// 3c. Lien de téléchargement d'un jeu (appelé par le launcher).
+// Il faut une session valide (jeton signé + clé encore active). Sans ça : aucun lien.
+// Les liens sont dans Redis (entrée « game:sources » = { "idDuJeu": "lien" }), jamais dans le code.
+async function validateSessionToken(token) {
+  const payload = readToken(token);
+  if (!payload || typeof payload.exp !== 'number') return false;
+  const now = Date.now();
+  if (now >= payload.exp) return false;
+
+  if (payload.adm === true) {
+    return payload.av === adminVersion() && !!process.env.ADMIN_KEY;
+  }
+
+  if (typeof payload.key !== 'string' || !KEY_RE.test(payload.key)) return false;
+  const rec = await redis.get(`key:${payload.key}`); // si Redis est en panne, l'erreur remonte (réponse 500)
+  if (!rec) return false;
+  return rec.createdAt + KEY_DURATION_MS - now > 0;
+}
+
+app.post('/api/get-download', async (req, res) => {
+  res.set('Cache-Control', 'no-store');
+
+  const ip = getClientIp(req);
+  if (!(await rateLimit('download', ip, 30, 60))) {
+    return res.status(429).json({ error: 'Trop de demandes, réessaie dans une minute.' });
+  }
+
+  const body = req.body || {};
+  const token = typeof body.token === 'string' ? body.token : '';
+  const gameId = (typeof body.gameId === 'string' || typeof body.gameId === 'number') ? String(body.gameId).trim() : '';
+
+  if (!token || !gameId || gameId.length > 50 || !/^[A-Za-z0-9_-]+$/.test(gameId)) {
+    return res.status(400).json({ error: 'Paramètres manquants ou invalides' });
+  }
+
+  try {
+    if (!(await validateSessionToken(token))) {
+      return res.status(403).json({ error: 'Session invalide ou expirée' });
+    }
+
+    const sources = await redis.get('game:sources');
+    if (!sources || typeof sources !== 'object' ||
+        !Object.prototype.hasOwnProperty.call(sources, gameId) ||
+        typeof sources[gameId] !== 'string' || !sources[gameId]) {
+      return res.status(404).json({ error: 'Lien non disponible pour ce jeu' });
+    }
+
+    return res.json({ magnetURI: sources[gameId] });
+  } catch (e) {
+    console.error('[get-download]', e);
+    return res.status(500).json({ error: 'Erreur interne du serveur' });
+  }
+});
+
+// Toute autre méthode (GET dans un navigateur, etc.) est refusée
+app.all('/api/get-download', (req, res) => {
+  res.status(405).json({ error: 'Méthode non autorisée' });
+});
+
 // 4. L'ancien endpoint est désactivé : il permettait d'obtenir une clé sans passer les checkpoints
 app.all('/api/generate', (req, res) => {
   res.status(410).json({ success: false, message: 'Endpoint supprimé.' });
