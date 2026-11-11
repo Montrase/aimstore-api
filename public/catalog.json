@@ -1421,9 +1421,9 @@
     "title": "Assassin's Creed : Black Flag Resynced",
     "category": "Aventure",
     "sourceVersion": 1,
-    "image": "https://cdn2.steamgriddb.com/hero_thumb/7225cf851cfd7fc4be4a84d04662c37f.jpg",
-    "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/ar6c3i.jpg",
-    "thumb": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ar6c3i.jpg",
+    "image": "https://cdn2.steamgriddb.com/grid/840d2ee14077ac7e9cfe78afa206e50d.png",
+    "banner": "https://cdn2.steamgriddb.com/hero/d90f6bddbbbc9a658cadaf15b5d89113.png",
+    "thumb": "https://cdn2.steamgriddb.com/grid/840d2ee14077ac7e9cfe78afa206e50d.png",
     "poster": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/cobyue.jpg",
     "sizeNum": 65,
     "size": "65 GB",
@@ -1474,8 +1474,7 @@
     },
     "reqRec": {
       "cpu": "Intel Core i5-10600K 4.1 GHz",
-      "gpu": "Nvidia GeForce RTX 3060",
-      "storage": "65 GB (SSD)"
+      "gpu": "Nvidia GeForce RTX 3060"
     },
     "carousel": true,
     "logo": "https://cdn2.steamgriddb.com/logo/c3a5706e6524c0a5454747000dea498d.png",
