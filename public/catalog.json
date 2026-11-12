@@ -1646,35 +1646,47 @@
     "image": "https://cdn2.steamgriddb.com/grid/7a50abe33a5b1ede31f6df5343d6bcc7.jpg",
     "banner": "https://cdn2.steamgriddb.com/hero/dd694327fc4abb8c7b944580a53a5fda.jpg",
     "thumb": "https://cdn2.steamgriddb.com/grid/7a50abe33a5b1ede31f6df5343d6bcc7.jpg",
-    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4255780/cb2400765e18628c3958ce575f8d4ecf995d546b/library_capsule.jpg?t=1793780898",
-    "sizeNum": 0,
-    "size": "",
-    "publisher": "HARDLINE",
-    "pegi": 0,
+    "poster": "https://cdn2.steamgriddb.com/thumb/84498fd84f8fe47a0648ca97cb2e70f5.jpg",
+    "sizeNum": 10,
+    "size": "10 GB",
+    "publisher": "ZeratGames",
+    "pegi": 18,
     "tags": [
-      "action",
       "aventure",
-      "indépendant"
+      "independant"
     ],
-    "description": "Un FPS sombre dans le style Bodycam où un coup d’État raté plonge la ville dans le chaos. Traversez des rues contrôlées par les gangs, découvrez la vérité sur la disparition de votre femme et reprenez ce qu’on vous a volé, balle après balle.",
+    "description": "No Mercy est un roman visuel pour adultes en 3D, axé sur les choix et centré sur le chantage et la domination masculine. Après que l'infidélité de votre belle-mère ait brisé votre famille, vous endossez un nouveau rôle : non pas réparer ce qui est cassé, mais la revendiquer pour vous-même. Ce jeu n'est pas un simulateur de viol. Presque personne parmi ceux qui commentent ce jeu n'y a réellement joué. Ils ne font que répéter ce qu'ils ont lu en ligne. Demandez-leur simplement s'ils y ont joué...",
     "media": [
       {
-        "type": "video",
-        "url": "https://video.akamai.steamstatic.com/store_trailers/4255780/1517121537/1e729d72283fcf08ec9e90c74c0c4b9582ac7edf/1783372411/microtrailer.mp4",
-        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257372038/d5cbe5d59d7bd2d4be86a7f6d8b361ce8dd87e2e/movie_full.jpg"
+        "type": "image",
+        "url": "https://zeratgames.com/Steam1.png"
+      },
+      {
+        "type": "image",
+        "url": "https://zeratgames.com/Steam2.png"
+      },
+      {
+        "type": "image",
+        "url": "https://zeratgames.com/Steam5.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://zeratgames.com/Steam4.png"
       }
     ],
     "reqMin": {
       "os": "Windows 10 / 11",
-      "cpu": "Intel Core i3 / AMD Ryzen 3 ou supérieur",
-      "ram": "16 GB de mémoire",
-      "gpu": "GTX 1050 4 Go / RX 470 ou supérieur"
+      "cpu": "Intel Core i3 / AMD Ryzen 3",
+      "ram": "4 GB",
+      "gpu": "Compatible OpenGL 2.0 / DirectX 9.0c (avec 512 Mo de VRAM)",
+      "storage": "10 Go"
     },
     "reqRec": {
       "os": "Windows 10 / 11",
       "cpu": "Intel Core i5 / AMD Ryzen 5 or better",
-      "ram": "16 GB de mémoire",
-      "gpu": "GTX 1070 / RX 580 or Better"
+      "ram": "8 GB",
+      "gpu": "1 Go de VRAM compatible DirectX 10",
+      "storage": "20GB"
     },
     "carousel": true,
     "steamAppId": 4255780,
