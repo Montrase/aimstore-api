@@ -1575,8 +1575,8 @@
     "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/ar5i8k.jpg",
     "thumb": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ar5i8k.jpg",
     "poster": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1vi7.jpg",
-    "sizeNum": 0,
-    "size": "",
+    "sizeNum": 10,
+    "size": "10 GB",
     "publisher": "Mojang Studios",
     "pegi": 12,
     "tags": [
@@ -1618,8 +1618,20 @@
         "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc12hqn.jpg"
       }
     ],
-    "reqMin": {},
-    "reqRec": {},
+    "reqMin": {
+      "os": "Windows7(64bit)",
+      "cpu": "Intel Core 2 Duo 2.4 GHz",
+      "ram": "3 Go",
+      "gpu": "Nvidia GTS 450+ avec 1024 Mo de VRAM (hors versions GT) / Intel HD Graphics 4000+",
+      "storage": "10 Go"
+    },
+    "reqRec": {
+      "os": "Windows 10 ou Windows 11 (64 bits)",
+      "cpu": "Intel Core i3 (4e génération ou plus récent, comme un i3-4150) ou AMD Ryzen 3 / FX-6300.",
+      "ram": "8 Go",
+      "gpu": "NVIDIA GeForce GTX 750 Ti ou AMD Radeon R7 260X avec au moins 2 Go de VRAM.",
+      "storage": "10Go SSD"
+    },
     "carousel": true,
     "logo": "https://cdn2.steamgriddb.com/logo/195d01f104437ebe2661a317ca2e231c.png",
     "addedAt": "2026-11-12T19:50:19.639Z"
