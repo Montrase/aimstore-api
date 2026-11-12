@@ -466,75 +466,6 @@
     "sourceVersion": 2
   },
   {
-    "id": 8,
-    "title": "Grand Theft Auto: San Andreas",
-    "category": "Course",
-    "image": "https://cdn2.steamgriddb.com/grid/90b8375d64d41c337c0cd41bb1700264.png",
-    "banner": "https://cdn2.steamgriddb.com/hero/6b5bf4d4122957763ce3b07201e4003e.png",
-    "thumb": "https://cdn2.steamgriddb.com/grid/90b8375d64d41c337c0cd41bb1700264.png",
-    "sizeNum": 4,
-    "size": "4GB",
-    "publisher": "Rockstar Games",
-    "pegi": 18,
-    "tags": [
-      "shooter",
-      "racing",
-      "adventure"
-    ],
-    "description": "Returning after his mother's murder to the semi-fictional city of Los Santos (based on Los Angeles), Carl Johnson, a former gang banger, must take back the streets for his family and friends by gaining respect and once again gaining control over the streets. However, a story filled with crime, lies and corruption will lead him to trudge the entire state of San Andreas (based on California and Nevada) to rebuild his life.",
-    "media": [
-      {
-        "type": "image",
-        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/eswubyh9h3uereuyumjq.jpg"
-      },
-      {
-        "type": "image",
-        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/hircn6ewsgu70ynlzis5.jpg"
-      },
-      {
-        "type": "image",
-        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scgoqj.jpg"
-      },
-      {
-        "type": "image",
-        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/dbbtmdz0q1536npbpr5o.jpg"
-      },
-      {
-        "type": "image",
-        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scgoqf.jpg"
-      },
-      {
-        "type": "image",
-        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scgoqh.jpg"
-      },
-      {
-        "type": "image",
-        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scgoqk.jpg"
-      },
-      {
-        "type": "image",
-        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/e11zpyhhjc9qdqgrx7v0.jpg"
-      }
-    ],
-    "reqMin": {
-      "os": "Windows 2000 ou Windows XP",
-      "cpu": "Intel Pentium III ou AMD Athlon à 1 GHz",
-      "ram": "256 Mb",
-      "gpu": "64 Mo  DirectX 9 Nvidia GeForce 3 ",
-      "storage": "3.6 GB"
-    },
-    "reqRec": {
-      "os": "Windows 10 (64 bits)",
-      "cpu": "Intel Pentium 4 ou AMD Athlon XP",
-      "ram": " 384 Mb",
-      "gpu": "128 Mb Nvidia GeForce 6",
-      "storage": "4.7GB"
-    },
-    "logo": "https://cdn2.steamgriddb.com/logo/88a199611ac2b85bd3f76e8ee7e55650.png",
-    "poster": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2lb9.jpg",
-    "carousel": false
-  },
-  {
     "id": 10,
     "title": "Grand Theft Auto V (Legacy)",
     "category": "Course",
@@ -1474,8 +1405,7 @@
     },
     "reqRec": {
       "cpu": "Intel Core i5-10600K 4.1 GHz",
-      "gpu": "Nvidia GeForce RTX 3060",
-      "storage": "65 GB (SSD)"
+      "gpu": "Nvidia GeForce RTX 3060"
     },
     "carousel": true,
     "logo": "https://cdn2.steamgriddb.com/logo/c3a5706e6524c0a5454747000dea498d.png",
