@@ -232,7 +232,7 @@
       "storage": "100 GB SSD"
     },
     "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4080220/81210d536b70c14e4cf9725f3f03d82bf64e5e25/library_capsule.jpg?t=1793610006",
-    "carousel": true,
+    "carousel": false,
     "featured": true
   },
   {
@@ -1410,5 +1410,75 @@
     "carousel": true,
     "logo": "https://cdn2.steamgriddb.com/logo/c3a5706e6524c0a5454747000dea498d.png",
     "addedAt": "2026-11-11T13:05:15.800Z"
+  },
+  {
+    "id": 27,
+    "title": "Grand Theft Auto: San Andreas",
+    "category": "Course",
+    "sourceVersion": 1,
+    "image": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/arqzf.jpg",
+    "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/arqzf.jpg",
+    "thumb": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/arqzf.jpg",
+    "poster": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2lb9.jpg",
+    "sizeNum": 4,
+    "size": "3.6 GB",
+    "publisher": "Take-Two Interactive",
+    "pegi": 18,
+    "tags": [
+      "shooter",
+      "racing",
+      "adventure"
+    ],
+    "description": "Returning after his mother's murder to the semi-fictional city of Los Santos (based on Los Angeles), Carl Johnson, a former gang banger, must take back the streets for his family and friends by gaining respect and once again gaining control over the streets. However, a story filled with crime, lies and corruption will lead him to trudge the entire state of San Andreas (based on California and Nevada) to rebuild his life.",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/eswubyh9h3uereuyumjq.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/hircn6ewsgu70ynlzis5.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scgoqj.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/dbbtmdz0q1536npbpr5o.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scgoqf.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scgoqh.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scgoqk.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/e11zpyhhjc9qdqgrx7v0.jpg"
+      }
+    ],
+    "reqMin": {
+      "os": "2000, XP",
+      "cpu": "Intel Pentium III 1.0 GHz",
+      "ram": "256 MB",
+      "gpu": "Nvidia GeForce 3",
+      "storage": "3.6 GB"
+    },
+    "reqRec": {
+      "cpu": "Intel Pentium 4",
+      "ram": "384 MB",
+      "gpu": "Nvidia GeForce 6",
+      "storage": "4.7 GB"
+    },
+    "carousel": true,
+    "logo": "https://cdn2.steamgriddb.com/logo/88a199611ac2b85bd3f76e8ee7e55650.png",
+    "addedAt": "2026-11-12T15:21:43.646Z"
   }
 ]
