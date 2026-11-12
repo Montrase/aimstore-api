@@ -1407,7 +1407,7 @@
       "cpu": "Intel Core i5-10600K 4.1 GHz",
       "gpu": "Nvidia GeForce RTX 3060"
     },
-    "carousel": true,
+    "carousel": false,
     "logo": "https://cdn2.steamgriddb.com/logo/c3a5706e6524c0a5454747000dea498d.png",
     "addedAt": "2026-11-11T13:05:15.800Z"
   },
@@ -1637,5 +1637,80 @@
     "carousel": true,
     "logo": "https://cdn2.steamgriddb.com/logo/195d01f104437ebe2661a317ca2e231c.png",
     "addedAt": "2026-11-12T19:50:19.639Z"
+  },
+  {
+    "id": 32,
+    "title": "No mercy",
+    "category": "Aventure",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4255780/e25ddc77985dee63f57de3de242d81fc008cf487/capsule_616x353.jpg?t=1793780898",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4255780/f9b439ce7f0bcae1d49f029c280cbd575d9d20d4/library_hero.jpg?t=1793780898",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4255780/e25ddc77985dee63f57de3de242d81fc008cf487/capsule_616x353.jpg?t=1793780898",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4255780/cb2400765e18628c3958ce575f8d4ecf995d546b/library_capsule.jpg?t=1793780898",
+    "sizeNum": 0,
+    "size": "",
+    "publisher": "HARDLINE",
+    "pegi": 0,
+    "tags": [
+      "action",
+      "aventure",
+      "indépendant"
+    ],
+    "description": "Un FPS sombre dans le style Bodycam où un coup d’État raté plonge la ville dans le chaos. Traversez des rues contrôlées par les gangs, découvrez la vérité sur la disparition de votre femme et reprenez ce qu’on vous a volé, balle après balle.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/4255780/1517121537/1e729d72283fcf08ec9e90c74c0c4b9582ac7edf/1783372411/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257372038/d5cbe5d59d7bd2d4be86a7f6d8b361ce8dd87e2e/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4255780/3b9b18e72520e6794ae6e832bd79e65a926ee34c/ss_3b9b18e72520e6794ae6e832bd79e65a926ee34c.1920x1080.jpg?t=1793780898"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4255780/1a42c952a17030d1fc09d12cbed696e02df48762/ss_1a42c952a17030d1fc09d12cbed696e02df48762.1920x1080.jpg?t=1793780898"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4255780/828daf8b47ddf018108a773e7ad9b0a848816cb4/ss_828daf8b47ddf018108a773e7ad9b0a848816cb4.1920x1080.jpg?t=1793780898"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4255780/e852884779d688c2a7e9e39aeab8d3de4f8b7abd/ss_e852884779d688c2a7e9e39aeab8d3de4f8b7abd.1920x1080.jpg?t=1793780898"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4255780/ebe92d778de1424401360b34bdabc3643eda9ae4/ss_ebe92d778de1424401360b34bdabc3643eda9ae4.1920x1080.jpg?t=1793780898"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4255780/0aee1125b55f75bb7a1138004e537d44b78e941d/ss_0aee1125b55f75bb7a1138004e537d44b78e941d.1920x1080.jpg?t=1793780898"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4255780/ff91d70759da5259600cae38bf01ecb7b9709267/ss_ff91d70759da5259600cae38bf01ecb7b9709267.1920x1080.jpg?t=1793780898"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4255780/45d9cde2fee9bb2f6e8f01d7f1f97e8a9a295e5a/ss_45d9cde2fee9bb2f6e8f01d7f1f97e8a9a295e5a.1920x1080.jpg?t=1793780898"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 10 / 11",
+      "cpu": "Intel Core i3 / AMD Ryzen 3 ou supérieur",
+      "ram": "16 GB de mémoire",
+      "gpu": "GTX 1050 4 Go / RX 470 ou supérieur"
+    },
+    "reqRec": {
+      "os": "Windows 10 / 11",
+      "cpu": "Intel Core i5 / AMD Ryzen 5 or better",
+      "ram": "16 GB de mémoire",
+      "gpu": "GTX 1070 / RX 580 or Better"
+    },
+    "carousel": true,
+    "steamAppId": 4255780,
+    "logo": "https://cdn2.steamgriddb.com/logo/64c7b2cc73cc4f326a05eb628227f3ce.png",
+    "addedAt": "2026-11-12T22:40:06.636Z"
   }
 ]
