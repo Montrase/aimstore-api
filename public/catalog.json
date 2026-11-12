@@ -1100,7 +1100,7 @@
       "gpu": "NVIDIA® GeForce® GTX 1080Ti / RTX 3060 or AMD Radeon™ RX 6600XT or Intel® Arc™ A770",
       "storage": "180GB"
     },
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 3595270,
     "logo": "https://cdn2.steamgriddb.com/logo/b454acc6fd77f2c3e5749728c5102201.png"
   },
@@ -1480,5 +1480,90 @@
     "carousel": true,
     "logo": "https://cdn2.steamgriddb.com/logo/88a199611ac2b85bd3f76e8ee7e55650.png",
     "addedAt": "2026-11-12T15:21:43.646Z"
+  },
+  {
+    "id": 28,
+    "title": "Minecraft Dungeons II",
+    "category": "RPG",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1912410/222677a2c4a3b8127d0dfbdccf59d70a4076f72e/capsule_616x353.jpg?t=1791536987",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1912410/3553b027447d4dca173f9759faa45a860ad40941/library_hero.jpg?t=1791536987",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1912410/222677a2c4a3b8127d0dfbdccf59d70a4076f72e/capsule_616x353.jpg?t=1791536987",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1912410/47d3b04112a86b5ddebb28252d4fa8e51671bfea/library_capsule.jpg?t=1791536987",
+    "sizeNum": 0,
+    "size": "",
+    "publisher": "Xbox Game Studios",
+    "pegi": 7,
+    "tags": [
+      "action",
+      "aventure",
+      "rpg"
+    ],
+    "description": "Une nouvelle menace s’abat sur la Surface...",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/1912410/2008242599/958eb37af8b30b43d8134098d26e208d95ff69b4/1787218778/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257403886/96c93505956c6945ef0703aedbb5564e5f08a743/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1912410/d6dde427b695492ec7b36c2bcf1d49c38143a017/ss_d6dde427b695492ec7b36c2bcf1d49c38143a017.1920x1080.jpg?t=1791536987"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1912410/bb794639f04b6f320b1c64f4869596c4871f3547/ss_bb794639f04b6f320b1c64f4869596c4871f3547.1920x1080.jpg?t=1791536987"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/1912410/1636784225/ba11440f2fe3e439e0c7a5435bd98f2fd16e5b94/1790753840/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257440718/bdc8d5cde58ee79507fc5d67758e3c6282ffc337/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1912410/83f867b762d29f7cf6853ac763481dc6f470f281/ss_83f867b762d29f7cf6853ac763481dc6f470f281.1920x1080.jpg?t=1791536987"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1912410/06b50826a23eb7a0aebc5ba3f2d78a798b416b25/ss_06b50826a23eb7a0aebc5ba3f2d78a798b416b25.1920x1080.jpg?t=1791536987"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/1912410/1798710726/6cccac9cda1aab81cb14fb177771dc9c80b65799/1786456703/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257396576/c9bbfea45e9f4868094c8d91e652a5139be666ab/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1912410/600f9219c11138db3cdc3c11841c01ac808c0338/ss_600f9219c11138db3cdc3c11841c01ac808c0338.1920x1080.jpg?t=1791536987"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1912410/ee939c4f8955f583830b9785d676ef9534f5ace9/ss_ee939c4f8955f583830b9785d676ef9534f5ace9.1920x1080.jpg?t=1791536987"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1912410/c06011b4f0de3c3f945f0b59f68e81903c9e130f/ss_c06011b4f0de3c3f945f0b59f68e81903c9e130f.1920x1080.jpg?t=1791536987"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1912410/eb73ea18cb3511d7a97510f077d45dd99d21a950/ss_eb73ea18cb3511d7a97510f077d45dd99d21a950.1920x1080.jpg?t=1791536987"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 10 64‑bit (1703 or newer)",
+      "cpu": "Intel Core i3‑8100, AMD Ryzen 3 2200G or equivalent",
+      "ram": "8 GB de mémoire",
+      "gpu": "NVIDIA GeForce GTX 1050, AMD Radeon RX 560 or equivalent dedicated graphics card with at least 2 GB VRAM"
+    },
+    "reqRec": {
+      "os": "Windows 10 64‑bit (1703 or newer)",
+      "cpu": "Intel Core i5‑8400, AMD Ryzen 5 2600 or equivalent or higher",
+      "ram": "16 GB de mémoire",
+      "gpu": "NVIDIA GeForce GTX 1060, AMD Radeon RX 580, with at least 6 GB VRAM or equivalent"
+    },
+    "carousel": true,
+    "steamAppId": 1912410,
+    "logo": "https://cdn2.steamgriddb.com/logo/a23b9c484c683e2092970a88b58b2e7d.png",
+    "addedAt": "2026-11-12T18:42:25.114Z"
   }
 ]
