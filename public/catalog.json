@@ -1343,7 +1343,7 @@
       "gpu": "Nvidia® GeForce RTX™ 3060Ti 8GB/AMD Radeon™ RX 6700 XT 12GB/Intel® Arc™ B580 12GB (REBAR ON)",
       "storage": "115 GB d'espace disque disponible"
     },
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 3159330,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3159330/logo.png"
   },
@@ -1565,5 +1565,63 @@
     "steamAppId": 1912410,
     "logo": "https://cdn2.steamgriddb.com/logo/a23b9c484c683e2092970a88b58b2e7d.png",
     "addedAt": "2026-11-12T18:42:25.114Z"
+  },
+  {
+    "id": 31,
+    "title": "Minecraft: Story Mode",
+    "category": "Aventure",
+    "sourceVersion": 1,
+    "image": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ar5i8k.jpg",
+    "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/ar5i8k.jpg",
+    "thumb": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ar5i8k.jpg",
+    "poster": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co1vi7.jpg",
+    "sizeNum": 0,
+    "size": "",
+    "publisher": "Mojang Studios",
+    "pegi": 12,
+    "tags": [
+      "point-and-click",
+      "adventure"
+    ],
+    "description": "Minecraft: Story Mode is a five-part adventure series based on the sandbox building and exploration game Minecraft. Typical for Telltale games, it is a cinematic adventure where the story is driven through the player's choices. Decisions are carried over and influence characters and events. The game uses the original title's block design and introduces a story for the game world as there was none for the original title. At the start of the game the player can choose between six characters, three male and three female, with different appearances.",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sy6hnzkl8or91hs0o5x4.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc12hqq.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc12hqi.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc12hqj.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc12hqk.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc12hql.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc12hqm.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc12hqn.jpg"
+      }
+    ],
+    "reqMin": {},
+    "reqRec": {},
+    "carousel": true,
+    "logo": "https://cdn2.steamgriddb.com/logo/195d01f104437ebe2661a317ca2e231c.png",
+    "addedAt": "2026-11-12T19:50:19.639Z"
   }
 ]
