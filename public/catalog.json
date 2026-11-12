@@ -1643,9 +1643,9 @@
     "title": "No mercy",
     "category": "Aventure",
     "sourceVersion": 1,
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4255780/e25ddc77985dee63f57de3de242d81fc008cf487/capsule_616x353.jpg?t=1793780898",
-    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4255780/f9b439ce7f0bcae1d49f029c280cbd575d9d20d4/library_hero.jpg?t=1793780898",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4255780/e25ddc77985dee63f57de3de242d81fc008cf487/capsule_616x353.jpg?t=1793780898",
+    "image": "https://cdn2.steamgriddb.com/grid/7a50abe33a5b1ede31f6df5343d6bcc7.jpg",
+    "banner": "https://cdn2.steamgriddb.com/hero/dd694327fc4abb8c7b944580a53a5fda.jpg",
+    "thumb": "https://cdn2.steamgriddb.com/grid/7a50abe33a5b1ede31f6df5343d6bcc7.jpg",
     "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4255780/cb2400765e18628c3958ce575f8d4ecf995d546b/library_capsule.jpg?t=1793780898",
     "sizeNum": 0,
     "size": "",
@@ -1662,38 +1662,6 @@
         "type": "video",
         "url": "https://video.akamai.steamstatic.com/store_trailers/4255780/1517121537/1e729d72283fcf08ec9e90c74c0c4b9582ac7edf/1783372411/microtrailer.mp4",
         "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257372038/d5cbe5d59d7bd2d4be86a7f6d8b361ce8dd87e2e/movie_full.jpg"
-      },
-      {
-        "type": "image",
-        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4255780/3b9b18e72520e6794ae6e832bd79e65a926ee34c/ss_3b9b18e72520e6794ae6e832bd79e65a926ee34c.1920x1080.jpg?t=1793780898"
-      },
-      {
-        "type": "image",
-        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4255780/1a42c952a17030d1fc09d12cbed696e02df48762/ss_1a42c952a17030d1fc09d12cbed696e02df48762.1920x1080.jpg?t=1793780898"
-      },
-      {
-        "type": "image",
-        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4255780/828daf8b47ddf018108a773e7ad9b0a848816cb4/ss_828daf8b47ddf018108a773e7ad9b0a848816cb4.1920x1080.jpg?t=1793780898"
-      },
-      {
-        "type": "image",
-        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4255780/e852884779d688c2a7e9e39aeab8d3de4f8b7abd/ss_e852884779d688c2a7e9e39aeab8d3de4f8b7abd.1920x1080.jpg?t=1793780898"
-      },
-      {
-        "type": "image",
-        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4255780/ebe92d778de1424401360b34bdabc3643eda9ae4/ss_ebe92d778de1424401360b34bdabc3643eda9ae4.1920x1080.jpg?t=1793780898"
-      },
-      {
-        "type": "image",
-        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4255780/0aee1125b55f75bb7a1138004e537d44b78e941d/ss_0aee1125b55f75bb7a1138004e537d44b78e941d.1920x1080.jpg?t=1793780898"
-      },
-      {
-        "type": "image",
-        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4255780/ff91d70759da5259600cae38bf01ecb7b9709267/ss_ff91d70759da5259600cae38bf01ecb7b9709267.1920x1080.jpg?t=1793780898"
-      },
-      {
-        "type": "image",
-        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4255780/45d9cde2fee9bb2f6e8f01d7f1f97e8a9a295e5a/ss_45d9cde2fee9bb2f6e8f01d7f1f97e8a9a295e5a.1920x1080.jpg?t=1793780898"
       }
     ],
     "reqMin": {
