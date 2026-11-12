@@ -1490,8 +1490,8 @@
     "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1912410/3553b027447d4dca173f9759faa45a860ad40941/library_hero.jpg?t=1791536987",
     "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1912410/222677a2c4a3b8127d0dfbdccf59d70a4076f72e/capsule_616x353.jpg?t=1791536987",
     "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1912410/47d3b04112a86b5ddebb28252d4fa8e51671bfea/library_capsule.jpg?t=1791536987",
-    "sizeNum": 0,
-    "size": "",
+    "sizeNum": 9,
+    "size": "9 GB",
     "publisher": "Xbox Game Studios",
     "pegi": 7,
     "tags": [
@@ -1553,13 +1553,15 @@
       "os": "Windows 10 64‑bit (1703 or newer)",
       "cpu": "Intel Core i3‑8100, AMD Ryzen 3 2200G or equivalent",
       "ram": "8 GB de mémoire",
-      "gpu": "NVIDIA GeForce GTX 1050, AMD Radeon RX 560 or equivalent dedicated graphics card with at least 2 GB VRAM"
+      "gpu": "NVIDIA GeForce GTX 1050, AMD Radeon RX 560 or equivalent dedicated graphics card with at least 2 GB VRAM",
+      "storage": "10Gb"
     },
     "reqRec": {
       "os": "Windows 10 64‑bit (1703 or newer)",
       "cpu": "Intel Core i5‑8400, AMD Ryzen 5 2600 or equivalent or higher",
       "ram": "16 GB de mémoire",
-      "gpu": "NVIDIA GeForce GTX 1060, AMD Radeon RX 580, with at least 6 GB VRAM or equivalent"
+      "gpu": "NVIDIA GeForce GTX 1060, AMD Radeon RX 580, with at least 6 GB VRAM or equivalent",
+      "storage": "15Gb"
     },
     "carousel": true,
     "steamAppId": 1912410,
