@@ -8,12 +8,23 @@
       "en": "New game added this week! Join the Discord to learn more."
     },
     "link": {
-      "label": { "fr": "Discord", "en": "Discord" },
+      "label": {
+        "fr": "Discord",
+        "en": "Discord"
+      },
       "url": "https://discord.gg/X6u4tpQRS"
     }
   },
   "links": {
     "discord": "https://discord.gg/X6u4tpQRS",
     "help": "https://discord.com/channels/1568483546035912837/1568728234395304008"
+  },
+  "update": {
+    "required": false,
+    "minVersion": "1.0.2",
+    "message": {
+      "fr": "Cette version corrige un problème important : la mise à jour est obligatoire.",
+      "en": "This version fixes an important issue: the update is required."
+    }
   }
 }
