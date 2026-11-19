@@ -1,11 +1,11 @@
 {
   "announcement": {
-    "enabled": false,
+    "enabled": true,
     "id": "annonce-1",
     "type": "info",
     "text": {
-      "fr": "Nouveau jeu ajouté cette semaine ! Rejoins le Discord pour en savoir plus.",
-      "en": "New game added this week! Join the Discord to learn more."
+      "fr": "Rejoins le Discord pour en savoir plus sur Aimstore.",
+      "en": "Join the Discord to learn more about Aimstore."
     },
     "link": {
       "label": {
