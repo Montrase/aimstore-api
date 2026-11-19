@@ -1,0 +1,19 @@
+{
+  "announcement": {
+    "enabled": false,
+    "id": "annonce-1",
+    "type": "info",
+    "text": {
+      "fr": "Nouveau jeu ajouté cette semaine ! Rejoins le Discord pour en savoir plus.",
+      "en": "New game added this week! Join the Discord to learn more."
+    },
+    "link": {
+      "label": { "fr": "Discord", "en": "Discord" },
+      "url": "https://discord.gg/X6u4tpQRS"
+    }
+  },
+  "links": {
+    "discord": "https://discord.gg/X6u4tpQRS",
+    "help": "https://discord.com/channels/1568483546035912837/1568728234395304008"
+  }
+}
