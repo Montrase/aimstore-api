@@ -18,6 +18,7 @@ const SESSION_TTL_SEC = 2 * 60 * 60;       // une session de checkpoints dure 2 
 
 const SID_RE = /^[a-f0-9]{48}$/;
 const KEY_RE = /^AIM-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}$/;
+const DEVICE_RE = /^[a-f0-9]{64}$/;   // empreinte SHA-256 de l'appareil, envoyée par le launcher
 const WORKINK_TOKEN_RE = /^[A-Za-z0-9-]{20,64}$/;
 const LINKVERTISE_HASH_RE = /^[A-Za-z0-9]{32,128}$/;
 
@@ -33,6 +34,19 @@ function safeEqual(a, b) {
   const ha = crypto.createHash('sha256').update(String(a)).digest();
   const hb = crypto.createHash('sha256').update(String(b)).digest();
   return crypto.timingSafeEqual(ha, hb);
+}
+
+/* ------------------- Clé liée à un appareil (anti-partage) ------------------- */
+// La première fois qu'une clé est utilisée, elle est « verrouillée » sur l'appareil qui l'a utilisée.
+// Un autre appareil qui essaie la même clé est refusé.
+// Retourne : 'ok' (même appareil ou première utilisation) ou 'other' (déjà utilisée ailleurs).
+async function bindKeyToDevice(userKey, device, remainingMs) {
+  const k = `bind:${userKey}`;
+  const ttl = Math.max(1, Math.ceil(remainingMs / 1000));
+  const created = await redis.set(k, device, { nx: true, ex: ttl });
+  if (created) return 'ok';
+  const current = await redis.get(k);
+  return String(current) === device ? 'ok' : 'other';
 }
 
 /* ------------------------- Jetons de session signés ------------------------- */
@@ -338,6 +352,8 @@ async function handleVerify(req, res) {
 
   const input = req.method === 'POST' ? (req.body && req.body.key) : req.query.key;
   const rawKey = typeof input === 'string' ? input.trim() : '';
+  const deviceInput = req.method === 'POST' ? (req.body && req.body.device) : req.query.device;
+  const device = typeof deviceInput === 'string' ? deviceInput.trim().toLowerCase() : '';
   if (!rawKey || rawKey.length > 128) {
     return res.json({ valid: false, reason: 'Clé invalide ou inexistante' });
   }
@@ -370,13 +386,21 @@ async function handleVerify(req, res) {
       return res.json({ valid: false, reason: 'Clé expirée (24h dépassées)' });
     }
 
+    if (!DEVICE_RE.test(device)) {
+      return res.json({ valid: false, code: 'UPDATE_REQUIRED', reason: 'Mets à jour AimStore pour utiliser une clé.' });
+    }
+    const bound = await bindKeyToDevice(userKey, device, remainingMs);
+    if (bound !== 'ok') {
+      return res.json({ valid: false, code: 'DEVICE_MISMATCH', reason: 'Cette clé est déjà utilisée sur un autre appareil.' });
+    }
+
     return res.json({
       valid: true,
       isAdmin: false,
       message: 'Accès autorisé',
       remainingHours: Math.ceil(remainingMs / 3600000),
       expiresIn: remainingMs,
-      token: signToken({ adm: false, key: userKey, exp: Date.now() + remainingMs })
+      token: signToken({ adm: false, key: userKey, dev: device, exp: Date.now() + remainingMs })
     });
   } catch (e) {
     console.error('[verify]', e);
@@ -415,9 +439,15 @@ app.post('/api/check', async (req, res) => {
   if (typeof payload.key !== 'string' || !KEY_RE.test(payload.key)) {
     return res.json({ valid: false, reason: 'Session invalide' });
   }
+  const device = req.body && typeof req.body.device === 'string' ? req.body.device.trim().toLowerCase() : '';
+  if (!DEVICE_RE.test(payload.dev || '') || payload.dev !== device) {
+    return res.json({ valid: false, reason: 'Session invalide' });
+  }
   try {
     const rec = await redis.get(`key:${payload.key}`);
     if (!rec) return res.json({ valid: false, reason: 'Clé expirée ou supprimée' });
+    const stillBound = await bindKeyToDevice(payload.key, device, rec.createdAt + KEY_DURATION_MS - now);
+    if (stillBound !== 'ok') return res.json({ valid: false, reason: 'Cette clé est utilisée sur un autre appareil.' });
     const remainingMs = rec.createdAt + KEY_DURATION_MS - now;
     if (remainingMs <= 0) return res.json({ valid: false, reason: 'Clé expirée (24h dépassées)' });
     return res.json({ valid: true, isAdmin: false, expiresIn: Math.min(remainingMs, payload.exp - now) });
@@ -428,9 +458,26 @@ app.post('/api/check', async (req, res) => {
 });
 
 // 3c. Lien de téléchargement d'un jeu (appelé par le launcher).
-// Il faut une session valide (jeton signé + clé encore active). Sans ça : aucun lien.
-// Les liens sont dans Redis (entrée « game:sources » = { "idDuJeu": "lien" }), jamais dans le code.
-async function validateSessionToken(token) {
+// Le fichier des liens (gist) est lu ICI, côté serveur : son adresse est dans la variable Vercel SOURCES_URL,
+// jamais dans le launcher. Le launcher ne reçoit que le lien du jeu demandé, et seulement avec une session valide.
+let sourcesCache = { at: 0, data: null };
+
+async function loadSources() {
+  if (sourcesCache.data && Date.now() - sourcesCache.at < 60 * 1000) return sourcesCache.data;
+  const url = (process.env.SOURCES_URL || '').trim();
+  if (!url) throw new Error('SOURCES_URL non défini dans Vercel');
+  const r = await fetchWithTimeout(url + (url.includes('?') ? '&' : '?') + 't=' + Math.floor(Date.now() / 60000), {
+    headers: { 'Cache-Control': 'no-cache' }
+  }, 8000);
+  if (!r.ok) throw new Error('Le fichier des liens a répondu HTTP ' + r.status);
+  const data = await r.json();
+  if (!data || typeof data !== 'object' || Array.isArray(data)) throw new Error('Fichier des liens illisible');
+  sourcesCache = { at: Date.now(), data };
+  return data;
+}
+
+// Session valide = jeton authentique + clé encore active + même appareil que celui qui a ouvert la session.
+async function validateSession(token, device) {
   const payload = readToken(token);
   if (!payload || typeof payload.exp !== 'number') return false;
   const now = Date.now();
@@ -441,9 +488,13 @@ async function validateSessionToken(token) {
   }
 
   if (typeof payload.key !== 'string' || !KEY_RE.test(payload.key)) return false;
-  const rec = await redis.get(`key:${payload.key}`); // si Redis est en panne, l'erreur remonte (réponse 500)
+  if (!DEVICE_RE.test(payload.dev || '') || payload.dev !== device) return false;
+
+  const rec = await redis.get(`key:${payload.key}`);
   if (!rec) return false;
-  return rec.createdAt + KEY_DURATION_MS - now > 0;
+  const remainingMs = rec.createdAt + KEY_DURATION_MS - now;
+  if (remainingMs <= 0) return false;
+  return (await bindKeyToDevice(payload.key, device, remainingMs)) === 'ok';
 }
 
 app.post('/api/get-download', async (req, res) => {
@@ -456,6 +507,7 @@ app.post('/api/get-download', async (req, res) => {
 
   const body = req.body || {};
   const token = typeof body.token === 'string' ? body.token : '';
+  const device = typeof body.device === 'string' ? body.device.trim().toLowerCase() : '';
   const gameId = (typeof body.gameId === 'string' || typeof body.gameId === 'number') ? String(body.gameId).trim() : '';
 
   if (!token || !gameId || gameId.length > 50 || !/^[A-Za-z0-9_-]+$/.test(gameId)) {
@@ -463,18 +515,17 @@ app.post('/api/get-download', async (req, res) => {
   }
 
   try {
-    if (!(await validateSessionToken(token))) {
+    if (!(await validateSession(token, device))) {
       return res.status(403).json({ error: 'Session invalide ou expirée' });
     }
 
-    const sources = await redis.get('game:sources');
-    if (!sources || typeof sources !== 'object' ||
-        !Object.prototype.hasOwnProperty.call(sources, gameId) ||
-        typeof sources[gameId] !== 'string' || !sources[gameId]) {
+    const sources = await loadSources();
+    const link = Object.prototype.hasOwnProperty.call(sources, gameId) ? sources[gameId] : null;
+    if (typeof link !== 'string' || !link) {
       return res.status(404).json({ error: 'Lien non disponible pour ce jeu' });
     }
 
-    return res.json({ magnetURI: sources[gameId] });
+    return res.json({ magnetURI: link });
   } catch (e) {
     console.error('[get-download]', e);
     return res.status(500).json({ error: 'Erreur interne du serveur' });
