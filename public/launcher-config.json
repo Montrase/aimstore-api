@@ -20,7 +20,7 @@
     "help": "https://discord.com/channels/1568483546035912837/1568728234395304008"
   },
   "update": {
-    "required": false,
+    "required": True,
     "minVersion": "1.0.2",
     "message": {
       "fr": "Cette version corrige un problème important : la mise à jour est obligatoire.",
