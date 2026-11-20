@@ -5851,7 +5851,7 @@
       "ram": "4 GB de mémoire",
       "gpu": "Nvidia GeForce 750 Ti / AMD Radeon HD 7850 / Intel Arc A380"
     },
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 454650,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/454650/logo.png",
     "addedAt": "2026-11-20T12:29:22.302Z",
@@ -6102,5 +6102,79 @@
     "steamAppId": 323470,
     "logo": "https://cdn2.steamgriddb.com/logo/18fe8ebf5d52c8992581f439ba783aa3.png",
     "addedAt": "2026-11-20T13:20:16.977Z"
+  },
+  {
+    "id": 93,
+    "title": "Watch Dogs 2",
+    "category": "Aventure",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/447040/capsule_616x353_french.jpg?t=1751986887",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/447040/library_hero.jpg?t=1751986887",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/447040/capsule_616x353_french.jpg?t=1751986887",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/447040/library_600x900.jpg?t=1751986887",
+    "sizeNum": 27,
+    "size": "27 GB",
+    "publisher": "Ubisoft",
+    "pegi": 18,
+    "tags": [
+      "action",
+      "aventure"
+    ],
+    "description": "Bienvenue à San Francisco ! Incarnez Marcus, un jeune hacker surdoué, et rejoignez le groupe de pirates informatiques le plus actif au monde, DedSec. Votre objectif : réaliser le plus gros hack de l’histoire et neutraliser le ctOS 2.0 à tout jamais.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/447040/81233/84ae25c8c615ca8e75150290975e247f0cd829eb/1750531970/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256675152/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/447040/ss_8071f719fea2d45baa805449ec550395db700118.1920x1080.jpg?t=1751986887"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/447040/ss_b93d600b2a0372d6b5a5d191b46654ba489819d1.1920x1080.jpg?t=1751986887"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/447040/80332/9652076aab691fa245a0c2bc0f4169c9008bbd33/1750531875/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256674619/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/447040/ss_6eb9108a5ac2f33942d15ebf0801f0e69373d4f8.1920x1080.jpg?t=1751986887"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/447040/ss_3466ea1a9e73594961b9f73fd560f379f7f49870.1920x1080.jpg?t=1751986887"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/447040/74662/96e99f9fc86f331d2180116660b594a89dfa36fc/1750533457/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256671674/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/447040/ss_a3787b7673e663ef78a59397eaf6b50a61ef70ff.1920x1080.jpg?t=1751986887"
+      }
+    ],
+    "reqMin": {
+      "os": "Originally released for Windows 7, the game can be played on Windows 10 and Windows 11 OS",
+      "cpu": "Intel Core i5 2400s @ 2.5 GHz, AMD FX 6120 @ 3.5 GHz or better",
+      "ram": "6 GB de mémoire",
+      "gpu": "NVIDIA GeForce GTX 660 with 2 GB VRAM or AMD Radeon HD 7870, with 2 GB VRAM or better - See supported List*",
+      "storage": "27 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Originally released for Windows 7, the game can be played on Windows 10 and Windows 11 OS",
+      "cpu": "Intel Core i5 3470 @ 3.2 GHz, AMD FX 8120 @ 3.9 GHz",
+      "ram": "8 GB de mémoire",
+      "gpu": "NVIDIA GeForce GTX 780 | AMD Radeon R9 290, with 3GB VRAM or better - See supported List*",
+      "storage": "27 GB d'espace disque disponible"
+    },
+    "carousel": true,
+    "steamAppId": 447040,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/447040/logo.png",
+    "addedAt": "2026-11-20T20:14:39.086Z"
   }
 ]
