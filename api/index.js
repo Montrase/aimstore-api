@@ -450,6 +450,7 @@ app.post('/api/check', async (req, res) => {
     if (stillBound !== 'ok') return res.json({ valid: false, reason: 'Cette clé est utilisée sur un autre appareil.' });
     const remainingMs = rec.createdAt + KEY_DURATION_MS - now;
     if (remainingMs <= 0) return res.json({ valid: false, reason: 'Clé expirée (24h dépassées)' });
+    await markPresence(device, 'in');
     return res.json({ valid: true, isAdmin: false, expiresIn: Math.min(remainingMs, payload.exp - now) });
   } catch (e) {
     console.error('[check]', e);
@@ -560,6 +561,55 @@ app.get('/api/debug-linkvertise', async (req, res) => {
     return res.json({ tokenDefini: true, longueurToken: token.length, httpStatus: r.status, reponseLinkvertise: text.slice(0, 120) });
   } catch (e) {
     return res.json({ tokenDefini: true, longueurToken: token.length, erreur: String(e.message || e) });
+  }
+});
+
+/* ------------------------- Présence en ligne (admin) ------------------------- */
+// Deux listes triées dans Redis (score = dernière activité) :
+//   pres:in  = connectés (session ouverte) : mis à jour par /api/check (toutes les 5 min)
+//   pres:out = en ligne mais déconnectés (écran de clé) : mis à jour par /api/presence (toutes les 2 min)
+// Un appareil n'est jamais dans les deux listes à la fois. Les sessions admin ne sont pas comptées.
+const PRES_IN_SEC = 7 * 60;
+const PRES_OUT_SEC = 3 * 60;
+
+async function markPresence(device, state) {
+  try {
+    const now = Date.now();
+    const [add, drop] = state === 'in' ? ['pres:in', 'pres:out'] : ['pres:out', 'pres:in'];
+    await Promise.all([redis.zadd(add, { score: now, member: device }), redis.zrem(drop, device)]);
+  } catch (e) { /* la présence ne doit jamais bloquer une vraie requête */ }
+}
+
+// Ping de l'écran de connexion du launcher (sans jeton). Il ne peut dire QUE « déconnecté » :
+// impossible de se faire passer pour un utilisateur connecté.
+app.post('/api/presence', async (req, res) => {
+  if (!(await rateLimit('presence', getClientIp(req), 20, 60))) return res.status(429).json({ ok: false });
+  const d = req.body && req.body.device;
+  const device = typeof d === 'string' ? d.trim().toLowerCase() : '';
+  if (!DEVICE_RE.test(device)) return res.json({ ok: false });
+  await markPresence(device, 'out');
+  return res.json({ ok: true });
+});
+
+// Compteurs, réservés à l'admin : en-tête « Authorization: Bearer <STATS_KEY> » (variable Vercel).
+app.get('/api/admin/online', async (req, res) => {
+  res.set('Cache-Control', 'no-store');
+  if (!(await rateLimit('stats', getClientIp(req), 30, 60))) return res.status(429).json({ ok: false });
+  const secret = (process.env.STATS_KEY || '').trim();
+  const auth = String(req.headers.authorization || '');
+  const given = auth.startsWith('Bearer ') ? auth.slice(7).trim() : '';
+  if (!secret || !given || !safeEqual(given, secret)) return res.status(401).json({ ok: false });
+  try {
+    const now = Date.now();
+    await Promise.all([
+      redis.zremrangebyscore('pres:in', 0, now - PRES_IN_SEC * 1000),
+      redis.zremrangebyscore('pres:out', 0, now - PRES_OUT_SEC * 1000)
+    ]);
+    const [connected, loggedOut] = await Promise.all([redis.zcard('pres:in'), redis.zcard('pres:out')]);
+    return res.json({ ok: true, connected, loggedOut, total: connected + loggedOut, at: now });
+  } catch (e) {
+    console.error('[admin/online]', e);
+    return res.status(503).json({ ok: false });
   }
 });
 
