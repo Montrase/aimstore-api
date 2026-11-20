@@ -232,8 +232,7 @@
       "storage": "100 GB SSD"
     },
     "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4080220/81210d536b70c14e4cf9725f3f03d82bf64e5e25/library_capsule.jpg?t=1793610006",
-    "carousel": false,
-    "featured": true
+    "carousel": false
   },
   {
     "id": 4,
@@ -4732,7 +4731,8 @@
     "carousel": false,
     "steamAppId": 2840770,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2840770/logo.png",
-    "addedAt": "2026-11-20T12:00:07.396Z"
+    "addedAt": "2026-11-20T12:00:07.396Z",
+    "featured": true
   },
   {
     "id": 74,
@@ -4818,7 +4818,8 @@
     "carousel": false,
     "steamAppId": 1659040,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1659040/logo.png",
-    "addedAt": "2026-11-20T12:03:03.348Z"
+    "addedAt": "2026-11-20T12:03:03.348Z",
+    "featured": true
   },
   {
     "id": 75,
@@ -4904,7 +4905,8 @@
     "carousel": false,
     "steamAppId": 3357650,
     "logo": "https://cdn2.steamgriddb.com/logo/11552053056a3e821ab989380e6c1901.png",
-    "addedAt": "2026-11-20T12:05:18.473Z"
+    "addedAt": "2026-11-20T12:05:18.473Z",
+    "featured": true
   },
   {
     "id": 76,
@@ -5045,7 +5047,8 @@
     "carousel": false,
     "steamAppId": 1817190,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1817190/logo.png",
-    "addedAt": "2026-11-20T12:09:25.521Z"
+    "addedAt": "2026-11-20T12:09:25.521Z",
+    "featured": true
   },
   {
     "id": 78,
@@ -5196,7 +5199,8 @@
     "carousel": false,
     "steamAppId": 3002570,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3002570/logo.png",
-    "addedAt": "2026-11-20T12:12:47.126Z"
+    "addedAt": "2026-11-20T12:12:47.126Z",
+    "featured": true
   },
   {
     "id": 80,
@@ -5326,7 +5330,8 @@
     },
     "carousel": false,
     "logo": "https://cdn2.steamgriddb.com/logo/cd14ec673077aaf075159ad0e473d899.png",
-    "addedAt": "2026-11-20T12:14:31.001Z"
+    "addedAt": "2026-11-20T12:14:31.001Z",
+    "featured": true
   },
   {
     "id": 82,
@@ -5412,7 +5417,8 @@
     "carousel": false,
     "steamAppId": 1259420,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1259420/logo.png",
-    "addedAt": "2026-11-20T12:18:06.611Z"
+    "addedAt": "2026-11-20T12:18:06.611Z",
+    "featured": true
   },
   {
     "id": 83,
@@ -5851,7 +5857,8 @@
     "carousel": true,
     "steamAppId": 454650,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/454650/logo.png",
-    "addedAt": "2026-11-20T12:29:22.302Z"
+    "addedAt": "2026-11-20T12:29:22.302Z",
+    "featured": true
   },
   {
     "id": 89,
