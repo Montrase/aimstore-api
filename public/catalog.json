@@ -1827,9 +1827,9 @@
     ],
     "reqMin": {
       "os": "Originally released for Windows 7, the game can be played on Windows 10 and Windows 11 OS",
-      "cpu": "Intel Core i5 2400s @ 2.5 GHz, AMD FX 6120 @ 3.5 GHz or better",
+      "cpu": "Intel Core 2 Quad Q8400 2.66Ghz or AMD Phenom II X4 940 3.0Ghz",
       "ram": "6 GB de mémoire",
-      "gpu": "NVIDIA GeForce GTX 660 with 2 GB VRAM or AMD Radeon HD 7870, with 2 GB VRAM or better - See supported List*",
+      "gpu": "DirectX 11 graphics card with 1 GB Video RAM - Nvidia Geforce GTX 460 or AMD Radeon HD 5770 / Intel Iris Pro HD 5200",
       "storage": "27 GB d'espace disque disponible"
     },
     "reqRec": {
