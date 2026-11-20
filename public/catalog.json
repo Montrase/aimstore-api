@@ -6030,5 +6030,80 @@
     "steamAppId": 851850,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/851850/logo.png",
     "addedAt": "2026-11-20T12:34:02.856Z"
+  },
+  {
+    "id": 92,
+    "title": "Dragon Ball: Xenoverse",
+    "category": "Action",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/323470/capsule_616x353.jpg?t=1701323766",
+    "banner": "https://store.akamai.steamstatic.com/images/storepagebackground/app/323470?t=1701323766",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/323470/capsule_616x353.jpg?t=1701323766",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/323470/portrait.png?t=1701323766",
+    "sizeNum": 10,
+    "size": "10 GB",
+    "publisher": "BANDAI NAMCO Entertainment",
+    "pegi": 12,
+    "tags": [
+      "action"
+    ],
+    "description": "Avec DRAGON BALL XENOVERSE, revis les combats emblématiques de la saga grâce à ton avatar personnalisé et les personnages de la série. Découvre l'étrange ville de Tokitoki, de nouveaux mécanismes de jeu et d'animation, et plein d'autres surprises !",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/323470/26528/00e5b3f57f4e0329e5d493b9e4e3c4358fb9f864/1751264115/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2035069/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/323470/ss_9270b9170af96b140d2ca060f93720fb928bead6.1920x1080.jpg?t=1701323766"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/323470/ss_d912fb5588a5ff0a950306535babb813503e0f97.1920x1080.jpg?t=1701323766"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/323470/ss_6205902c4caab9d81c87f46b71aac2b3bde7d541.1920x1080.jpg?t=1701323766"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/323470/ss_8baa4b04e4c395f26879c6f6ca73d2b181216a10.1920x1080.jpg?t=1701323766"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/323470/ss_cdbb16d696ecaf63aaf4dc2754f87e03e5308da2.1920x1080.jpg?t=1701323766"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/323470/ss_6e1a7f729b4110583068fef590fb964dc207a3e8.1920x1080.jpg?t=1701323766"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/323470/ss_272afe12cc54cd8d7d08abff2d8ae570aaa22425.1920x1080.jpg?t=1701323766"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/323470/ss_d5be6b784f16500635787940763e6df9c85e8467.1920x1080.jpg?t=1701323766"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows Vista (x64) / Windows 7 (x64)",
+      "cpu": "Intel Core 2 Duo 2.4Ghz / AMD Athlon 64 X2 5200+, 2.6GHz",
+      "ram": "2 GB de mémoire",
+      "gpu": "512 MB Nvidia GeForce 8800 / ATI Radeon HD 3870",
+      "storage": "10 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Windows Vista (x64) / Windows 7 (x64) / Windows 8 (x64)",
+      "cpu": "Intel Core i3-530, 2.93 GHz / AMD Phenom II X4 940, 3.0GHz",
+      "ram": "4 GB de mémoire",
+      "gpu": "1 GB Nvidia GeForce GTX 550Ti / AMD Radeon HD 6790",
+      "storage": "10 GB d'espace disque disponible"
+    },
+    "carousel": true,
+    "steamAppId": 323470,
+    "logo": "https://cdn2.steamgriddb.com/logo/18fe8ebf5d52c8992581f439ba783aa3.png",
+    "addedAt": "2026-11-20T13:20:16.977Z"
   }
 ]
