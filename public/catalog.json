@@ -7709,7 +7709,7 @@
     ],
     "reqMin": {},
     "reqRec": {},
-    "carousel": true,
+    "carousel": false,
     "logo": "https://cdn2.steamgriddb.com/logo/e8630344970962450dbedfcd4cc6d718.png",
     "addedAt": "2026-11-20T21:52:45.534Z"
   },
@@ -7779,7 +7779,7 @@
       "storage": "15 Go d'espace disque disponible",
       "gpu": "Carte vidéo Nvidia ou ATI compatible DirectX 11. ATI Radeon 6950 ou Nvidia GeForce GTX 560"
     },
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 202170,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/202170/logo.png",
     "addedAt": "2026-11-20T21:55:55.392Z"
@@ -7857,7 +7857,7 @@
       "ram": "12 GB de mémoire",
       "gpu": "AMD Radeon™ RX 6600XT ou NVIDIA® GeForce® GTX 1080Ti / RTX 3060"
     },
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 4384550,
     "logo": "https://cdn2.steamgriddb.com/logo/e58208deb3a60b5ab5f071f1b0535da3.png",
     "addedAt": "2026-11-20T21:57:57.853Z"
@@ -7937,5 +7937,195 @@
     "steamAppId": 1222140,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1222140/logo.png",
     "addedAt": "2026-11-20T21:59:03.510Z"
+  },
+  {
+    "id": 119,
+    "title": "THIEF",
+    "category": "Aventure",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/239160/capsule_616x353.jpg?t=1780670514",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/239160/library_hero.jpg?t=1780670514",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/239160/capsule_616x353.jpg?t=1780670514",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/239160/library_600x900.jpg?t=1780670514",
+    "sizeNum": 20,
+    "size": "20 GB",
+    "publisher": "Eidos Interactive Corp.",
+    "pegi": 16,
+    "tags": [
+      "action",
+      "aventure"
+    ],
+    "description": "Garrett, le Maître Voleur, quitte l’ombre pour la Cité. Un fléau mystérieux s’est abattu sur cette cité où la milice du Baron règne par la peur et l’oppression. Sous la bannière d’Orion, la voix du peuple, les citoyens opprimés semblent prêts à tout pour reprendre contrôle de la Cité.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/239160/168409398/4a249a9d6f1ba2a4d702cfae69517a57f261148f/1755178539/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257183169/a570daff696d301de412cdba43da91b490f78ea6/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239160/ss_b40d2b3cf97b4a38f7d3bf896f9339a33886c0ff.1920x1080.jpg?t=1780670514"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239160/ss_b56f3d8c4a96f2fb9e5edee81fde0c3ebf48c0b3.1920x1080.jpg?t=1780670514"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/239160/17716/60932751431591c14138255e34ce7d6a36b527d2/1750486180/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2031118/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239160/ss_f415a948f5aed71b8d69e8dae97fac30cc82cfd1.1920x1080.jpg?t=1780670514"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239160/ss_5dd761ac579348371230ca313d7ade06a9931aa9.1920x1080.jpg?t=1780670514"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239160/ss_13e8927ec433a240b1b0343158cf2f07e315737e.1920x1080.jpg?t=1780670514"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239160/ss_cb519feaef433fff9f2a826552aa3dcc83aafb38.1920x1080.jpg?t=1780670514"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239160/ss_f2d87fc20d7b9fe45884c27e8cd17cf7a81b6c6a.1920x1080.jpg?t=1780670514"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/239160/ss_775ff94b3a59523ba345c4799144f56e8feedf65.1920x1080.jpg?t=1780670514"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows Vista avec mise à jour de plateforme pour Windows Vista",
+      "cpu": "Processeur haute performance Dual Core ou Quad Core",
+      "ram": "4 GB de mémoire",
+      "gpu": "AMD Radeon série 4800 / Nvidia GTS 250",
+      "storage": "20 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Windows 7 ou Windows 8",
+      "cpu": "AMD FX série 8000 ou supérieur / Intel Quad Core i7",
+      "ram": "4 GB de mémoire",
+      "gpu": "AMD Radeon série HD R9 ou supérieur / Nvidia GTX série 660 ou supérieur",
+      "storage": "20 GB d'espace disque disponible"
+    },
+    "carousel": true,
+    "steamAppId": 239160,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/239160/logo.png",
+    "addedAt": "2026-11-20T23:01:25.201Z"
+  },
+  {
+    "id": 120,
+    "title": "Schoolboy runaway",
+    "category": "Indépendant",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3359320/840309e1cd23d2e36992eac32faef2a2357aa128/capsule_616x353.jpg?t=1733726446",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3359320/a7553682892887aad5b09fdb2f716d6c5489cf4a/library_hero.jpg?t=1733726446",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3359320/840309e1cd23d2e36992eac32faef2a2357aa128/capsule_616x353.jpg?t=1733726446",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3359320/af49d43b2aaa6164537506823992830b25692dd3/library_600x900.jpg?t=1733726446",
+    "sizeNum": 1,
+    "size": "0.68 GB",
+    "publisher": "Linked Squad",
+    "pegi": 12,
+    "tags": [
+      "indépendant"
+    ],
+    "description": "«Petit vaurien ! Apprends tes leçons tout de suite ! » dirent les parents en colère en te mettant en résidence surveillée. Essaie de déjouer tes parents et trouve un moyen de t’amuser avec tes amis.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/3359320/796986/66fc9eea4879bbcf93e5935dbe8feb5126eca7cb/1750825710/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257080144/0ca8e4700e50cbb1cf03a49ae0239deb646778e4/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3359320/ss_bb2f0a6b5e678f0bbad31e9162a6a11caed9cabe.1920x1080.jpg?t=1733726446"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3359320/ss_f584877e80817439b76abc31008bbd2522854172.1920x1080.jpg?t=1733726446"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/3359320/787793/cc845806667149fa6c35988b5e7b4ad54eb87d29/1750825709/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257074723/0ca8e4700e50cbb1cf03a49ae0239deb646778e4/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3359320/ss_3942709e0fbfdd1dd67daa32aae71411839f5c00.1920x1080.jpg?t=1733726446"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3359320/ss_62dc79c9cb17742cf5c31611adc5ab5ea79dfafe.1920x1080.jpg?t=1733726446"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3359320/ss_223a50d5b8b39a4266c07e9f370a127b29855532.1920x1080.jpg?t=1733726446"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3359320/ss_ffcce2e38c3c34815409f1ceab324c03784a6ccf.1920x1080.jpg?t=1733726446"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 7, 8, 10, 11",
+      "cpu": "Intel Dual-Core 2GHz or AMD Dual-Core 2GHz",
+      "ram": "2048 MB de mémoire",
+      "gpu": "NVIDIA GeForce 400 series or AMD Radeon HD 6000 series, 1GB Video Card (Minimum Shader Model 2.0)",
+      "storage": "700 MB d'espace disque disponible"
+    },
+    "reqRec": {},
+    "carousel": true,
+    "steamAppId": 3359320,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3359320/logo.png",
+    "addedAt": "2026-11-20T23:05:22.798Z"
+  },
+  {
+    "id": 121,
+    "title": "The Amazing Spider-Man 2",
+    "category": "Action",
+    "sourceVersion": 1,
+    "image": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ar6dml.jpg",
+    "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/ar6dml.jpg",
+    "thumb": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ar6dml.jpg",
+    "poster": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co7h9v.jpg",
+    "sizeNum": 9,
+    "size": "9 GB",
+    "publisher": "Gameloft",
+    "pegi": 0,
+    "tags": [
+      "hack and slash/beat 'em up"
+    ],
+    "description": "The Android and iOS port of The Amazing Spider-Man 2.",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/schtum.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/schtun.jpg"
+      }
+    ],
+    "reqMin": {
+      "os": "XP SP3, Vista SP2, 7",
+      "cpu": "Intel Core 2 Duo 2.6 GHz",
+      "ram": "3 GB",
+      "gpu": "Nvidia GeForce 8800 GT",
+      "storage": "9 GB"
+    },
+    "reqRec": {
+      "cpu": "Intel Core 2 Quad 2.4 GHz",
+      "ram": "4 GB",
+      "gpu": "Nvidia GeForce GTX 285"
+    },
+    "carousel": true,
+    "logo": "https://cdn2.steamgriddb.com/logo/3e26fe68d7bb168d9a4f99f251e08ae3.png",
+    "addedAt": "2026-11-20T23:14:20.176Z"
   }
 ]
