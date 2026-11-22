@@ -19,6 +19,9 @@
     "discord": "https://discord.gg/X6u4tpQRS",
     "help": "https://youtu.be/7sNNw3-Iz8w"
   },
+  "keySystem": {
+    "enabled": false
+  },
   "update": {
     "required": true,
     "minVersion": "1.0.3",
