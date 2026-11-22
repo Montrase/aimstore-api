@@ -20,7 +20,7 @@
     "help": "https://youtu.be/7sNNw3-Iz8w"
   },
   "keySystem": {
-    "enabled": true
+    "enabled": false
   },
   "update": {
     "required": true,
