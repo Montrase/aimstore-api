@@ -8457,64 +8457,64 @@
     "addedAt": "2026-11-23T15:39:02.085Z"
   },
   {
-    "id": 127,
-    "title": "Five Nights At Freddy's 2",
-    "category": "Indépendant",
+    "id": 128,
+    "title": "Five Nights at Freddy's : Help Wanted 2",
+    "category": "Simulation",
     "sourceVersion": 1,
-    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/332800/capsule_616x353.jpg?t=1579635993",
-    "banner": "https://store.akamai.steamstatic.com/images/storepagebackground/app/332800?t=1579635993",
-    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/332800/capsule_616x353.jpg?t=1579635993",
-    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/332800/portrait.png?t=1579635993",
-    "sizeNum": 0,
-    "size": "0.24 GB",
-    "publisher": "Scott Cawthon",
-    "pegi": 0,
+    "image": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ar2o8o.jpg",
+    "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/ar2o8o.jpg",
+    "thumb": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ar2o8o.jpg",
+    "poster": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co7h69.jpg",
+    "sizeNum": 8,
+    "size": "8 GB",
+    "publisher": "Steel Wool Studios",
+    "pegi": 12,
     "tags": [
-      "indépendant"
+      "puzzle",
+      "simulator",
+      "indie"
     ],
-    "description": "Welcome back to the new and improved Freddy Fazbear's Pizza! As always, Fazbear Entertainment is not responsible for death or dismemberment.",
+    "description": "Find out if you have what it takes to be a Fazbear Entertainment Superstar! Five Nights at Freddy’s: Help Wanted 2 is the sequel to the terrifying VR experience that brought new life to the iconic horror franchise. As a brand new Fazbear employee you’ll have to prove you have what it takes to excel in all aspects of Pizzeria management and maintenance.",
     "media": [
       {
-        "type": "video",
-        "url": "https://video.akamai.steamstatic.com/store_trailers/332800/27365/4473bcdfc1f5da8b8ac25fa3e68f5152c981ac47/1750510026/microtrailer.mp4",
-        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2035458/movie_full.jpg"
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scpuso.jpg"
       },
       {
         "type": "image",
-        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/332800/ss_49915306285cd7c567620c1c10e300a068089e35.1920x1080.jpg?t=1579635993"
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scpusn.jpg"
       },
       {
         "type": "image",
-        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/332800/ss_ed9a7e583267f5d9ff58a34ab5ff2f1735fb7346.1920x1080.jpg?t=1579635993"
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scpusp.jpg"
       },
       {
         "type": "image",
-        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/332800/ss_f42e7f094cab8a39322ddb0f14df824ad15865bf.1920x1080.jpg?t=1579635993"
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scpusq.jpg"
       },
       {
         "type": "image",
-        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/332800/ss_10c3872339fc465663b4fcccca575da6c42f0a80.1920x1080.jpg?t=1579635993"
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scpusr.jpg"
       },
       {
         "type": "image",
-        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/332800/ss_37ca29be698a27080bcec8a8481d28dd53b43f2a.1920x1080.jpg?t=1579635993"
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scpuss.jpg"
       },
       {
         "type": "image",
-        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/332800/ss_878eafbf70068bdec37fc672613e5d007f433195.1920x1080.jpg?t=1579635993"
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/scpust.jpg"
       }
     ],
     "reqMin": {
-      "os": "XP,Vista,Windows 7, Windows 8",
-      "cpu": "2 GHz Intel Pentium 4 or AMD Athlon or equivalent",
-      "ram": "1 GB de mémoire",
-      "gpu": "1 GB",
-      "storage": "250 MB d'espace disque disponible"
+      "os": "10, 11",
+      "cpu": "AMD Ryzen 5 1500X",
+      "ram": "16 GB",
+      "gpu": "Nvidia GeForce GTX 1070",
+      "storage": "8 GB"
     },
     "reqRec": {},
     "carousel": true,
-    "steamAppId": 332800,
-    "logo": "https://cdn2.steamgriddb.com/logo/2298d2d15377df1b320d007677c07a07.png",
-    "addedAt": "2026-11-23T15:41:34.734Z"
+    "logo": "https://cdn2.steamgriddb.com/logo/4f995a76903755151bdedaa1dc5ed11a.png",
+    "addedAt": "2026-11-23T15:51:04.291Z"
   }
 ]
