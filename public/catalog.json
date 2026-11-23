@@ -7933,7 +7933,7 @@
       "gpu": "Nvidia GeForce GTX 1060 or AMD Radeon RX 580 with 4GB VRAM minimum (Support of Vulkan 1.1 required)",
       "storage": "55 GB d'espace disque disponible"
     },
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 1222140,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1222140/logo.png",
     "addedAt": "2026-11-20T21:59:03.510Z"
@@ -8127,5 +8127,79 @@
     "carousel": true,
     "logo": "https://cdn2.steamgriddb.com/logo/3e26fe68d7bb168d9a4f99f251e08ae3.png",
     "addedAt": "2026-11-20T23:14:20.176Z"
+  },
+  {
+    "id": 122,
+    "title": "Subnautica 2",
+    "category": "Aventure",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962700/ceed43f5d774d84a5578eccaaec6842cb9591667/capsule_616x353.jpg?t=1785967256",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962700/5775c2fdf39291633dd59b87ece66ab0431aa9ec/library_hero.jpg?t=1785967256",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962700/ceed43f5d774d84a5578eccaaec6842cb9591667/capsule_616x353.jpg?t=1785967256",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962700/bd66bf4a6db518e15573284aa4030d1f9e1f364d/library_600x900.jpg?t=1785967256",
+    "sizeNum": 50,
+    "size": "50 GB",
+    "publisher": "Unknown Worlds Entertainment",
+    "pegi": 12,
+    "tags": [
+      "action",
+      "aventure",
+      "accès anticipé"
+    ],
+    "description": "Subnautica 2 est un jeu d'aventure et de survie sous-marine dans un monde océanique inédit, développé par Unknown Worlds. Jouez en solo ou jusqu'à 4 joueurs en coop. Adaptez-vous pour survivre en construisant des bases et des outils. Explorez l'inconnu et découvrez les mystères des profondeurs.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/1962700/1381761660/62855c0fcad0dee2938dfe86b5894cd342f3e23f/1778732086/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257333715/b1d8aeafbffae6530e2c9439fbbec1a16f86b314/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962700/823b102b09530bbf588f5e9752cb52f1681dc992/ss_823b102b09530bbf588f5e9752cb52f1681dc992.1920x1080.jpg?t=1785967256"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962700/e631ef3b91faacacb5a2c823d0b979083548d66f/ss_e631ef3b91faacacb5a2c823d0b979083548d66f.1920x1080.jpg?t=1785967256"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/1962700/1862467419/5631393dd23dad76bcb0c7917c2f60891948158a/1776997487/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257323188/0ad616f54f199f3fbccec9b1a90e909fce31a1ec/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962700/16b68b0941ed9c5ac1eea74e478fa726d425bebf/ss_16b68b0941ed9c5ac1eea74e478fa726d425bebf.1920x1080.jpg?t=1785967256"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962700/56159597a28edfb07c6dd27b4a00f2e06e571048/ss_56159597a28edfb07c6dd27b4a00f2e06e571048.1920x1080.jpg?t=1785967256"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962700/eab92bde7378f6532f765001126a8fb8b10ca8f9/ss_eab92bde7378f6532f765001126a8fb8b10ca8f9.1920x1080.jpg?t=1785967256"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1962700/787e2315a1eb5aaba73c4f75e6f7d7d8835fa260/ss_787e2315a1eb5aaba73c4f75e6f7d7d8835fa260.1920x1080.jpg?t=1785967256"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 10/11",
+      "cpu": "Intel Core i5-8400 / AMD Ryzen 5 2600",
+      "ram": "12 GB de mémoire",
+      "gpu": "GeForce GTX 1660 6GB / RX 5500 XT 6GB",
+      "storage": "50 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Windows 11",
+      "cpu": "Intel Core i7-13700 / AMD Ryzen 7 7700X",
+      "ram": "16 GB de mémoire",
+      "gpu": "Geforce RTX 3070 8GB / RX 6700 XT 8GB",
+      "storage": "50 GB d'espace disque disponible"
+    },
+    "carousel": true,
+    "steamAppId": 1962700,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962700/logo.png",
+    "addedAt": "2026-11-23T08:43:17.406Z"
   }
 ]
