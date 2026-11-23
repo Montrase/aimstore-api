@@ -72,8 +72,7 @@
     },
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1020790/logo.png",
     "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1020790/library_600x900.jpg?t=1727301927",
-    "carousel": false,
-    "featured": true
+    "carousel": false
   },
   {
     "id": 2,
@@ -150,8 +149,7 @@
     },
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1790600/logo.png",
     "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1790600/library_600x900.jpg?t=1785726916",
-    "carousel": false,
-    "featured": true
+    "carousel": false
   },
   {
     "id": 3,
@@ -234,8 +232,7 @@
       "storage": "100 GB SSD"
     },
     "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4080220/81210d536b70c14e4cf9725f3f03d82bf64e5e25/library_capsule.jpg?t=1793610006",
-    "carousel": false,
-    "featured": true
+    "carousel": false
   },
   {
     "id": 4,
@@ -318,8 +315,7 @@
     },
     "logo": "https://cdn2.steamgriddb.com/logo/2c618774f88d9b2a617f9683b6a6ee5c.png",
     "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2483190/711e39803402def82a90e1f31578c64744f952f3/library_capsule.jpg?t=1793664659",
-    "carousel": false,
-    "featured": true
+    "carousel": false
   },
   {
     "id": 5,
@@ -3741,7 +3737,8 @@
     "carousel": false,
     "steamAppId": 2638890,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2638890/logo.png",
-    "addedAt": "2026-11-20T09:01:36.878Z"
+    "addedAt": "2026-11-20T09:01:36.878Z",
+    "featured": true
   },
   {
     "id": 60,
@@ -3900,7 +3897,8 @@
     "carousel": false,
     "steamAppId": 2001760,
     "logo": "https://cdn2.steamgriddb.com/logo/67765d11a8f521ed057e2c784401a0a7.png",
-    "addedAt": "2026-11-20T09:06:16.587Z"
+    "addedAt": "2026-11-20T09:06:16.587Z",
+    "featured": true
   },
   {
     "id": 62,
@@ -3969,8 +3967,7 @@
     },
     "carousel": false,
     "logo": "https://cdn2.steamgriddb.com/logo/bbe41cc6a544ab519ecc7af51f27e773.png",
-    "addedAt": "2026-11-20T09:07:08.403Z",
-    "featured": true
+    "addedAt": "2026-11-20T09:07:08.403Z"
   },
   {
     "id": 63,
@@ -4118,7 +4115,8 @@
     "carousel": false,
     "steamAppId": 2767530,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2767530/logo.png",
-    "addedAt": "2026-11-20T09:10:59.226Z"
+    "addedAt": "2026-11-20T09:10:59.226Z",
+    "featured": true
   },
   {
     "id": 65,
@@ -4243,7 +4241,8 @@
     "carousel": false,
     "steamAppId": 2584270,
     "logo": "https://cdn2.steamgriddb.com/logo/21dbfd55cc09194fb629a92641d9d5c4.png",
-    "addedAt": "2026-11-20T09:17:51.635Z"
+    "addedAt": "2026-11-20T09:17:51.635Z",
+    "featured": true
   },
   {
     "id": 68,
@@ -4561,7 +4560,8 @@
     "carousel": false,
     "steamAppId": 2680010,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2680010/logo.png",
-    "addedAt": "2026-11-20T09:49:11.705Z"
+    "addedAt": "2026-11-20T09:49:11.705Z",
+    "featured": true
   },
   {
     "id": 72,
@@ -5497,7 +5497,8 @@
     "carousel": false,
     "steamAppId": 611790,
     "logo": "https://cdn2.steamgriddb.com/logo/4aed1c032ed18bc0543492af4181f98f.png",
-    "addedAt": "2026-11-20T12:20:45.758Z"
+    "addedAt": "2026-11-20T12:20:45.758Z",
+    "featured": true
   },
   {
     "id": 84,
@@ -6023,7 +6024,8 @@
     "carousel": false,
     "steamAppId": 851850,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/851850/logo.png",
-    "addedAt": "2026-11-20T12:34:02.856Z"
+    "addedAt": "2026-11-20T12:34:02.856Z",
+    "featured": true
   },
   {
     "id": 92,
@@ -6914,8 +6916,7 @@
     "carousel": false,
     "steamAppId": 976310,
     "logo": "https://cdn2.steamgriddb.com/logo/c4127b9194fe8562c64dc0f5bf2c93bc.png",
-    "addedAt": "2026-11-20T21:07:18.954Z",
-    "featured": true
+    "addedAt": "2026-11-20T21:07:18.954Z"
   },
   {
     "id": 105,
@@ -7000,8 +7001,7 @@
     "carousel": false,
     "steamAppId": 1971870,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1971870/logo.png",
-    "addedAt": "2026-11-20T21:12:02.034Z",
-    "featured": true
+    "addedAt": "2026-11-20T21:12:02.034Z"
   },
   {
     "id": 106,
@@ -7075,8 +7075,7 @@
     "carousel": false,
     "steamAppId": 2369390,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2369390/logo.png",
-    "addedAt": "2026-11-20T21:23:12.650Z",
-    "featured": true
+    "addedAt": "2026-11-20T21:23:12.650Z"
   },
   {
     "id": 107,
@@ -7711,7 +7710,8 @@
     "reqRec": {},
     "carousel": false,
     "logo": "https://cdn2.steamgriddb.com/logo/e8630344970962450dbedfcd4cc6d718.png",
-    "addedAt": "2026-11-20T21:52:45.534Z"
+    "addedAt": "2026-11-20T21:52:45.534Z",
+    "featured": true
   },
   {
     "id": 116,
@@ -8014,7 +8014,7 @@
       "gpu": "AMD Radeon série HD R9 ou supérieur / Nvidia GTX série 660 ou supérieur",
       "storage": "20 GB d'espace disque disponible"
     },
-    "carousel": false,
+    "carousel": true,
     "steamAppId": 239160,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/239160/logo.png",
     "addedAt": "2026-11-20T23:01:25.201Z"
@@ -8197,7 +8197,7 @@
       "gpu": "Geforce RTX 3070 8GB / RX 6700 XT 8GB",
       "storage": "50 GB d'espace disque disponible"
     },
-    "carousel": false,
+    "carousel": true,
     "steamAppId": 1962700,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962700/logo.png",
     "addedAt": "2026-11-23T08:43:17.406Z"
@@ -8261,7 +8261,7 @@
       "ram": "16 GB de mémoire",
       "storage": "80 GB d'espace disque disponible"
     },
-    "carousel": false,
+    "carousel": true,
     "steamAppId": 747660,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/747660/logo.png",
     "addedAt": "2026-11-23T15:16:33.743Z"
@@ -8332,7 +8332,7 @@
       "storage": "3 GB d'espace disque disponible"
     },
     "reqRec": {},
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 2638370,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2638370/logo.png",
     "addedAt": "2026-11-23T15:20:07.570Z"
@@ -8393,7 +8393,7 @@
       "storage": "20 GB d'espace disque disponible"
     },
     "reqRec": {},
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 2215390,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215390/logo.png",
     "addedAt": "2026-11-23T15:23:19.741Z"
@@ -8451,7 +8451,7 @@
       "storage": "1 GB d'espace disque disponible"
     },
     "reqRec": {},
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 388090,
     "logo": "https://cdn2.steamgriddb.com/logo/0a521f4b3f184d3e27654212e38c7b76.png",
     "addedAt": "2026-11-23T15:39:02.085Z"
@@ -8513,7 +8513,7 @@
       "storage": "8 GB"
     },
     "reqRec": {},
-    "carousel": true,
+    "carousel": false,
     "logo": "https://cdn2.steamgriddb.com/logo/4f995a76903755151bdedaa1dc5ed11a.png",
     "addedAt": "2026-11-23T15:51:04.291Z"
   }
