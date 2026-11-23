@@ -8014,7 +8014,7 @@
       "gpu": "AMD Radeon série HD R9 ou supérieur / Nvidia GTX série 660 ou supérieur",
       "storage": "20 GB d'espace disque disponible"
     },
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 239160,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/239160/logo.png",
     "addedAt": "2026-11-20T23:01:25.201Z"
@@ -8080,7 +8080,7 @@
       "storage": "700 MB d'espace disque disponible"
     },
     "reqRec": {},
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 3359320,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/3359320/logo.png",
     "addedAt": "2026-11-20T23:05:22.798Z"
@@ -8124,7 +8124,7 @@
       "ram": "4 GB",
       "gpu": "Nvidia GeForce GTX 285"
     },
-    "carousel": true,
+    "carousel": false,
     "logo": "https://cdn2.steamgriddb.com/logo/3e26fe68d7bb168d9a4f99f251e08ae3.png",
     "addedAt": "2026-11-20T23:14:20.176Z"
   },
@@ -8197,9 +8197,324 @@
       "gpu": "Geforce RTX 3070 8GB / RX 6700 XT 8GB",
       "storage": "50 GB d'espace disque disponible"
     },
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 1962700,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962700/logo.png",
     "addedAt": "2026-11-23T08:43:17.406Z"
+  },
+  {
+    "id": 123,
+    "title": "Five Nights at Freddy's: Security Breach",
+    "category": "Aventure",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/747660/capsule_616x353.jpg?t=1686587905",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/747660/library_hero.jpg?t=1686587905",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/747660/capsule_616x353.jpg?t=1686587905",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/747660/library_600x900.jpg?t=1686587905",
+    "sizeNum": 80,
+    "size": "80 GB",
+    "publisher": "ScottGames",
+    "pegi": 12,
+    "tags": [
+      "action",
+      "aventure",
+      "indépendant"
+    ],
+    "description": "Dans Five Nights at Freddy’s: Security Breach, vous incarnez Gregory, un jeune garçon pris au piège toute la nuit dans le Mega Pizzaplex de Freddy Fazbear. Avec l’aide de Freddy lui-même, Gregory doit lever le voile sur les secrets du Pizzaplex, découvrir la vérité et survivre jusqu’à l’aube.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/747660/417637/8617b470e4dfd6b884c45f52c0fa2d37d14075e8/1750578108/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256860809/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/747660/ss_45e9d1edfceffb5246192d956d8d54b0b9def2fc.1920x1080.jpg?t=1686587905"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/747660/ss_7287a2542ed5303fc35766c1ee852c25249ffcae.1920x1080.jpg?t=1686587905"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/747660/ss_269e04d166f124d2cb121ceb4b7fd871f4329d16.1920x1080.jpg?t=1686587905"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/747660/ss_ea43b794024ea6c9908de4760f6cd17c0bf28e86.1920x1080.jpg?t=1686587905"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/747660/ss_f4ea69d12dd9ed029e72b4f092441b32f87ce8ee.1920x1080.jpg?t=1686587905"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 10 (64 bit)",
+      "cpu": "AMD Ryzen 5 3600, Core i5 6600K",
+      "ram": "8 GB de mémoire",
+      "gpu": "Nvidia GeForce GTX 1050 Ti",
+      "storage": "80 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Windows 10 (64 bit)",
+      "cpu": "AMD Ryzen 7 2700X, Intel Core i7 4790",
+      "ram": "16 GB de mémoire",
+      "storage": "80 GB d'espace disque disponible"
+    },
+    "carousel": false,
+    "steamAppId": 747660,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/747660/logo.png",
+    "addedAt": "2026-11-23T15:16:33.743Z"
+  },
+  {
+    "id": 124,
+    "title": "Five Nights at Freddy’s: Into the Pit",
+    "category": "Aventure",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2638370/capsule_616x353.jpg?t=1746172589",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2638370/library_hero.jpg?t=1746172589",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2638370/capsule_616x353.jpg?t=1746172589",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2638370/library_600x900.jpg?t=1746172589",
+    "sizeNum": 3,
+    "size": "3 GB",
+    "publisher": "Mega Cat Studios",
+    "pegi": 16,
+    "tags": [
+      "action",
+      "aventure",
+      "indépendant"
+    ],
+    "description": "Survivez aux cinq nuits de terreurs dans ce jeu d’aventure frissonnant. Voyagez entre les périodes temporelles pour résoudre des casse-tête, réunir des indices, et semer la menace qui vous poursuit sans relâche. Déplacez-vous rapidement et restez caché, et vous arriverez peut-être à survivre.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/2638370/737287/bd0d416f957fcc97aac7570f96b8d1c7cd792fb0/1750817777/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257044402/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638370/ss_222760191498d495b8bb1fcaa0f7f0fd5e8d4250.1920x1080.jpg?t=1746172589"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638370/ss_cc92a5750da24bd24d6937ebe42a1506db81328e.1920x1080.jpg?t=1746172589"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638370/ss_e5cf7256ab4863657480af94373cbe6333f1b33d.1920x1080.jpg?t=1746172589"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638370/ss_2c54d6a1abe369d29709a18a14e717405cdec6e3.1920x1080.jpg?t=1746172589"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638370/ss_31da1455e8d8800b4ccbb874723a4ce4791bd28d.1920x1080.jpg?t=1746172589"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638370/ss_b8bb07195860a3552d81f0312f478cde42ab8a87.1920x1080.jpg?t=1746172589"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638370/ss_fb64c66d6a99df662423401b25758cf79b3e5475.1920x1080.jpg?t=1746172589"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638370/ss_aafb56599e06d883ff3e5c31fe7ef8efbde3375f.1920x1080.jpg?t=1746172589"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 10/11",
+      "cpu": "Intel i5 750 or equivalent",
+      "ram": "8 GB de mémoire",
+      "gpu": "NVIDIA GeForce GTX 670 or equivalent",
+      "storage": "3 GB d'espace disque disponible"
+    },
+    "reqRec": {},
+    "carousel": true,
+    "steamAppId": 2638370,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2638370/logo.png",
+    "addedAt": "2026-11-23T15:20:07.570Z"
+  },
+  {
+    "id": 125,
+    "title": "Five Nights at Freddy’s: Secret of the Mimic",
+    "category": "Indépendant",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215390/c02dcbc28d630efbfe6f49d9995d4166759604de/capsule_616x353.jpg?t=1779297670",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215390/2dd97deb7b17be6045439ea04c3451682154bb35/library_hero.jpg?t=1779297670",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215390/c02dcbc28d630efbfe6f49d9995d4166759604de/capsule_616x353.jpg?t=1779297670",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215390/159fa72c24bcf5c7aa6296b3a7f90b4d7f843453/library_600x900.jpg?t=1779297670",
+    "sizeNum": 20,
+    "size": "20 GB",
+    "publisher": "ScottGames",
+    "pegi": 12,
+    "tags": [
+      "indépendant"
+    ],
+    "description": "Pénétrez dans l’atelier abandonné du Murray’s Costume Manor et percez le mystère perdu de l’inventeur fou. Dans Five Nights at Freddy’s: Secret of the Mimic, vous entrerez dans un monde où chaque recoin sombre garde un secret, et où chaque soupçon de lumière laisse entrevoir une menace permanente.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/2215390/850824/db96675710d573644fe40819880d6f3ed190fdc0/1750809557/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/257114219/99f649de2bf88d2f3812f4dc1d5d7e066a7ba669/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215390/f3e9f15a5594ced34d57c88bc2f074485a4cae32/ss_f3e9f15a5594ced34d57c88bc2f074485a4cae32.1920x1080.jpg?t=1779297670"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215390/ee22303a9ee76db1ed79bc3692bc2671ce5365ba/ss_ee22303a9ee76db1ed79bc3692bc2671ce5365ba.1920x1080.jpg?t=1779297670"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215390/7c964d1b042cbfb37bdf23f0fe4d50b25ba59aab/ss_7c964d1b042cbfb37bdf23f0fe4d50b25ba59aab.1920x1080.jpg?t=1779297670"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215390/83b1e92d43c6a449c8e5668e80e692e4d42190d2/ss_83b1e92d43c6a449c8e5668e80e692e4d42190d2.1920x1080.jpg?t=1779297670"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215390/9fa7a8d27e16885543883b4b1b810ccb1c99659f/ss_9fa7a8d27e16885543883b4b1b810ccb1c99659f.1920x1080.jpg?t=1779297670"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215390/043acf94a2239d81dd9b6efb9a015347fd06cdd0/ss_043acf94a2239d81dd9b6efb9a015347fd06cdd0.1920x1080.jpg?t=1779297670"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 10/11",
+      "cpu": "AMD Ryzen 5 1500X / Intel i5-8400",
+      "ram": "16 GB de mémoire",
+      "gpu": "NVIDIA GeForce GTX 1070 8GB / AMD RX Vega 56 8GB",
+      "storage": "20 GB d'espace disque disponible"
+    },
+    "reqRec": {},
+    "carousel": true,
+    "steamAppId": 2215390,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/2215390/logo.png",
+    "addedAt": "2026-11-23T15:23:19.741Z"
+  },
+  {
+    "id": 126,
+    "title": "Five Nights At Freddy's 4",
+    "category": "Stratégie",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/388090/capsule_616x353.jpg?t=1579635988",
+    "banner": "https://store.akamai.steamstatic.com/images/storepagebackground/app/388090?t=1579635988",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/388090/capsule_616x353.jpg?t=1579635988",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/388090/portrait.png?t=1579635988",
+    "sizeNum": 1,
+    "size": "1 GB",
+    "publisher": "Scott Cawthon",
+    "pegi": 12,
+    "tags": [
+      "action",
+      "indépendant",
+      "stratégie"
+    ],
+    "description": "In this last chapter of the Five Nights at Freddy's original story, you must once again defend yourself against Freddy Fazbear, Chica, Bonnie, Foxy, and even worse things that lurk in the shadows.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/388090/39464/5342cdb10559278b420dda0599042a2099ba3330/1750523485/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256654861/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388090/ss_ed133c092449015276842c83a347fcd1f544fd1e.1920x1080.jpg?t=1579635988"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388090/ss_f2024ef4e66e17d89f9c0af8f2ec33c9f873accb.1920x1080.jpg?t=1579635988"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388090/ss_65dcdae9afd884f985827dc591ce18be1f574617.1920x1080.jpg?t=1579635988"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388090/ss_32592700ad0ba14371f8237155a31d8c92bec7c1.1920x1080.jpg?t=1579635988"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388090/ss_1ade3023b1e5555b11d723b9532d1c7453246b2e.1920x1080.jpg?t=1579635988"
+      }
+    ],
+    "reqMin": {
+      "os": "Win XP, 7, 8, Vista, 10",
+      "cpu": "2 GHz Intel Pentium 4 or AMD Athlon or equivalent",
+      "ram": "2 GB de mémoire",
+      "storage": "1 GB d'espace disque disponible"
+    },
+    "reqRec": {},
+    "carousel": true,
+    "steamAppId": 388090,
+    "logo": "https://cdn2.steamgriddb.com/logo/0a521f4b3f184d3e27654212e38c7b76.png",
+    "addedAt": "2026-11-23T15:39:02.085Z"
+  },
+  {
+    "id": 127,
+    "title": "Five Nights At Freddy's 2",
+    "category": "Indépendant",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/332800/capsule_616x353.jpg?t=1579635993",
+    "banner": "https://store.akamai.steamstatic.com/images/storepagebackground/app/332800?t=1579635993",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/332800/capsule_616x353.jpg?t=1579635993",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/332800/portrait.png?t=1579635993",
+    "sizeNum": 0,
+    "size": "0.24 GB",
+    "publisher": "Scott Cawthon",
+    "pegi": 0,
+    "tags": [
+      "indépendant"
+    ],
+    "description": "Welcome back to the new and improved Freddy Fazbear's Pizza! As always, Fazbear Entertainment is not responsible for death or dismemberment.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/332800/27365/4473bcdfc1f5da8b8ac25fa3e68f5152c981ac47/1750510026/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2035458/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/332800/ss_49915306285cd7c567620c1c10e300a068089e35.1920x1080.jpg?t=1579635993"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/332800/ss_ed9a7e583267f5d9ff58a34ab5ff2f1735fb7346.1920x1080.jpg?t=1579635993"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/332800/ss_f42e7f094cab8a39322ddb0f14df824ad15865bf.1920x1080.jpg?t=1579635993"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/332800/ss_10c3872339fc465663b4fcccca575da6c42f0a80.1920x1080.jpg?t=1579635993"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/332800/ss_37ca29be698a27080bcec8a8481d28dd53b43f2a.1920x1080.jpg?t=1579635993"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/332800/ss_878eafbf70068bdec37fc672613e5d007f433195.1920x1080.jpg?t=1579635993"
+      }
+    ],
+    "reqMin": {
+      "os": "XP,Vista,Windows 7, Windows 8",
+      "cpu": "2 GHz Intel Pentium 4 or AMD Athlon or equivalent",
+      "ram": "1 GB de mémoire",
+      "gpu": "1 GB",
+      "storage": "250 MB d'espace disque disponible"
+    },
+    "reqRec": {},
+    "carousel": true,
+    "steamAppId": 332800,
+    "logo": "https://cdn2.steamgriddb.com/logo/2298d2d15377df1b320d007677c07a07.png",
+    "addedAt": "2026-11-23T15:41:34.734Z"
   }
 ]
