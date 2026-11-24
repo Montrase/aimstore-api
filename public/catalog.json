@@ -8014,7 +8014,7 @@
       "gpu": "AMD Radeon série HD R9 ou supérieur / Nvidia GTX série 660 ou supérieur",
       "storage": "20 GB d'espace disque disponible"
     },
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 239160,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/239160/logo.png",
     "addedAt": "2026-11-20T23:01:25.201Z"
@@ -8197,7 +8197,7 @@
       "gpu": "Geforce RTX 3070 8GB / RX 6700 XT 8GB",
       "storage": "50 GB d'espace disque disponible"
     },
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 1962700,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1962700/logo.png",
     "addedAt": "2026-11-23T08:43:17.406Z"
@@ -8261,7 +8261,7 @@
       "ram": "16 GB de mémoire",
       "storage": "80 GB d'espace disque disponible"
     },
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 747660,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/747660/logo.png",
     "addedAt": "2026-11-23T15:16:33.743Z"
@@ -8516,5 +8516,708 @@
     "carousel": false,
     "logo": "https://cdn2.steamgriddb.com/logo/4f995a76903755151bdedaa1dc5ed11a.png",
     "addedAt": "2026-11-23T15:51:04.291Z"
+  },
+  {
+    "id": 129,
+    "title": "Subnautica",
+    "category": "Aventure",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/264710/capsule_616x353.jpg?t=1777456112",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/264710/library_hero.jpg?t=1777456112",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/264710/capsule_616x353.jpg?t=1777456112",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/264710/library_600x900.jpg?t=1777456112",
+    "sizeNum": 20,
+    "size": "20 GB",
+    "publisher": "Unknown Worlds Entertainment",
+    "pegi": 7,
+    "tags": [
+      "aventure",
+      "indépendant"
+    ],
+    "description": "Descendez dans les profondeurs d'un monde sous-marin étranger plein de merveilles et périls. Concevez des équipements, pilotez des sous-marins, terraformez un terrain voxel, et adaptez-vous à la vie sauvage afin d’explorer le monde, tout en essayant de survivre.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/264710/143519/33594902d34e588ce90d9905c30aa902198fea59/1750490623/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256706800/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_e182b6b20bb797500f9f63c561586d920d44e37c.1920x1080.jpg?t=1777456112"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_970a13f246e33e0df26d93baf9f8e975732adb4b.1920x1080.jpg?t=1777456112"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/264710/55128/06ac53f65e291c5ee42b9e76907f7a3cdef362f6/1750490593/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256662171/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_5f2f2ea498cdc632cbffd6cf37c1a09670eb3272.1920x1080.jpg?t=1777456112"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_cebc378d2f7bc78978c21db4e3c5e12ccd067349.1920x1080.jpg?t=1777456112"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/264710/143714/5edf88beb952621c411bb168a9b08c9e7ef51637/1750490625/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256706872/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_0ace7f8b4350b8fbdd16345a76bc30545256e918.1920x1080.jpg?t=1777456112"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_f0eeabe108c2bc2b3e370b9828fb280035b50db2.1920x1080.jpg?t=1777456112"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_b28404f3d108cc15aebbb2c3d7cb17e587225662.1920x1080.jpg?t=1777456112"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/ss_623579a6693f6fc48033e619cacc4306f10eef15.1920x1080.jpg?t=1777456112"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows Vista SP2 ou plus récent 64-bit",
+      "cpu": "Intel Haswell 2 cores / 4 threads @ 2.5Ghz ou équivalent",
+      "ram": "4 GB de mémoire",
+      "gpu": "Intel HD 4600 ou équivalent",
+      "storage": "20 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Windows Vista SP2 or plus récent 64-bit",
+      "cpu": "Intel Haswell 4 cores / 4 threads @ 3.2Ghz ou équivalent",
+      "ram": "8 GB de mémoire",
+      "gpu": "Nvidia GTX 550 ti ou équivalent",
+      "storage": "20 GB d'espace disque disponible"
+    },
+    "carousel": false,
+    "steamAppId": 264710,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/264710/logo.png",
+    "addedAt": "2026-11-24T15:00:58.373Z"
+  },
+  {
+    "id": 130,
+    "title": "Subnautica: Below Zero",
+    "category": "Aventure",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/848450/capsule_616x353.jpg?t=1777456254",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/848450/library_hero.jpg?t=1777456254",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/848450/capsule_616x353.jpg?t=1777456254",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/848450/library_600x900.jpg?t=1777456254",
+    "sizeNum": 15,
+    "size": "15 GB",
+    "publisher": "Unknown Worlds Entertainment",
+    "pegi": 12,
+    "tags": [
+      "aventure",
+      "indépendant"
+    ],
+    "description": "Vivez une aventure sous-marine glaciale sur une planète extraterrestre. Below Zero se déroule deux ans après le premier Subnautica. Bravez les intempéries en construisant des habitats, en fabriquant des outils et en sondant les mystères de Subnautica.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/848450/361258/82151770fcaf7d6667a364a76c0f16b836513514/1750588821/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256830049/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/848450/ss_5011daad83f8494eda0826e4bbc91181239ad5d7.1920x1080.jpg?t=1777456254"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/848450/ss_69bdcf6ce29ba61650f0b2551a3494af67be09ac.1920x1080.jpg?t=1777456254"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/848450/ss_3c3403337b972d4913e3a6b4f34e0f47e484c042.1920x1080.jpg?t=1777456254"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/848450/ss_5bc21362aa200d08fe25203cbe50debedd8f11a3.1920x1080.jpg?t=1777456254"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/848450/ss_9e3d6ab0db5442f7bcbeb923da47d3a80023f50f.1920x1080.jpg?t=1777456254"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/848450/ss_e5c0f0272552f4aff9129ce3683131bdabd5983c.1920x1080.jpg?t=1777456254"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/848450/ss_4175a9e5b1533698856493140038643f2f4669b5.1920x1080.jpg?t=1777456254"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/848450/ss_a0686edd0106fa67746037a29a9846b8448dff0c.1920x1080.jpg?t=1777456254"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 7 64-bit",
+      "cpu": "Intel Core i3 4XXX series / AMD Ryzen 3 2.6ghz+",
+      "ram": "8 GB de mémoire",
+      "gpu": "Intel HD 530 or better",
+      "storage": "15 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Windows 10 64-bit",
+      "cpu": "Intel Core i5 4XXX series/ AMD Ryzen 5 @ 3Ghz +",
+      "ram": "8 GB de mémoire",
+      "gpu": "Nvidia 1050 Ti / AMD Radeon 570, 4GB VRAM",
+      "storage": "15 GB d'espace disque disponible"
+    },
+    "carousel": false,
+    "steamAppId": 848450,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/848450/logo.png",
+    "addedAt": "2026-11-24T15:01:59.995Z"
+  },
+  {
+    "id": 131,
+    "title": "Call of Duty: Modern Warfare 2 - Campaign Remastered",
+    "category": "Action",
+    "sourceVersion": 1,
+    "image": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ar10dj.jpg",
+    "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/ar10dj.jpg",
+    "thumb": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ar10dj.jpg",
+    "poster": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co2adp.jpg",
+    "sizeNum": 80,
+    "size": "80 GB",
+    "publisher": "Activision",
+    "pegi": 18,
+    "tags": [
+      "shooter"
+    ],
+    "description": "The Call of Duty: Modern Warfare 2 Campaign has been fully remastered with improved textures, animations, physically based rendering, high-dynamic range lighting, and much more. Experience classic missions including Cliffhanger, The Gulag, and Whiskey Hotel as you join Soap, Price, Ghost and the rest of Task Force 141 in the globe-spanning fight to restore order to the world.",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc83b5.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc83b6.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc83b7.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc83b4.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sc83b8.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sctja4.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sctja5.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sctja7.jpg"
+      }
+    ],
+    "reqMin": {
+      "os": "7 SP1, 8",
+      "cpu": "Intel Core i3-4340",
+      "ram": "8 GB",
+      "gpu": "Nvidia GeForce GTX 1650",
+      "storage": "80 GB"
+    },
+    "reqRec": {
+      "os": "10",
+      "cpu": "Intel Core i5-2500K",
+      "ram": "12 GB",
+      "gpu": "Nvidia GeForce GTX 1660"
+    },
+    "carousel": false,
+    "logo": "https://cdn2.steamgriddb.com/logo/3e15bc5fa2dc63605c64a2afbee14366.png",
+    "addedAt": "2026-11-24T15:11:27.579Z"
+  },
+  {
+    "id": 132,
+    "title": "Call of Duty: WWII",
+    "category": "Action",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/476600/capsule_616x353.jpg?t=1780963893",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/476600/library_hero.jpg?t=1780963893",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/476600/capsule_616x353.jpg?t=1780963893",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/476600/library_600x900.jpg?t=1780963893",
+    "sizeNum": 90,
+    "size": "90 GB",
+    "publisher": "Activision",
+    "pegi": 18,
+    "tags": [
+      "action"
+    ],
+    "description": "Call of Duty®: WWII, une référence dans le domaine offrant une expérience à couper le souffle.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/476600/123560/ca946128a800919bdd81aed8fe388ea22de9cbbc/1750535468/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256695756/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/476600/ss_5e5727fc0974a154f69dc1d2e53ca8e63453022f.1920x1080.jpg?t=1780963893"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/476600/ss_db711966afcef6cd0a916cbefc05377d1898e40d.1920x1080.jpg?t=1780963893"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/476600/121557/e17c6ce7fc1f1e53a70ecadbec8b1cce715fefb7/1750535424/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256694637/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/476600/ss_ba2ac2a2959f96992d18cb1e00eb37c97152d4c6.1920x1080.jpg?t=1780963893"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/476600/ss_fd09182eb59809c65f7c3e06254019a5ef2ec2eb.1920x1080.jpg?t=1780963893"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/476600/114523/c1826d9939a04afc8a49af482858d16518577b0c/1750535403/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256690784/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/476600/ss_1ddf7c1d9731249289ed242460020d9e10879dfa.1920x1080.jpg?t=1780963893"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/476600/ss_b6d4aef803569078ee543e8f4b0ec72989c1ff8d.1920x1080.jpg?t=1780963893"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/476600/ss_d07bc24087adb71b88a4dc88d3d93319e350f598.1920x1080.jpg?t=1780963893"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/476600/ss_88a576957be06b2f39159a5a971df10e6223f2c2.1920x1080.jpg?t=1780963893"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 7 64-Bit or later",
+      "cpu": "CPU: Intel® Core™ i3 3225 3.3 GHz or AMD Ryzen™ 5 1400",
+      "ram": "8 GB de mémoire",
+      "gpu": "NVIDIA® GeForce® GTX 660 @ 2 GB / GTX 1050 or ATI® Radeon™ HD 7850 @ 2GB / AMD RX 550",
+      "storage": "90 GB d'espace disque disponible"
+    },
+    "reqRec": {},
+    "carousel": false,
+    "steamAppId": 476600,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/476600/logo.png",
+    "addedAt": "2026-11-24T15:16:42.368Z"
+  },
+  {
+    "id": 133,
+    "title": "Just Cause 4",
+    "category": "Aventure",
+    "sourceVersion": 1,
+    "image": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/aypl44vdlsmxndmjgtqk.jpg",
+    "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/aypl44vdlsmxndmjgtqk.jpg",
+    "thumb": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/aypl44vdlsmxndmjgtqk.jpg",
+    "poster": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co27or.jpg",
+    "sizeNum": 59,
+    "size": "59 GB",
+    "publisher": "Square Enix",
+    "pegi": 18,
+    "tags": [
+      "shooter",
+      "adventure"
+    ],
+    "description": "Set in the fictional South American world of Solis, JUST CAUSE 4 takes the series incredible destruction and unique physics to a whole new level with the introduction of tornadoes and other Extreme Weather events. JUST CAUSE 4 has four distinct biomes: Rainforest, Grasslands, Alpine & Desert. With each biome offering its own individual, fully simulated weather event, players will have a truly unique experience as they traverse this deep, diverse world. Rico Rodriguez returns in JUST CAUSE 4 with his trademark parachute, wingsuit and, of course his grapple hook, now enhanced with new functionality and fully customisable. Making it the most powerful and creative tool the player has ever had.",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/ukbdj9aq7cbl9sdnp364.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/zk2hw7novnuid54zsgnb.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/mqgp1cklhdo7uxfv5ulp.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/peacztvh4u20dlfpfgcv.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/toceok15xsvphias6ezd.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/if4zbxkf72ph9j4vcftk.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sctkii.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sctkij.jpg"
+      }
+    ],
+    "reqMin": {
+      "os": "7 SP1",
+      "cpu": "Intel Core i5-2400 3.1 GHz",
+      "ram": "8 GB",
+      "gpu": "Nvidia GeForce GTX 760",
+      "storage": "59 GB"
+    },
+    "reqRec": {
+      "os": "10",
+      "cpu": "Intel Core i7-4770 3.4 GHz",
+      "ram": "16 GB",
+      "gpu": "Nvidia GeForce GTX 1070"
+    },
+    "carousel": false,
+    "logo": "https://cdn2.steamgriddb.com/logo/240497d1c93f3ea543976e5f331f3f9d.png",
+    "addedAt": "2026-11-24T15:25:29.303Z"
+  },
+  {
+    "id": 134,
+    "title": "Assassin's Creed Odyssey",
+    "category": "RPG",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/812140/capsule_616x353.jpg?t=1793886405",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/812140/library_hero.jpg?t=1793886405",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/812140/capsule_616x353.jpg?t=1793886405",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/812140/library_600x900.jpg?t=1793886405",
+    "sizeNum": 46,
+    "size": "46 GB",
+    "publisher": "Ubisoft",
+    "pegi": 18,
+    "tags": [
+      "action",
+      "aventure",
+      "rpg"
+    ],
+    "description": "Dans ce jeu d'action-aventure, mettez le cap sur la Grèce antique pour en changer le destin. Disputez des combats sauvages sur terre et sur mer, façonnez votre destin, de paria à légende, et percez les secrets de votre passé.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/812140/188292/a8c55a69aa88fdeafbbeeff69b4c525d6d2bd091/1750586000/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256730989/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/812140/16fc551879ac299dca68839da90f89d9e624db48/ss_16fc551879ac299dca68839da90f89d9e624db48.1920x1080.jpg?t=1793886405"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/812140/f0584a6081d10f4b4b611deea809dabada28b086/ss_f0584a6081d10f4b4b611deea809dabada28b086.1920x1080.jpg?t=1793886405"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/812140/188297/22cf4660908289571c858970588aad2afc461ec0/1750586007/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256730993/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/812140/f4dfed02451eb92eea6d6bf40c078e9a0c91573c/ss_f4dfed02451eb92eea6d6bf40c078e9a0c91573c.1920x1080.jpg?t=1793886405"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/812140/5009fb962158218d14e3275a153085ecabc848f2/ss_5009fb962158218d14e3275a153085ecabc848f2.1920x1080.jpg?t=1793886405"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/812140/188300/7906c0fabd1b08c606fa199ea6dacf130f9a0646/1750586014/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256730995/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/812140/f6a8ad096b6b3414ab8ef90ff8e49717fbebb2af/ss_f6a8ad096b6b3414ab8ef90ff8e49717fbebb2af.1920x1080.jpg?t=1793886405"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/812140/23039e3003448ee760030faf5e3bf8637f8d4063/ss_23039e3003448ee760030faf5e3bf8637f8d4063.1920x1080.jpg?t=1793886405"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/812140/23409aff01b0d829295d98f2379873febfc5014c/ss_23409aff01b0d829295d98f2379873febfc5014c.1920x1080.jpg?t=1793886405"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/812140/fff56709b0baf82a116ab39439b22dee4be502a4/ss_fff56709b0baf82a116ab39439b22dee4be502a4.1920x1080.jpg?t=1793886405"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 10 (64bit versions only)",
+      "cpu": "AMD FX 6300 @ 3.8 GHz, Ryzen 3 - 1200, Intel Core i5 2400 @ 3.1 GHz (MORE DETAILS HERE)",
+      "ram": "8 GB de mémoire",
+      "gpu": "AMD Radeon R9 285, NVIDIA GeForce GTX 660 (2GB VRAM with Shader Model 5.0) (MORE DETAILS HERE)",
+      "storage": "46+ GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Windows 10 (64bit versions only)",
+      "cpu": "AMD FX-8350 @ 4.0 GHz, Ryzen 5 - 1400, Intel Core i7-3770 @ 3.5 GHz or better (MORE DETAILS HERE)",
+      "ram": "8 GB de mémoire",
+      "gpu": "AMD Radeon R9 290, NVIDIA GeForce GTX 970 (4GB VRAM with Shader Model 5.0) or better (MORE DETAILS HERE)",
+      "storage": "46+ GB d'espace disque disponible"
+    },
+    "carousel": true,
+    "steamAppId": 812140,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/812140/logo.png",
+    "addedAt": "2026-11-24T15:28:41.223Z"
+  },
+  {
+    "id": 135,
+    "title": "Hello Neighbor",
+    "category": "Stratégie",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/521890/4cc3608ccefb5b0f3c8c57ccccb87cd916c35c9c/capsule_616x353.jpg?t=1789402399",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/521890/library_hero.jpg?t=1789402399",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/521890/4cc3608ccefb5b0f3c8c57ccccb87cd916c35c9c/capsule_616x353.jpg?t=1789402399",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/521890/library_600x900.jpg?t=1789402399",
+    "sizeNum": 5,
+    "size": "5 GB",
+    "publisher": "tinyBuild",
+    "pegi": 7,
+    "tags": [
+      "aventure",
+      "indépendant",
+      "stratégie"
+    ],
+    "description": "Hello Neighbor est un jeu d'horreur en mode furtif consistant à pénétrer en cachette dans la maison du voisin pour découvrir ce qu'il cache dans son sous-sol. Jouez contre une IA avancée qui apprend de chacun de vos mouvements. Passez à travers les fenêtres. Déjouez les pièges à ours. Vous essayez de vous échapper? Trouvez un raccourci.",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/521890/129868/c5f2c3129f2e3d136779776d37a330550c1c8003/1750543300/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256699116/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/521890/ss_f4bf74bcbf51a0d3b5b7a0497018e824f2ec092c.1920x1080.jpg?t=1789402399"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/521890/ss_ac219a7c078de280a6ab21c39d925d3f1c8bb4a8.1920x1080.jpg?t=1789402399"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/521890/73734/ac9d9d5f19c5794f47a22148c909e1bad649cf9f/1750543248/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256671243/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/521890/ss_462735bb24790570cadc9f6ed9fa5d456c2f8035.1920x1080.jpg?t=1789402399"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/521890/ss_dbd1c56e58f628d7978b2ef8f7f6b7106512366e.1920x1080.jpg?t=1789402399"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/521890/112172/51e3922624f4dbee657bf62a936ad848df3ee880/1750543299/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256689508/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/521890/ss_b0df68f6289fe4c8d16b826821c08f8fa6c1fd2b.1920x1080.jpg?t=1789402399"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/521890/ss_9341a234c2bba8b79b724018cc29c770a53200ac.1920x1080.jpg?t=1789402399"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/521890/ss_9857456077fb5baefccd9c134357a1b73901622b.1920x1080.jpg?t=1789402399"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 7 and up",
+      "cpu": "i5 and up",
+      "ram": "6 GB de mémoire",
+      "gpu": "GTX 770 and up",
+      "storage": "5 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Windows 10",
+      "cpu": "i7",
+      "ram": "8 GB de mémoire",
+      "gpu": "GTX 1060",
+      "storage": "5 GB d'espace disque disponible"
+    },
+    "carousel": true,
+    "steamAppId": 521890,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/521890/logo.png",
+    "addedAt": "2026-11-24T15:32:20.248Z"
+  },
+  {
+    "id": 136,
+    "title": "Hello Neighbor 2",
+    "category": "Stratégie",
+    "sourceVersion": 1,
+    "image": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1321680/c7947631d9d5aa61d2438329b0edc7f7c6af2666/capsule_616x353.jpg?t=1784143360",
+    "banner": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1321680/library_hero.jpg?t=1784143360",
+    "thumb": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1321680/c7947631d9d5aa61d2438329b0edc7f7c6af2666/capsule_616x353.jpg?t=1784143360",
+    "poster": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1321680/bd8d6443009ca67d8d3abb907b1f740cf425d08a/library_600x900.jpg?t=1784143360",
+    "sizeNum": 20,
+    "size": "20 GB",
+    "publisher": "tinyBuild",
+    "pegi": 12,
+    "tags": [
+      "aventure",
+      "indépendant",
+      "stratégie"
+    ],
+    "description": "Jeu d'horreur et d'infiltration, Hello Neighbor 2 vous met au défi de déterrer les secrets de vos voisins sinistres. Seul hic : chacun de ces individus est contrôlé par une I.A. dernier cri ! Réussirez-vous à déjouer les stratagèmes des voisins et à découvrir ce qu'ils cachent ?",
+    "media": [
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/1321680/624663/39feaf2675a84bf70345ca33af9edfd459ff8e4f/1751221500/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256979428/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1321680/ss_c1affb4818a942f8377328a9380d6bea26922e0a.1920x1080.jpg?t=1784143360"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1321680/ss_79a21fff82643efe385402467d9f12ea524226f8.1920x1080.jpg?t=1784143360"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/1321680/519800/3e723997fe506a4cd890135a636c716a756aef8e/1751221498/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256919687/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1321680/ss_e260f89acf1668f0a962baaca220355886de7f6c.1920x1080.jpg?t=1784143360"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1321680/ss_868417c591b9297afdda231a90a4eed28d15f90a.1920x1080.jpg?t=1784143360"
+      },
+      {
+        "type": "video",
+        "url": "https://video.akamai.steamstatic.com/store_trailers/1321680/499464/fb0c5ab02e68aee8758425c57bddbb03c866918a/1751221497/microtrailer.mp4",
+        "poster": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/256907710/movie_full.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1321680/ss_5a4e663b73de53b2aaf57d81f3577c3f005bca54.1920x1080.jpg?t=1784143360"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1321680/ss_e3b35c5d66e99519226d8e72b09539ee94d5f96a.1920x1080.jpg?t=1784143360"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1321680/ss_37ee62f9108be24da1269b1fa00d1f7db127e0ca.1920x1080.jpg?t=1784143360"
+      },
+      {
+        "type": "image",
+        "url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1321680/ss_acabd89194506696267804421172e405b5ba558e.1920x1080.jpg?t=1784143360"
+      }
+    ],
+    "reqMin": {
+      "os": "Windows 10/11 x64",
+      "cpu": "Intel i3 4th gen / AMD Athlon X4 880K",
+      "ram": "6 GB de mémoire",
+      "gpu": "GeForce GTX 750 Ti / AMD Radeon HD 7850",
+      "storage": "20 GB d'espace disque disponible"
+    },
+    "reqRec": {
+      "os": "Windows 10/11 x64",
+      "cpu": "Intel i5-4760 / AMD FX 9370",
+      "ram": "16 GB de mémoire",
+      "gpu": "GeForce GTX 1660 Ti / AMD Radeon RX Vega 56",
+      "storage": "20 GB d'espace disque disponible"
+    },
+    "carousel": true,
+    "steamAppId": 1321680,
+    "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1321680/logo.png",
+    "addedAt": "2026-11-24T15:34:21.764Z"
+  },
+  {
+    "id": 137,
+    "title": "The LEGO Ninjago Movie - Video Game",
+    "category": "Aventure",
+    "sourceVersion": 1,
+    "image": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ardep.jpg",
+    "banner": "https://images.igdb.com/igdb/image/upload/t_1080p/ardep.jpg",
+    "thumb": "https://images.igdb.com/igdb/image/upload/t_screenshot_big/ardep.jpg",
+    "poster": "https://images.igdb.com/igdb/image/upload/t_cover_big_2x/co253j.jpg",
+    "sizeNum": 20,
+    "size": "20 GB",
+    "publisher": "Warner Bros. Interactive Entertainment",
+    "pegi": 7,
+    "tags": [
+      "shooter",
+      "hack and slash/beat 'em up",
+      "adventure"
+    ],
+    "description": "Find your inner ninja with the all-new LEGO Ninjago Movie Video Game! Play as your favorite ninjas, Lloyd, Jay, Kai, Cole, Zane, Nya and Master Wu to defend Ninjago City from the evil Lord Garmadon and his Shark Army. Master the art of Ninja-gility by wall-running, high-jumping and battling the foes of Ninjago to rank up and upgrade the ninja’s combat skills. Only in the LEGO Ninjago Movie Video Game will you experience the film across 8 action packed locations each with its own unique Challenge Dojo. And with the Battle Maps, play against friends and family in competitions for up to four players!",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/oilfnkqsuz1uvnabb9jj.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/pwkz7fkjkbhk02onywgp.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/jn3mlrcudm2i9kf4yezr.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/bjf5gggnpwp6etmapotw.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/rttgzjmr8zjomesle4ib.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/sletbm53ml6gkbw0n1f3.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/t9ym9s5jaexylvbornzi.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/kzipvibljjwtbzhsbffj.jpg"
+      }
+    ],
+    "reqMin": {
+      "os": "7, 8, 8.1",
+      "cpu": "Intel Core 2 Quad Q9300 2.5 GHz",
+      "ram": "4 GB",
+      "gpu": "Nvidia GeForce GT 430",
+      "storage": "20 GB"
+    },
+    "reqRec": {
+      "os": "10",
+      "cpu": "Intel Core i5-2500K 3.3 GHz",
+      "gpu": "Nvidia GeForce GTX 750 Ti"
+    },
+    "carousel": true,
+    "addedAt": "2026-11-24T15:36:09.622Z"
   }
 ]
