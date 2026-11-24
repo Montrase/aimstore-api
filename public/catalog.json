@@ -8977,7 +8977,7 @@
       "gpu": "AMD Radeon R9 290, NVIDIA GeForce GTX 970 (4GB VRAM with Shader Model 5.0) or better (MORE DETAILS HERE)",
       "storage": "46+ GB d'espace disque disponible"
     },
-    "carousel": true,
+    "carousel": false,
     "steamAppId": 812140,
     "logo": "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/812140/logo.png",
     "addedAt": "2026-11-24T15:28:41.223Z"
@@ -9219,5 +9219,70 @@
     },
     "carousel": true,
     "addedAt": "2026-11-24T15:36:09.622Z"
+  },
+  {
+    "id": 138,
+    "title": "007 Legends",
+    "category": "Action",
+    "sourceVersion": 1,
+    "image": "https://cdn2.steamgriddb.com/grid/a9421b7cc6ba232930ceb90e6b227d30.png",
+    "banner": "https://cdn2.steamgriddb.com/hero/1e5b7061d1b5ab216c940c36ad179e59.png",
+    "thumb": "https://cdn2.steamgriddb.com/grid/a9421b7cc6ba232930ceb90e6b227d30.png",
+    "poster": "https://cdn2.steamgriddb.com/grid/83e24b8eb05b0a31ed42c5ac9c0c56a8.png",
+    "sizeNum": 10,
+    "size": "10 GB",
+    "publisher": "Activision",
+    "pegi": 16,
+    "tags": [
+      "shooter"
+    ],
+    "description": "007 Legends features an original, overarching storyline tying together six classic Bond movies for an original James Bond experience, and equips players with state-of-the-art spy gadgets, an arsenal of weapons and more. In addition to 007 Legends' main story, the game features the return of fan-favorite single-player Mi6 Ops Missions, which debuted in GoldenEye 007: Reloaded and challenges players to complete extra missions ranging from all-out action to stealth and gadget-based gameplay and compete for the highest online leader board scores. Also for the first time ever, players will be able to participate as one of Bond's cohorts or villainous foes, reliving the missions through their eyes, as well as 007's. Meanwhile the robust James Bond multiplayer experience includes local four-player split-screen game modes and online competitive gameplay with new maps, weapons and characters derived from Bond's 50 year legacy. With more gadgets, deeper stealth and spy investigation gameplay, gamers will have every opportunity to truly feel like the world's favorite spy.",
+    "media": [
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/hg1nv69lbuzonkenmuwg.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/qaaushd1p90plwdcqynt.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/wkf2igm8fymt5hfcagx7.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/wflhvqwnqwuqnzchn5iy.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/slel9f9gv0bpltjebk7k.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/latpfxpclbptfamm7ecr.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/ds31mzdpamfatuvpecir.jpg"
+      },
+      {
+        "type": "image",
+        "url": "https://images.igdb.com/igdb/image/upload/t_1080p/ijxlnryslwakim5vhqgl.jpg"
+      }
+    ],
+    "reqMin": {
+      "os": "XP",
+      "cpu": "Intel Core 2 Duo E6600",
+      "ram": "2 GB",
+      "gpu": "Nvidia GeForce 9600 GT",
+      "storage": "10 GB"
+    },
+    "reqRec": {
+      "os": "Vista, 7"
+    },
+    "carousel": true,
+    "logo": "https://cdn2.steamgriddb.com/logo/4ba3c163cd1efd4c14e3a415fa0a3010.png",
+    "addedAt": "2026-11-24T18:53:42.026Z"
   }
 ]
