@@ -418,6 +418,15 @@ app.post('/api/check', async (req, res) => {
     return res.status(429).json({ rateLimited: true, reason: 'Trop de requêtes.' });
   }
 
+  // Session invité (système de clé désactivé) : pas de jeton signé, on note seulement la présence.
+  // Aucun accès n'est donné par ce chemin : la réponse sert juste d'accusé de réception.
+  if (req.body && req.body.token === 'guest') {
+    const gd = typeof req.body.device === 'string' ? req.body.device.trim().toLowerCase() : '';
+    if (!DEVICE_RE.test(gd)) return res.json({ valid: false, reason: 'Session invalide' });
+    await markPresence(gd, 'in');
+    return res.json({ valid: true, guest: true });
+  }
+
   const payload = readToken(req.body && req.body.token);
   if (!payload || typeof payload.exp !== 'number') {
     return res.json({ valid: false, reason: 'Session invalide' });
