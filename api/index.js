@@ -581,13 +581,55 @@ app.get('/api/debug-linkvertise', async (req, res) => {
 const PRES_IN_SEC = 7 * 60;
 const PRES_OUT_SEC = 3 * 60;
 
+// Historique : 'pres:seen' garde la dernière activité de chaque appareil pendant 30 jours.
+// On n'écrit qu'une fois toutes les 10 min par appareil (économise les commandes Redis).
+const SEEN_KEEP_SEC = 30 * 24 * 60 * 60;
+const seenThrottle = new Map();
+
 async function markPresence(device, state) {
   try {
     const now = Date.now();
     const [add, drop] = state === 'in' ? ['pres:in', 'pres:out'] : ['pres:out', 'pres:in'];
-    await Promise.all([redis.zadd(add, { score: now, member: device }), redis.zrem(drop, device)]);
+    const jobs = [redis.zadd(add, { score: now, member: device }), redis.zrem(drop, device)];
+    if (now - (seenThrottle.get(device) || 0) > 10 * 60 * 1000) {
+      if (seenThrottle.size > 5000) seenThrottle.clear();
+      seenThrottle.set(device, now);
+      jobs.push(redis.zadd('pres:seen', { score: now, member: device }));
+    }
+    await Promise.all(jobs);
   } catch (e) { /* la présence ne doit jamais bloquer une vraie requête */ }
 }
+
+// Jour courant en heure du Congo (UTC+1), pour les compteurs « aujourd'hui »
+function dayKey() {
+  return new Date(Date.now() + 60 * 60 * 1000).toISOString().slice(0, 10);
+}
+
+// Statistiques d'usage envoyées par le launcher : téléchargement démarré / jeu lancé.
+// Sans jeton (comme /api/presence) : ce sont de simples compteurs, ils ne donnent aucun accès.
+app.post('/api/stat', async (req, res) => {
+  if (!(await rateLimit('stat', getClientIp(req), 30, 60))) return res.status(429).json({ ok: false });
+  const body = req.body || {};
+  const kind = body.kind;
+  const d = body.device;
+  const device = typeof d === 'string' ? d.trim().toLowerCase() : '';
+  if ((kind !== 'download' && kind !== 'launch') || !DEVICE_RE.test(device)) return res.json({ ok: false });
+  try {
+    const day = dayKey();
+    if (kind === 'download') {
+      const dk = 'stats:dl:day:' + day;
+      await Promise.all([redis.incr('stats:dl:total'), redis.incr(dk)]);
+      await redis.expire(dk, 45 * 24 * 60 * 60);
+    } else {
+      const lk = 'stats:launch:day:' + day;
+      await Promise.all([redis.sadd('stats:launch:devices', device), redis.sadd(lk, device)]);
+      await redis.expire(lk, 45 * 24 * 60 * 60);
+    }
+    return res.json({ ok: true });
+  } catch (e) {
+    return res.json({ ok: false });
+  }
+});
 
 // Ping de l'écran de connexion du launcher (sans jeton). Il ne peut dire QUE « déconnecté » :
 // impossible de se faire passer pour un utilisateur connecté.
@@ -612,10 +654,28 @@ app.get('/api/admin/online', async (req, res) => {
     const now = Date.now();
     await Promise.all([
       redis.zremrangebyscore('pres:in', 0, now - PRES_IN_SEC * 1000),
-      redis.zremrangebyscore('pres:out', 0, now - PRES_OUT_SEC * 1000)
+      redis.zremrangebyscore('pres:out', 0, now - PRES_OUT_SEC * 1000),
+      redis.zremrangebyscore('pres:seen', 0, now - SEEN_KEEP_SEC * 1000)
     ]);
-    const [connected, loggedOut] = await Promise.all([redis.zcard('pres:in'), redis.zcard('pres:out')]);
-    return res.json({ ok: true, connected, loggedOut, total: connected + loggedOut, at: now });
+    const H = 60 * 60 * 1000;
+    const day = dayKey();
+    const [connected, loggedOut, h3, d7, d30, dlTotal, dlToday, plTotal, plToday] = await Promise.all([
+      redis.zcard('pres:in'),
+      redis.zcard('pres:out'),
+      redis.zcount('pres:seen', now - 3 * H, '+inf'),
+      redis.zcount('pres:seen', now - 7 * 24 * H, '+inf'),
+      redis.zcount('pres:seen', now - 30 * 24 * H, '+inf'),
+      redis.get('stats:dl:total'),
+      redis.get('stats:dl:day:' + day),
+      redis.scard('stats:launch:devices'),
+      redis.scard('stats:launch:day:' + day)
+    ]);
+    return res.json({
+      ok: true, connected, loggedOut, total: connected + loggedOut, at: now,
+      history: { h3, d7, d30 },
+      downloads: { total: Number(dlTotal) || 0, today: Number(dlToday) || 0 },
+      players: { total: plTotal, today: plToday }
+    });
   } catch (e) {
     console.error('[admin/online]', e);
     return res.status(503).json({ ok: false });
