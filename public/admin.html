@@ -20,6 +20,11 @@ h1{font-size:1.1rem;font-weight:600;margin-bottom:18px}
 .box b{display:block;font-size:2rem}
 .box span{color:var(--mute);font-size:.82rem}
 .in b{color:var(--in)}.out b{color:var(--out)}
+.row3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+h2{font-size:.85rem;font-weight:600;color:var(--mute);margin:26px 0 10px;text-transform:uppercase;letter-spacing:.04em}
+.box b.sm{font-size:1.6rem}
+.note{color:var(--mute);font-size:.72rem;margin-top:10px}
+@media (max-width:420px){.row3{grid-template-columns:1fr}}
 form{display:flex;gap:8px}
 input{flex:1;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--text);font:inherit}
 button{padding:12px 18px;border:0;border-radius:10px;background:#4f46e5;color:#fff;font:600 .9rem inherit;font-family:inherit;cursor:pointer}
@@ -42,6 +47,23 @@ button{padding:12px 18px;border:0;border-radius:10px;background:#4f46e5;color:#f
       <div class="box in"><b id="in">0</b><span>connectés</span></div>
       <div class="box out"><b id="out">0</b><span>en ligne, déconnectés</span></div>
     </div>
+    <h2>Appareils uniques en ligne</h2>
+    <div class="row3">
+      <div class="box"><b class="sm" id="h3">0</b><span>3 dernières heures</span></div>
+      <div class="box"><b class="sm" id="d7">0</b><span>7 derniers jours</span></div>
+      <div class="box"><b class="sm" id="d30">0</b><span>30 derniers jours</span></div>
+    </div>
+    <h2>Téléchargements démarrés</h2>
+    <div class="row">
+      <div class="box"><b class="sm" id="dlTotal">0</b><span>depuis le début</span></div>
+      <div class="box"><b class="sm" id="dlToday">0</b><span>aujourd'hui</span></div>
+    </div>
+    <h2>Personnes ayant lancé un jeu</h2>
+    <div class="row">
+      <div class="box"><b class="sm" id="plTotal">0</b><span>depuis le début</span></div>
+      <div class="box"><b class="sm" id="plToday">0</b><span>aujourd'hui</span></div>
+    </div>
+    <div class="note">Un appareil compte une seule fois. Les chiffres démarrent à la mise en place de ces statistiques.</div>
   </section>
   <div id="msg"></div>
 </main>
@@ -56,6 +78,10 @@ async function load(){
     if(!r.ok)return msg('Serveur indisponible, nouvel essai dans 15 s.',true);
     const d=await r.json();
     $('total').textContent=d.total;$('in').textContent=d.connected;$('out').textContent=d.loggedOut;
+    const h=d.history||{},dl=d.downloads||{},pl=d.players||{},n=v=>(v==null?0:v).toLocaleString('fr-FR');
+    $('h3').textContent=n(h.h3);$('d7').textContent=n(h.d7);$('d30').textContent=n(h.d30);
+    $('dlTotal').textContent=n(dl.total);$('dlToday').textContent=n(dl.today);
+    $('plTotal').textContent=n(pl.total);$('plToday').textContent=n(pl.today);
     $('login').classList.add('hidden');$('stats').classList.remove('hidden');
     msg('Mis à jour à '+new Date(d.at).toLocaleTimeString('fr-FR'));
   }catch(e){msg('Pas de connexion réseau.',true)}
