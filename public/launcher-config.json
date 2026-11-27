@@ -105,7 +105,7 @@
     "required": true,
     "minVersion": "1.0.5",
     "message": {
-      "fr": "Cette version corrige un problème important : la mise à jour est obligatoire.",
+      "fr": "Cette version apporte quelques correctifs importants : la mise à jour est obligatoire.",
       "en": "This version fixes an important issue: the update is required."
     }
   }
