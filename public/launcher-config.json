@@ -103,7 +103,7 @@
   },
   "update": {
     "required": true,
-    "minVersion": "1.0.4",
+    "minVersion": "1.0.5",
     "message": {
       "fr": "Cette version corrige un problème important : la mise à jour est obligatoire.",
       "en": "This version fixes an important issue: the update is required."
