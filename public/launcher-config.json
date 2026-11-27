@@ -18,7 +18,7 @@
   "hero": {
     "enabled": true,
     "slide1": {
-      "image": "https://cdn2.steamgriddb.com/hero_thumb/232efe14b864588c1d368b35b460e2d2.jpg",
+      "image": "https://github.com/Montrase/aimstore-api/blob/main/public/AIMAFF.jpg?raw=true",
       "title": {
         "fr": "Plonger dans l'univers de naruto",
         "en": ""
