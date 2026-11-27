@@ -16,15 +16,15 @@
     }
   },
   "hero": {
-    "enabled": false,
+    "enabled": true,
     "slide1": {
-      "image": "",
+      "image": "https://cdn2.steamgriddb.com/hero_thumb/232efe14b864588c1d368b35b460e2d2.jpg",
       "title": {
-        "fr": "",
+        "fr": "Plonger dans l'univers de naruto",
         "en": ""
       },
       "text": {
-        "fr": "",
+        "fr": "Gratuitement sur aimstore",
         "en": ""
       },
       "button": {
