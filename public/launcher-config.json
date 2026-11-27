@@ -15,6 +15,85 @@
       "url": "https://discord.gg/yjDKauEbe5"
     }
   },
+  "hero": {
+    "enabled": false,
+    "slide1": {
+      "image": "",
+      "title": {
+        "fr": "",
+        "en": ""
+      },
+      "text": {
+        "fr": "",
+        "en": ""
+      },
+      "button": {
+        "label": {
+          "fr": "Découvrir",
+          "en": "Discover"
+        },
+        "type": "external",
+        "target": "https://discord.gg/X6u4tpQRS"
+      }
+    },
+    "slide2": {
+      "image": "",
+      "title": {
+        "fr": "",
+        "en": ""
+      },
+      "text": {
+        "fr": "",
+        "en": ""
+      },
+      "button": {
+        "label": {
+          "fr": "Découvrir",
+          "en": "Discover"
+        },
+        "type": "tab",
+        "target": "catalog"
+      }
+    },
+    "slide3": {
+      "image": "",
+      "title": {
+        "fr": "",
+        "en": ""
+      },
+      "text": {
+        "fr": "",
+        "en": ""
+      },
+      "button": {
+        "label": {
+          "fr": "Découvrir",
+          "en": "Discover"
+        },
+        "type": "game",
+        "target": ""
+      }
+    },
+    "slide4": {
+      "image": "",
+      "title": {
+        "fr": "",
+        "en": ""
+      },
+      "text": {
+        "fr": "",
+        "en": ""
+      },
+      "button": {
+        "label": {
+          "fr": "Découvrir",
+          "en": "Discover"
+        },
+        "type": "tab",
+        "target": "library"
+      }
+    }
+  },
   "links": {
     "discord": "https://discord.gg/X6u4tpQRS",
     "help": "https://youtu.be/7sNNw3-Iz8w"
